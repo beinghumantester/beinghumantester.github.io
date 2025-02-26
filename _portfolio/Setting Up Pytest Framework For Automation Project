@@ -1,13 +1,12 @@
 ---
-title: "PyTest Setup Guide For Automation Project"
-excerpt: "In the below article setting up pytest framework for automation project is being discussed in detail."
+title: "Setting Up Pytest for Your Automation Project"
+date: 2025-02-26
+layout: post
+description: "A complete guide to setting up Pytest for automation, covering installation, configuration, project structure, best practices, and reporting."
 collection: testing-mindspace
+categories: [Testing, Automation, Python]
+tags: [pytest, automation, testing, Python]
 ---
-
-
-
-
-
 
 # Setting Up Pytest for Your Automation Project
 
@@ -252,4 +251,3 @@ By leveraging Pytest's powerful features like fixtures, markers, and reporting, 
 ---
 
 I hope this guide helps you set up Pytest efficiently. If you have any questions or improvements, feel free to explore and experiment with different configurations!
-
