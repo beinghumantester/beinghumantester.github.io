@@ -1,12 +1,11 @@
 ---
 title: "Test Cases"
-excerpt: "In the below mind map all the column that are required for creating test cases is mentioned."
+excerpt: "In the below mind map, all the columns required for creating effective test cases are mentioned."
 collection: testing-mindspace
 ---
 
-This mind map consist of all the test case component that are required for creating test cases.
+This mind map consists of all the essential components required for writing efficient test cases.
 <img src='/images/Teststeps.jpg'>
-
 
 * <b>Test Scenario</b> : The Test Scenario is the starting point of a test case and represents the high-level functionality or feature being tested. It provides a concise description of what needs to be validated, ensuring testers focus on the specific area of the application under test. This column helps in grouping test cases logically and maintaining clarity in the test documentation.
 
@@ -26,9 +25,16 @@ This mind map consist of all the test case component that are required for creat
 
 * <b>Result</b> : The Result column provides the final verdict on the test case, indicating whether it passed or failed. This summary is derived from the comparison between the expected and actual results. A well-documented result column simplifies reporting and decision-making for further action.
 
-
 <b>Some other Test Case Columns for efficient test cases :</b>
 
 * <b>Test Case ID</b> : The Test Case ID is a unique identifier assigned to each test case. It helps in organizing, tracking, and referencing test cases within the test management system. A systematic naming convention for test case IDs ensures better traceability and facilitates easier mapping with requirements, defects, or test results.
 
 * <b>Evidence</b> : The Evidence column plays a crucial role in supporting the pass or fail verdict of a test case. It typically includes screenshots, logs, or recordings captured during test execution to validate the observed results. Providing evidence adds credibility and transparency to the testing process, enabling stakeholders to verify the outcome confidently.
+
+<b>Best Practices for Writing Efficient Test Cases:</b>
+
+* <b>Merge Test Cases Where Possible</b> : To avoid an unnecessary number of test cases, similar scenarios should be merged wherever possible. This reduces redundancy, simplifies test management, and enhances efficiency. However, ensure that merging does not compromise the clarity or intent of the test case.
+
+* <b>Use Simple and Clear Language</b> : The language used in test cases should be simple and easy to understand. It should be written in a way that both technical and non-technical stakeholders can grasp the objective of the test case. Avoid technical jargon unless absolutely necessary, and focus on clarity and readability.
+
+By following these practices, test cases can be more effective, maintainable, and easier to execute, ultimately improving the overall quality of the testing process.
