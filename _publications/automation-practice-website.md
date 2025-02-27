@@ -4,7 +4,7 @@ collection: projects
 category: manuscripts
 permalink: /projects/automation-practice-website
 excerpt: 'This Github Repo contains code for Automation of Website which is a web application for automation practice.'
-date: 2024-12-05
+date: 2025-01-03
 venue: 'Github'
 ---
 
