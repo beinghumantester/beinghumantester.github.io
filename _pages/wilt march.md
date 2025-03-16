@@ -91,15 +91,6 @@ author_profile: true
         </div>
     </div>
 </article>
-  <p>Documenting daily discoveries and insights in technology and personal growth</p>
-    
-    <div class="category-filter">
-      <button class="filter-btn active" data-category="all">All</button>
-      <button class="filter-btn" data-category="testing">Testing</button>
-      <button class="filter-btn" data-category="development">Development</button>
-      <button class="filter-btn" data-category="personal">Personal Growth</button>
-    </div>
-  </header>
 
   <div class="timeline">
 
