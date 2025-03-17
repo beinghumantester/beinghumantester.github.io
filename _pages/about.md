@@ -30,6 +30,16 @@ redirect_from:
   <div class="achievements-section">
     <h2>🏆 Tales of Triumph</h2>
     <div class="achievement-grid">
+         <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>🏅 MOT Community Certificate</h3>
+          </div>
+          <div class="flip-card-back">
+            <p>Recognized foe getting 5 Community Stars for Contribution To MOT!</p>
+          </div>
+        </div>
+      </div>
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
@@ -46,7 +56,7 @@ redirect_from:
             <h3>🏆 Call of Duty</h3>
           </div>
           <div class="flip-card-back">
-            <p>Successfully led a critical release under tight deadlines!</p>
+            <p>Recognized for going extra mile to support or help team!</p>
           </div>
         </div>
       </div>
@@ -88,6 +98,10 @@ redirect_from:
       <div class="cert-item glow-card">
         <span>🌐 Accessibility Specialist</span>
         <small>November 2024</small>
+      </div>
+      <div class="cert-item glow-card">
+        <span>🌐 MOT Community Certificate</span>
+        <small>February 2025</small>
       </div>
     </div>
   </div>
