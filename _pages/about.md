@@ -73,8 +73,9 @@ redirect_from:
     </div>
   </div>
 
-<div class="community-grid">
+
 <h2>🤝 Community Contributions</h2>
+<div class="community-grid">
   <div class="community-card">
     <div class="icon">🚀</div>
     <h3>Open Source Contributor</h3>
