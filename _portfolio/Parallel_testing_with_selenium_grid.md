@@ -1,5 +1,5 @@
 ---
-title: "Test Cases"
+title: "Selenium Grid With Python"
 excerpt: "Parallel Testing Made Simple: Setting Up Selenium Grid and Pytest Framework"
 collection: testing-mindspace
 ---
