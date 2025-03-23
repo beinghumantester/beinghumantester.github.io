@@ -1,6 +1,6 @@
 ---
-title: "Selenium Grid With Python"
-excerpt: "Parallel Testing Made Simple: Setting Up Selenium Grid and Pytest Framework"
+title: "Selenium Grid With Pytest"
+excerpt: "Parallel Testing Made Simple: Setting Up Selenium Grid With Pytest Framework"
 collection: testing-mindspace
 ---
 
