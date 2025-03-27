@@ -20,6 +20,264 @@ author_profile: true
 
   <div class="timeline">
 
+
+<article class="timeline-entry" data-category="learning">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">26th March</span>
+            <span class="category-tag" role="button" data-category="learning">Learning</span>
+        </div>
+        <h2>Advancing in Testing and Development Skills</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Reviewed progress and identified areas for deeper exploration.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Description:</b> Reflected on learnings from the past weeks and set goals for the next phase.</li>
+                <li><b>Key Takeaway:</b> Regular review and planning enhance continuous learning.</li>
+                <li><b>Personal Reflection:</b> Keeping track of learning helps in building a structured approach towards professional growth.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="learning">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">25th March</span>
+            <span class="category-tag" role="button" data-category="learning">Learning</span>
+        </div>
+        <h2>Practicing Algorithms on Lists and Arrays</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Implemented various programs on lists and arrays.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Description:</b> Solved problems related to searching, sorting, and manipulation of lists.</li>
+                <li><b>Key Takeaway:</b> Strengthening algorithmic problem-solving skills.</li>
+                <li><b>Personal Reflection:</b> Working with arrays and lists builds a strong foundation for automation.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="learning">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">24th March</span>
+            <span class="category-tag" role="button" data-category="learning">Learning</span>
+        </div>
+        <h2>Continuing "Growth Driven Strategy" Book</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Continued reading and extracting insights from the book.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Description:</b> Focused on chapters discussing iterative improvement strategies.</li>
+                <li><b>Key Takeaway:</b> Growth-driven strategies align well with testing mindsets.</li>
+                <li><b>Personal Reflection:</b> Implementing these strategies can refine automation approaches.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="learning">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">23rd March</span>
+            <span class="category-tag" role="button" data-category="learning">Learning</span>
+        </div>
+        <h2>Integrating Selenium Grid with pytest</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Successfully integrated Selenium Grid with pytest.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Description:</b> Set up Selenium Grid and executed parallel test runs.</li>
+                <li><b>Key Takeaway:</b> Selenium Grid improves test execution efficiency.</li>
+                <li><b>Personal Reflection:</b> Running tests in parallel helps in faster validation of web applications.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="learning">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">22nd March</span>
+            <span class="category-tag" role="button" data-category="learning">Learning</span>
+        </div>
+        <h2>Exploring GraphQL for API Testing</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Started exploring GraphQL and its impact on API testing.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Description:</b> Learned about GraphQL queries, mutations, and how it differs from REST.</li>
+                <li><b>Key Takeaway:</b> GraphQL provides more flexibility in API requests.</li>
+                <li><b>Personal Reflection:</b> Understanding GraphQL enhances API testing capabilities.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="learning">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">21st March</span>
+            <span class="category-tag" role="button" data-category="learning">Learning</span>
+        </div>
+        <h2>Smart QA Hybist Program</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Continued participation in structured learning.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Description:</b> Engaged in discussions and exercises to refine QA strategies.</li>
+                <li><b>Key Takeaway:</b> Structured learning helps in reinforcing key testing concepts.</li>
+                <li><b>Personal Reflection:</b> The program is helping in gaining a broader perspective on quality assurance.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+
+
+<article class="timeline-entry" data-category="learning">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">20th March</span>
+            <span class="category-tag" role="button" data-category="learning">Learning</span>
+        </div>
+        <h2>Understanding Fuzzy Logic in Testing</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Explored fuzzy logic applications in test automation.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Description:</b> Studied how fuzzy logic helps in handling uncertainty in test cases.</li>
+                <li><b>Key Takeaway:</b> Fuzzy logic can enhance dynamic test scenario generation.</li>
+                <li><b>Personal Reflection:</b> This approach might be useful in AI-driven testing.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="learning">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">19th March</span>
+            <span class="category-tag" role="button" data-category="learning">Learning</span>
+        </div>
+        <h2>Kafka for Test Data Streaming</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Explored Kafka's role in test data streaming.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Description:</b> Learned Kafka fundamentals and how to use it for real-time test data flow.</li>
+                <li><b>Key Takeaway:</b> Kafka enables scalable and efficient test data handling.</li>
+                <li><b>Personal Reflection:</b> This knowledge is valuable for large-scale test environments.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="learning">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">18th March</span>
+            <span class="category-tag" role="button" data-category="learning">Learning</span>
+        </div>
+        <h2>Regex for API Response Validation</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Practiced using regex for validating API responses.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Description:</b> Used regex patterns to extract and validate JSON responses.</li>
+                <li><b>Key Takeaway:</b> Regex can simplify API response verification.</li>
+                <li><b>Personal Reflection:</b> Mastering regex will help in writing efficient test assertions.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="learning">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">17th March</span>
+            <span class="category-tag" role="button" data-category="learning">Learning</span>
+        </div>
+        <h2>REST Assured for API Automation</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Implemented API automation using REST Assured.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Description:</b> Wrote test cases to validate API responses and performance.</li>
+                <li><b>Key Takeaway:</b> REST Assured is a powerful tool for API automation.</li>
+                <li><b>Personal Reflection:</b> Adding REST Assured to my toolkit strengthens my API testing skills.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="learning">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">16th March</span>
+            <span class="category-tag" role="button" data-category="learning">Learning</span>
+        </div>
+        <h2>Exploring BiDi Protocol in Selenium</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Studied the BiDi protocol for better browser automation.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Description:</b> Learned how BiDi enables real-time browser interaction.</li>
+                <li><b>Key Takeaway:</b> BiDi protocol provides more control over browser automation.</li>
+                <li><b>Personal Reflection:</b> Integrating BiDi in Selenium tests can enhance debugging capabilities.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+
+
 <article class="timeline-entry" data-category="testing">
     <div class="timeline-dot"></div>
     <div class="timeline-content">
