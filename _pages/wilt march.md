@@ -67,12 +67,12 @@ author_profile: true
     </div>
 </article>
 
-<article class="timeline-entry" data-category="learning">
+<article class="timeline-entry" data-category="personal">
     <div class="timeline-dot"></div>
     <div class="timeline-content">
         <div class="entry-header">
             <span class="entry-date">24th March</span>
-            <span class="category-tag" role="button" data-category="learning">Learning</span>
+            <span class="category-tag" role="button" data-category="personal">Personal Growth</span>
         </div>
         <h2>Continuing "Growth Driven Strategy" Book</h2>
         <div class="entry-preview">
@@ -90,12 +90,12 @@ author_profile: true
     </div>
 </article>
 
-<article class="timeline-entry" data-category="learning">
+<article class="timeline-entry" data-category="testing">
     <div class="timeline-dot"></div>
     <div class="timeline-content">
         <div class="entry-header">
             <span class="entry-date">23rd March</span>
-            <span class="category-tag" role="button" data-category="learning">Learning</span>
+            <span class="category-tag" role="button" data-category="testing">Testing</span>
         </div>
         <h2>Integrating Selenium Grid with pytest</h2>
         <div class="entry-preview">
@@ -207,12 +207,12 @@ author_profile: true
     </div>
 </article>
 
-<article class="timeline-entry" data-category="learning">
+<article class="timeline-entry" data-category="testing">
     <div class="timeline-dot"></div>
     <div class="timeline-content">
         <div class="entry-header">
             <span class="entry-date">18th March</span>
-            <span class="category-tag" role="button" data-category="learning">Learning</span>
+            <span class="category-tag" role="button" data-category="testing">Testing</span>
         </div>
         <h2>Regex for API Response Validation</h2>
         <div class="entry-preview">
@@ -230,12 +230,12 @@ author_profile: true
     </div>
 </article>
 
-<article class="timeline-entry" data-category="learning">
+<article class="timeline-entry" data-category="testing">
     <div class="timeline-dot"></div>
     <div class="timeline-content">
         <div class="entry-header">
             <span class="entry-date">17th March</span>
-            <span class="category-tag" role="button" data-category="learning">Learning</span>
+            <span class="category-tag" role="button" data-category="testing">Testing</span>
         </div>
         <h2>REST Assured for API Automation</h2>
         <div class="entry-preview">
