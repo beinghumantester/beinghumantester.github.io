@@ -20,6 +20,122 @@ author_profile: true
 
   <div class="timeline">
 
+<article class="timeline-entry" data-category="learning">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">31st March</span>
+            <span class="category-tag" role="button" data-category="learning">Learning</span>
+        </div>
+        <h2>Thinking in Systems</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Explored the foundational principles of System Thinking.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Description:</b> Understood feedback loops, leverage points, and the importance of viewing problems holistically.</li>
+                <li><b>Key Takeaway:</b> Systems are interconnected — seeing the big picture helps in solving deeper problems.</li>
+                <li><b>Personal Reflection:</b> This mindset shift feels powerful — like zooming out to truly *see* the map, not just the road.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="learning">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">30th March</span>
+            <span class="category-tag" role="button" data-category="learning">Learning</span>
+        </div>
+        <h2>Cracking Collections: Lists, Tuples & Dictionaries</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Dived deep into Python’s core data structures.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Description:</b> Practiced use cases, differences, and performance implications of lists, tuples, and dictionaries.</li>
+                <li><b>Key Takeaway:</b> Choosing the right data structure makes your code not only cleaner, but smarter.</li>
+                <li><b>Personal Reflection:</b> The subtle elegance of Python shines through its simplicity — every structure has a story.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="learning">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">29th March</span>
+            <span class="category-tag" role="button" data-category="learning">Learning</span>
+        </div>
+        <h2>Book in Progress: Growth-Driven Strategy</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Continued exploring strategic principles for sustainable product and team growth.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Description:</b> Read about aligning vision, execution, and feedback cycles in teams.</li>
+                <li><b>Key Takeaway:</b> Strategy without learning is just motion. Growth needs rhythm.</li>
+                <li><b>Personal Reflection:</b> These pages echo my daily work — trying to bridge intention with action.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="learning">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">28th March</span>
+            <span class="category-tag" role="button" data-category="learning">Learning</span>
+        </div>
+        <h2>API Testing in Motion</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Explored endpoint testing and chaining in Postman.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Description:</b> Focused on response validation, dynamic variables, and API workflows in Postman.</li>
+                <li><b>Key Takeaway:</b> A well-structured API test tells a complete user story — start to finish.</li>
+                <li><b>Personal Reflection:</b> Postman continues to amaze me — not just for testing, but for telling API tales.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+<article class="timeline-entry" data-category="learning">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <div class="entry-header">
+            <span class="entry-date">27th March</span>
+            <span class="category-tag" role="button" data-category="learning">Learning</span>
+        </div>
+        <h2>Automation Conversations</h2>
+        <div class="entry-preview">
+            <p><b>Learning:</b> Explored various automation frameworks and their design philosophies.</p>
+            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+        <div class="entry-full hidden">
+            <ul>
+                <li><b>Description:</b> Compared BDD, hybrid, and keyword-driven frameworks, and their use in real projects.</li>
+                <li><b>Key Takeaway:</b> Automation is not just about tools — it is about designing thoughtful solutions.</li>
+                <li><b>Personal Reflection:</b> Sometimes, frameworks whisper patterns if you listen closely — today, I listened.</li>
+            </ul>
+            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+        </div>
+    </div>
+</article>
+
+
 
 <article class="timeline-entry" data-category="learning">
     <div class="timeline-dot"></div>
@@ -655,7 +771,7 @@ author_profile: true
 
 
   <div class="archives-link">
-    <a href="/wilt-january">View Previous Entries</a>
+    <a href="/wilt-february">View Previous Entries</a>
   </div>
 </div>
 

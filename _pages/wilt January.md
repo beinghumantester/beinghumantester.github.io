@@ -311,9 +311,7 @@ author_profile: true
 </article>
   </div>
 
-  <div class="archives-link">
-    <a href="/december-wilt">View Previous Entries</a>
-  </div>
+  
 </div>
 
 <style>
