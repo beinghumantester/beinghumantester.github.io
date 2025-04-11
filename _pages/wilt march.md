@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "What I Learned Today"
-permalink: /wilt/
+permalink: /wilt-march/
 author_profile: true
 ---
 
