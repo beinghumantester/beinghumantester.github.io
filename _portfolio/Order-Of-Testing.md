@@ -1,7 +1,7 @@
 ---
 title: "Order Of Testing"
 excerpt: "Order Of Testing To Be Followed On New Releases."
-collection: testing-mindspace
+#collection: testing-mindspace
 ---
 
 When a new build is released by developing team for testing, the testing should be performed in certain order 

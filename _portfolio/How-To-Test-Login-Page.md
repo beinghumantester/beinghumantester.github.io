@@ -1,7 +1,7 @@
 ---
 title: "How To Test Login Page On Web Application"
 excerpt: "Mind-Map showcasing how to test login feature on Web Application"
-collection: testing-mindspace
+# collection: testing-mindspace
 ---
 
 <b>When testing a login page with email, password, and "Remember Me" fields, there are multiple positive and negative test cases that can be explored: </b>

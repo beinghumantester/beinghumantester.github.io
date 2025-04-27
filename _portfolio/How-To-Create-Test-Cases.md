@@ -1,7 +1,7 @@
 ---
 title: "Test Cases"
 excerpt: "In the below mind map, all the columns required for creating effective test cases are mentioned."
-collection: testing-mindspace
+# collection: testing-mindspace
 ---
 
 This mind map consists of all the essential components required for writing efficient test cases.

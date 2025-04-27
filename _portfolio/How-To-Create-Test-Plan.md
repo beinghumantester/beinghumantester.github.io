@@ -1,7 +1,7 @@
 ---
 title: "How To Create Test Plan"
 excerpt: "A Detailed Description Of How To Create Test Plans"
-collection: testing-mindspace
+# collection: testing-mindspace
 ---
 
 This mind map focus on all the components that have primarily required while creating the test plans.
