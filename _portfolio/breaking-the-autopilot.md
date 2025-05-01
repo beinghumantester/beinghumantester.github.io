@@ -5,7 +5,7 @@ collection: echoes
 ---
 
 
-In this article, I share how I shifted from testing on autopilot to approaching software testing with more clarity, intention, and collaboration. For a long time, my testing approach was all about following test cases, checking boxes, and logging bugs, but I often missed subtle issues that real users might face. It felt like I was doing everything by the book, yet something was missing. That’s when I started reflecting on my own habits and realised I was testing like a machine, not like someone trying to understand the product deeply.
+In this article published at Ministry of Testing, I share how I shifted from testing on autopilot to approaching software testing with more clarity, intention, and collaboration. For a long time, my testing approach was all about following test cases, checking boxes, and logging bugs, but I often missed subtle issues that real users might face. It felt like I was doing everything by the book, yet something was missing. That’s when I started reflecting on my own habits and realised I was testing like a machine, not like someone trying to understand the product deeply.
 
 The turning point came when I embraced mindfulness and began asking more thoughtful questions like "What if the user does something unexpected?" or "Why does this feature behave this way?" This change in mindset helped me slow down and truly engage with the application. I also started explaining bugs out loud (yes, sometimes even to my coffee mug) which made my reports clearer and more thoughtful. I learned to pause when I was mentally drained instead of pushing through, and that small break often gave me a fresh perspective.
 
