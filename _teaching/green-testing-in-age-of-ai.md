@@ -1,8 +1,13 @@
 ---
-title: "Green Testing in the Age of AI"
-excerpt: "Green Testing in the Age of AI: A Comprehensive Guide"
-collection: testing-mindspace
+title: "Green Testing in the Age of AI "
+collection: testing-musings
+type: "Green-Testing"
+permalink: /testing-musings/an-unforgettable-cookie
+venue: "green-testing"
+date: 2025-08-05
+location: "AI"
 ---
+
 
 In an age where artificial intelligence is transforming our testing methodologies, another revolution quietly unfolds alongside it — the movement toward Green Testing. As software testers with over a decade in the field and several years specializing in AI testing tools, we have observed how our testing processes contribute significantly to our digital carbon footprint. This is not just an environmental concern. It represents a fundamental shift in how we should approach quality assurance in the 2020s and beyond.
 
