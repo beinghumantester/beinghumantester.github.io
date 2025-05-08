@@ -2,7 +2,7 @@
 title: "Green Testing in the Age of AI "
 collection: testing-musings
 type: "Green-Testing"
-permalink: /testing-musings/an-unforgettable-cookie
+permalink: /testing-musings/green-testing-in-the-age-of-ai
 venue: "AI"
 date: 2025-08-05
 location: "AI"
