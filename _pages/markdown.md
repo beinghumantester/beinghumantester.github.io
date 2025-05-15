@@ -10,10 +10,10 @@ redirect_from:
 
 # My Testing Toolkit: Not Just Tools, but Trusty Companions
 
-*Some tools I found by chance while exploring
-Some stayed because they helped me solve tough bugs  
-Each one has a story  
-And together, they make testing a little easier every day*
+*Some tools came my way while I was just exploring  
+Some stayed because they helped me fix tricky bugs  
+Each one has its own use  
+Together, they make testing a bit smoother every day *
 
 # Tools I Use for Writing Code  
 - PyCharm – My main IDE for working on Python projects  
