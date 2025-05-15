@@ -42,6 +42,132 @@ author_profile: true
     </div>
 </article>
 
+
+
+<article class="timeline-entry" data-category="learning">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">5th May</span>
+      <span class="category-tag" role="button" data-category="learning">Learning</span>
+    </div>
+    <h2>AI Agent for WhatsApp Replies</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Built a basic AI agent to send automated WhatsApp replies.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Built a basic AI agent to send automated WhatsApp replies.</li>
+        <li><b>Description:</b> Used simple rule-based logic at first and then tried integrating with NLP models for more contextual responses. It was an interesting experiment in personal productivity.</li>
+        <li><b>Key Takeaway:</b> Even small automations can save time when integrated into day-to-day messaging workflows.</li>
+        <li><b>Personal Reflection:</b> This gave me a glimpse into how customer service automation works behind the scenes.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="learning">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">4th May</span>
+      <span class="category-tag" role="button" data-category="learning">Learning</span>
+    </div>
+    <h2>Understanding Transformers</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Started learning how transformer models work in AI.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Started learning how transformer models work in AI.</li>
+        <li><b>Description:</b> Focused on self-attention mechanisms and how transformers handle sequences. This helped me connect the dots between basic neural networks and more advanced models like GPT.</li>
+        <li><b>Key Takeaway:</b> Transformers have completely changed how machines understand language and context.</li>
+        <li><b>Personal Reflection:</b> The learning curve is steep but it feels worth it because of the endless applications.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="learning">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">3rd May</span>
+      <span class="category-tag" role="button" data-category="learning">Learning</span>
+    </div>
+    <h2>Exploring Support Vector Machines</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Got familiar with SVM and how it fits into classification problems.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Got familiar with SVM and how it fits into classification problems.</li>
+        <li><b>Description:</b> Practiced with different kernels and plotted decision boundaries. It helped to actually visualize how SVM separates data points.</li>
+        <li><b>Key Takeaway:</b> SVM can be powerful when used for the right kind of problem especially with smaller datasets.</li>
+        <li><b>Personal Reflection:</b> It was good to step back from deep learning and get into classic ML again.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">2nd May</span>
+      <span class="category-tag" role="button" data-category="testing">Testing</span>
+    </div>
+    <h2>Types and Levels of Testing</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Refreshed my understanding of different testing levels and categories.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Refreshed my understanding of different testing levels and categories.</li>
+        <li><b>Description:</b> From unit to acceptance testing and from functional to non-functional areas I mapped how each layer adds value. Also tried applying it to some old projects mentally.</li>
+        <li><b>Key Takeaway:</b> Clarity on testing categories helps in better planning and execution.</li>
+        <li><b>Personal Reflection:</b> Revisiting the basics often clears a lot of confusion when working on complex test strategies.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="thinking">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">1st May</span>
+      <span class="category-tag" role="button" data-category="thinking">Thinking</span>
+    </div>
+    <h2>Introduction to System Thinking</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Explored how system thinking works in problem-solving.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Explored how system thinking works in problem-solving.</li>
+        <li><b>Description:</b> Looked into feedback loops and how small actions ripple through a system. Tried applying the lens to a few testing and workflow issues I had faced recently.</li>
+        <li><b>Key Takeaway:</b> Looking at problems through systems instead of isolated events brings out root causes more clearly.</li>
+        <li><b>Personal Reflection:</b> This kind of thinking feels more natural and realistic once you get used to it. I want to explore it further in daily decisions too.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+
+
+
+
 <article class="timeline-entry" data-category="learning">
     <div class="timeline-dot"></div>
     <div class="timeline-content">
