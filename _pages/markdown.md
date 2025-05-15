@@ -1,5 +1,5 @@
 ---
-permalink: /exploring-ai-tools/
+permalink: /exploring-tools/
 title: ""
 author_profile: true
 redirect_from: 
@@ -8,8 +8,51 @@ redirect_from:
 ---
 
 
-# ShiftSync Tricentis AI Testing Vlogathon!
+# Tool kit for Automation and Testing 
 
-Here is a video that I have submitted for ShiftSync Tricentis AI Testing Vlogathon and in the video I have talked about leveraging the power of AI while creating Test Cases:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rA0lluxgdpE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+# IDE  
+- PyCharm 
+- Visual Studio Code 
+- Notepad++ 
+- Eclipse 
+
+# Performance Testing Tools 
+- Jmeter 
+- Light House 
+- GtMetrix 
+- Postman 
+
+# Accessibility Testing 
+- Axe Accessibility 
+
+# API Testing 
+- Postman 
+- Swagger 
+
+# CI/CD Pipeline
+- Jenkins
+- Docker 
+- Selenium Grid 
+
+# Version Control 
+- Github 
+
+# Frameworks 
+- Rest Assured 
+- Pytest
+- Behave
+
+# AI Based Testing Tools 
+- Katalon
+- Postbot 
+
+# LLMs based Tools 
+- Chatgpt 
+- Claude
+- Copilot 
+
+# Inspect 
+- Google Developer Tools 
+- SelectorHub
+
