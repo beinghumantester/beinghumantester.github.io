@@ -20,6 +20,105 @@ author_profile: true
 
   <div class="timeline">
   
+
+<article class="timeline-entry" data-category="testing">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">14th May</span>
+      <span class="category-tag" role="button" data-category="testing">Testing</span>
+    </div>
+    <h2>Looking at Testing Metrics</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Explored the role of testing metrics in improving test practices.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Explored the role of testing metrics in improving test practices.</li>
+        <li><b>Description:</b> I looked into different types of metrics like test coverage, defect density, and test case efficiency. It helped me understand how to measure the value of my tests better.</li>
+        <li><b>Key Takeaway:</b> Numbers can guide testing decisions, but they should never replace good judgment.</li>
+        <li><b>Personal Reflection:</b> I now see metrics as tools, not targets. They help, but they don’t tell the whole story.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">13th May</span>
+      <span class="category-tag" role="button" data-category="testing">Testing</span>
+    </div>
+    <h2>Understanding Cross Browser Testing</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Looked into how apps behave on different browsers.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Looked into how apps behave on different browsers.</li>
+        <li><b>Description:</b> I tested web apps on Chrome, Firefox, Safari, and Edge to see if layout, speed, and features work the same. Some small changes in rendering helped me realize how users can have different experiences.</li>
+        <li><b>Key Takeaway:</b> Just because it works on one browser doesn’t mean it works everywhere.</li>
+        <li><b>Personal Reflection:</b> I now test on multiple browsers even for small changes. It saves time later.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">12th May</span>
+      <span class="category-tag" role="button" data-category="testing">Testing</span>
+    </div>
+    <h2>Getting into Cache Testing</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Explored how cache affects app behavior and testing.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Explored how cache affects app behavior and testing.</li>
+        <li><b>Description:</b> I tested how websites store data in cache and how clearing or corrupt cache impacts functionality. It showed me where bugs can hide if cache isn't handled well.</li>
+        <li><b>Key Takeaway:</b> Caching can speed things up but also create hidden bugs.</li>
+        <li><b>Personal Reflection:</b> I learned not to ignore the cache during testing. It matters more than I thought.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">11th May</span>
+      <span class="category-tag" role="button" data-category="testing">Testing</span>
+    </div>
+    <h2>Types of Authentication in Testing</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Explored different types of authentication methods used in software.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Explored different types of authentication methods used in software.</li>
+        <li><b>Description:</b> I explored how basic auth, token-based auth, OAuth, and multi-factor auth work. I tested flows and saw where things break when tokens are missing or expired.</li>
+        <li><b>Key Takeaway:</b> Each type of auth brings its own challenges in testing. It's more than just logging in.</li>
+        <li><b>Personal Reflection:</b> I now pay more attention to security during testing. A simple login flow can hide many issues.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+
+
 <article class="timeline-entry" data-category="testing">
   <div class="timeline-dot"></div>
   <div class="timeline-content">
