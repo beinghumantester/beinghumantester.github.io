@@ -239,6 +239,125 @@ author_profile: true
   </div>
 </article>
 
+<article class="timeline-entry" data-category="coding">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">5th May</span>
+      <span class="category-tag" role="button" data-category="coding">Coding</span>
+    </div>
+    <h2>Explored Logging and Reporting</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Understood how logs and reports help in debugging and analysis.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Understood how logs and reports help in debugging and analysis.</li>
+        <li><b>Description:</b> I tried adding logging in Python test scripts and saw how it gives better visibility into what’s happening. Also checked out basic reporting tools to track test outcomes.</li>
+        <li><b>Key Takeaway:</b> Logs and reports make it easier to catch issues and explain what went wrong.</li>
+        <li><b>Personal Reflection:</b> Earlier, I only fixed failing tests. Now I focus on how to trace issues smartly using logs.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="automation">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">4th May</span>
+      <span class="category-tag" role="button" data-category="automation">Automation</span>
+    </div>
+    <h2>Dived into Pytest Parametrization</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Explored how to run the same test with different data using pytest.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Explored how to run the same test with different data using pytest.</li>
+        <li><b>Description:</b> I tried writing tests with multiple inputs using `@pytest.mark.parametrize`. It saved time and reduced repetitive code.</li>
+        <li><b>Key Takeaway:</b> Parametrization makes tests cleaner and more powerful.</li>
+        <li><b>Personal Reflection:</b> I like how a small feature in a framework can make testing smarter and faster.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="automation">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">3rd May</span>
+      <span class="category-tag" role="button" data-category="automation">Automation</span>
+    </div>
+    <h2>Started with Coverage.py</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Learned how to measure test coverage in Python projects.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Learned how to measure test coverage in Python projects.</li>
+        <li><b>Description:</b> I used coverage.py with pytest to check which parts of code were tested and which were not. It showed me some gaps I didn’t notice earlier.</li>
+        <li><b>Key Takeaway:</b> Coverage tools help improve quality by pointing out missing tests.</li>
+        <li><b>Personal Reflection:</b> I thought I was testing well, but coverage reports showed me what I missed.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="api">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">2nd May</span>
+      <span class="category-tag" role="button" data-category="api">API</span>
+    </div>
+    <h2>Practiced API Flows</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Practiced how APIs connect and work together in a flow.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Practiced how APIs connect and work together in a flow.</li>
+        <li><b>Description:</b> I built small flows where one API response became input for the next. It helped me understand chaining and data dependency in real apps.</li>
+        <li><b>Key Takeaway:</b> API testing is not just about single calls. Flows matter.</li>
+        <li><b>Personal Reflection:</b> Now I test APIs like a user would use them, in sequence, not in isolation.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="coding">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">1st May</span>
+      <span class="category-tag" role="button" data-category="coding">Coding</span>
+    </div>
+    <h2>Practiced Arrays and Lists</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Practiced basic problems using arrays and lists in Python.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Practiced basic problems using arrays and lists in Python.</li>
+        <li><b>Description:</b> Solved problems like finding duplicates, sorting, reversing, and merging lists. Focused on building logic and speed.</li>
+        <li><b>Key Takeaway:</b> These basics are used almost everywhere in coding and automation.</li>
+        <li><b>Personal Reflection:</b> The more I solve, the more patterns I notice. Lists feel less confusing now.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
 
 
 
