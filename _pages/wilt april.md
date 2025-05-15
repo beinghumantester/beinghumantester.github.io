@@ -19,97 +19,25 @@ author_profile: true
   </header>
 
   <div class="timeline">
-   <article class="timeline-entry" data-category="learning">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-        <div class="entry-header">
-            <span class="entry-date">10th April</span>
-            <span class="category-tag" role="button" data-category="learning">Learning</span>
-        </div>
-        <h2>Decoding Selenium Grid</h2>
-        <div class="entry-preview">
-            <p><b>Learning:</b> Began exploring Selenium Grid and its parallel execution capabilities.</p>
-            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
-        </div>
-        <div class="entry-full hidden">
-            <ul>
-                <li><b>Description:</b> Understood hub-node architecture, remote execution, and its role in distributed testing.</li>
-                <li><b>Key Takeaway:</b> The Grid teaches one thing loud and clear — scale smart, not just wide.</li>
-                <li><b>Personal Reflection:</b> Setting up the grid felt like building a network of digital clones ready to test in sync.</li>
-            </ul>
-            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
-        </div>
-    </div>
-</article>
-
-
-
-<article class="timeline-entry" data-category="learning">
+  
+<article class="timeline-entry" data-category="testing">
   <div class="timeline-dot"></div>
   <div class="timeline-content">
     <div class="entry-header">
-      <span class="entry-date">5th May</span>
-      <span class="category-tag" role="button" data-category="learning">Learning</span>
+      <span class="entry-date">10th May</span>
+      <span class="category-tag" role="button" data-category="testing">Testing</span>
     </div>
-    <h2>AI Agent for WhatsApp Replies</h2>
+    <h2>Accessibility Testing Basics</h2>
     <div class="entry-preview">
-      <p><b>Learning:</b> Built a basic AI agent to send automated WhatsApp replies.</p>
+      <p><b>Learning:</b> Explored the basics of accessibility testing and its importance.</p>
       <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
     </div>
     <div class="entry-full hidden">
       <ul>
-        <li><b>Learning:</b> Built a basic AI agent to send automated WhatsApp replies.</li>
-        <li><b>Description:</b> Used simple rule-based logic at first and then tried integrating with NLP models for more contextual responses. It was an interesting experiment in personal productivity.</li>
-        <li><b>Key Takeaway:</b> Even small automations can save time when integrated into day-to-day messaging workflows.</li>
-        <li><b>Personal Reflection:</b> This gave me a glimpse into how customer service automation works behind the scenes.</li>
-      </ul>
-      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
-    </div>
-  </div>
-</article>
-
-<article class="timeline-entry" data-category="learning">
-  <div class="timeline-dot"></div>
-  <div class="timeline-content">
-    <div class="entry-header">
-      <span class="entry-date">4th May</span>
-      <span class="category-tag" role="button" data-category="learning">Learning</span>
-    </div>
-    <h2>Understanding Transformers</h2>
-    <div class="entry-preview">
-      <p><b>Learning:</b> Started learning how transformer models work in AI.</p>
-      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
-    </div>
-    <div class="entry-full hidden">
-      <ul>
-        <li><b>Learning:</b> Started learning how transformer models work in AI.</li>
-        <li><b>Description:</b> Focused on self-attention mechanisms and how transformers handle sequences. This helped me connect the dots between basic neural networks and more advanced models like GPT.</li>
-        <li><b>Key Takeaway:</b> Transformers have completely changed how machines understand language and context.</li>
-        <li><b>Personal Reflection:</b> The learning curve is steep but it feels worth it because of the endless applications.</li>
-      </ul>
-      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
-    </div>
-  </div>
-</article>
-
-<article class="timeline-entry" data-category="learning">
-  <div class="timeline-dot"></div>
-  <div class="timeline-content">
-    <div class="entry-header">
-      <span class="entry-date">3rd May</span>
-      <span class="category-tag" role="button" data-category="learning">Learning</span>
-    </div>
-    <h2>Exploring Support Vector Machines</h2>
-    <div class="entry-preview">
-      <p><b>Learning:</b> Got familiar with SVM and how it fits into classification problems.</p>
-      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
-    </div>
-    <div class="entry-full hidden">
-      <ul>
-        <li><b>Learning:</b> Got familiar with SVM and how it fits into classification problems.</li>
-        <li><b>Description:</b> Practiced with different kernels and plotted decision boundaries. It helped to actually visualize how SVM separates data points.</li>
-        <li><b>Key Takeaway:</b> SVM can be powerful when used for the right kind of problem especially with smaller datasets.</li>
-        <li><b>Personal Reflection:</b> It was good to step back from deep learning and get into classic ML again.</li>
+        <li><b>Learning:</b> Explored the basics of accessibility testing and its importance.</li>
+        <li><b>Description:</b> I learned how to test whether a website or app is easy to use for people with disabilities. I tried tools that help find missing labels and poor contrast. It helped me understand how small changes can make a big difference.</li>
+        <li><b>Key Takeaway:</b> Accessibility is not optional. It makes products better for everyone.</li>
+        <li><b>Personal Reflection:</b> This made me realize that inclusive design should be a habit, not an afterthought.</li>
       </ul>
       <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
     </div>
@@ -120,44 +48,92 @@ author_profile: true
   <div class="timeline-dot"></div>
   <div class="timeline-content">
     <div class="entry-header">
-      <span class="entry-date">2nd May</span>
+      <span class="entry-date">9th May</span>
       <span class="category-tag" role="button" data-category="testing">Testing</span>
     </div>
-    <h2>Types and Levels of Testing</h2>
+    <h2>Understanding A/B Testing</h2>
     <div class="entry-preview">
-      <p><b>Learning:</b> Refreshed my understanding of different testing levels and categories.</p>
+      <p><b>Learning:</b> Looked into how A/B testing works in product decisions.</p>
       <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
     </div>
     <div class="entry-full hidden">
       <ul>
-        <li><b>Learning:</b> Refreshed my understanding of different testing levels and categories.</li>
-        <li><b>Description:</b> From unit to acceptance testing and from functional to non-functional areas I mapped how each layer adds value. Also tried applying it to some old projects mentally.</li>
-        <li><b>Key Takeaway:</b> Clarity on testing categories helps in better planning and execution.</li>
-        <li><b>Personal Reflection:</b> Revisiting the basics often clears a lot of confusion when working on complex test strategies.</li>
+        <li><b>Learning:</b> Looked into how A/B testing works in product decisions.</li>
+        <li><b>Description:</b> I explored what A/B testing is and how it helps in choosing what version of a product or feature works better. I found tools that help run such experiments with users and track their behavior.</li>
+        <li><b>Key Takeaway:</b> Real feedback from users is more helpful than just assumptions.</li>
+        <li><b>Personal Reflection:</b> A/B testing helps in building with users, not just for them.</li>
       </ul>
       <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
     </div>
   </div>
 </article>
 
-<article class="timeline-entry" data-category="thinking">
+<article class="timeline-entry" data-category="testing">
   <div class="timeline-dot"></div>
   <div class="timeline-content">
     <div class="entry-header">
-      <span class="entry-date">1st May</span>
-      <span class="category-tag" role="button" data-category="thinking">Thinking</span>
+      <span class="entry-date">8th May</span>
+      <span class="category-tag" role="button" data-category="testing">Testing</span>
     </div>
-    <h2>Introduction to System Thinking</h2>
+    <h2>Practicing SWOT Analysis</h2>
     <div class="entry-preview">
-      <p><b>Learning:</b> Explored how system thinking works in problem-solving.</p>
+      <p><b>Learning:</b> Practiced doing SWOT analysis for testing strategy improvement.</p>
       <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
     </div>
     <div class="entry-full hidden">
       <ul>
-        <li><b>Learning:</b> Explored how system thinking works in problem-solving.</li>
-        <li><b>Description:</b> Looked into feedback loops and how small actions ripple through a system. Tried applying the lens to a few testing and workflow issues I had faced recently.</li>
-        <li><b>Key Takeaway:</b> Looking at problems through systems instead of isolated events brings out root causes more clearly.</li>
-        <li><b>Personal Reflection:</b> This kind of thinking feels more natural and realistic once you get used to it. I want to explore it further in daily decisions too.</li>
+        <li><b>Learning:</b> Practiced doing SWOT analysis for testing strategy improvement.</li>
+        <li><b>Description:</b> I listed down strengths, weaknesses, opportunities, and threats in the way testing is done in a current setup. This helped me look at gaps and plan better.</li>
+        <li><b>Key Takeaway:</b> Having a clear view of what's working and what's not can help plan smarter moves.</li>
+        <li><b>Personal Reflection:</b> It felt like a mirror that shows both the good and the bad in a fair way.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">7th May</span>
+      <span class="category-tag" role="button" data-category="testing">Testing</span>
+    </div>
+    <h2>Risk Thinking in Testing</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Explored different ways of analyzing risks in testing.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Explored different ways of analyzing risks in testing.</li>
+        <li><b>Description:</b> I looked into techniques like risk matrix, probability vs impact, and how to prioritize tests based on risk. This helped me understand which areas of a product need more focus.</li>
+        <li><b>Key Takeaway:</b> Not all bugs are equal. Some are riskier and need faster attention.</li>
+        <li><b>Personal Reflection:</b> Thinking in terms of risk helped me test smarter, not just harder.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">6th May</span>
+      <span class="category-tag" role="button" data-category="testing">Testing</span>
+    </div>
+    <h2>What Makes Testing Accessible</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Took a deeper look into how to make testing itself more inclusive.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Took a deeper look into how to make testing itself more inclusive.</li>
+        <li><b>Description:</b> I explored ways to make test reports readable for everyone, including using screen-reader friendly formats and making better use of color and structure.</li>
+        <li><b>Key Takeaway:</b> Making testing inclusive starts with how results are shared and communicated.</li>
+        <li><b>Personal Reflection:</b> It feels good to know that even small changes in reporting can make a big difference for someone.</li>
       </ul>
       <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
     </div>
@@ -167,213 +143,6 @@ author_profile: true
 
 
 
-
-<article class="timeline-entry" data-category="learning">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-        <div class="entry-header">
-            <span class="entry-date">9th April</span>
-            <span class="category-tag" role="button" data-category="learning">Learning</span>
-        </div>
-        <h2>The AI Agent Era</h2>
-        <div class="entry-preview">
-            <p><b>Learning:</b> Dabbled with AI agents and their potential in testing workflows.</p>
-            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
-        </div>
-        <div class="entry-full hidden">
-            <ul>
-                <li><b>Description:</b> Explored lightweight agents like SmolAgent, and compared them with LangChain and CrewAI.</li>
-                <li><b>Key Takeaway:</b> AI agents are not magic — they are mirrors to our prompts and intent.</li>
-                <li><b>Personal Reflection:</b> This feels like testing’s next co-pilot — not replacing us, but augmenting us with brains-on-demand.</li>
-            </ul>
-            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
-        </div>
-    </div>
-</article>
-
-<article class="timeline-entry" data-category="learning">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-        <div class="entry-header">
-            <span class="entry-date">8th April</span>
-            <span class="category-tag" role="button" data-category="learning">Learning</span>
-        </div>
-        <h2>Understanding the Pyramid</h2>
-        <div class="entry-preview">
-            <p><b>Learning:</b> Studied the Testing Pyramid and its impact on automation strategy.</p>
-            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
-        </div>
-        <div class="entry-full hidden">
-            <ul>
-                <li><b>Description:</b> Reviewed the balance between unit, service, and UI tests and how it guides efficient testing pipelines.</li>
-                <li><b>Key Takeaway:</b> A strong base in automation starts small — with units, not giants.</li>
-                <li><b>Personal Reflection:</b> The pyramid whispers wisdom — test less at the top, but test with vision.</li>
-            </ul>
-            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
-        </div>
-    </div>
-</article>
-
-<article class="timeline-entry" data-category="learning">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-        <div class="entry-header">
-            <span class="entry-date">7th April</span>
-            <span class="category-tag" role="button" data-category="learning">Learning</span>
-        </div>
-        <h2>Digging into Coverage.py</h2>
-        <div class="entry-preview">
-            <p><b>Learning:</b> Explored how coverage.py helps track test coverage in Python projects.</p>
-            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
-        </div>
-        <div class="entry-full hidden">
-            <ul>
-                <li><b>Description:</b> Practiced running coverage reports, reading metrics, and improving gaps in automation.</li>
-                <li><b>Key Takeaway:</b> What gets measured gets improved — test coverage tells the untold story.</li>
-                <li><b>Personal Reflection:</b> Coverage is not about 100% — it is about meaningful testing footprints.</li>
-            </ul>
-            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
-        </div>
-    </div>
-</article>
-
-<article class="timeline-entry" data-category="learning">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-        <div class="entry-header">
-            <span class="entry-date">6th April</span>
-            <span class="category-tag" role="button" data-category="learning">Learning</span>
-        </div>
-        <h2>OSS Footprints</h2>
-        <div class="entry-preview">
-            <p><b>Learning:</b> Contributed to Selenium and Aluminium projects through documentation and discussion.</p>
-            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
-        </div>
-        <div class="entry-full hidden">
-            <ul>
-                <li><b>Description:</b> Shared insights, updated docstrings, and provided feedback on features and docs.</li>
-                <li><b>Key Takeaway:</b> Open source is more about *showing up* than being perfect.</li>
-                <li><b>Personal Reflection:</b> Felt like I am not just using tools — I am now shaping them, one commit at a time.</li>
-            </ul>
-            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
-        </div>
-    </div>
-</article>
-
-<article class="timeline-entry" data-category="learning">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-        <div class="entry-header">
-            <span class="entry-date">5th April</span>
-            <span class="category-tag" role="button" data-category="learning">Learning</span>
-        </div>
-        <h2>Writing: The Comeback Chapter</h2>
-        <div class="entry-preview">
-            <p><b>Learning:</b> Resumed writing — finally breaking the inertia.</p>
-            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
-        </div>
-        <div class="entry-full hidden">
-            <ul>
-                <li><b>Description:</b> Drafted reflections on testing, AI, and a few poetic musings for my portfolio and community posts.</li>
-                <li><b>Key Takeaway:</b> Writing is not just expression — it is thinking in slow motion.</li>
-                <li><b>Personal Reflection:</b> Words felt like old friends — a bit rusty, but right where I left them.</li>
-            </ul>
-            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
-        </div>
-    </div>
-</article>
-
-<article class="timeline-entry" data-category="learning">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-        <div class="entry-header">
-            <span class="entry-date">4th April</span>
-            <span class="category-tag" role="button" data-category="learning">Learning</span>
-        </div>
-        <h2>Proposal for uTest Conference</h2>
-        <div class="entry-preview">
-            <p><b>Learning:</b> Submitted a proposal for the uTest Conference on API Testing Constellation.</p>
-            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
-        </div>
-        <div class="entry-full hidden">
-            <ul>
-                <li><b>Description:</b> Outlined API testing patterns, common pitfalls, and tools for observability and resilience.</li>
-                <li><b>Key Takeaway:</b> Proposals make you zoom out and reflect deeply on what truly matters in your craft.</li>
-                <li><b>Personal Reflection:</b> I felt vulnerable yet proud — like sharing a chapter still being written.</li>
-            </ul>
-            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
-        </div>
-    </div>
-</article>
-
-<article class="timeline-entry" data-category="learning">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-        <div class="entry-header">
-            <span class="entry-date">3rd April</span>
-            <span class="category-tag" role="button" data-category="learning">Learning</span>
-        </div>
-        <h2>MoT Friday and Future Talks</h2>
-        <div class="entry-preview">
-            <p><b>Learning:</b> Participated in Ministry of Testing’s Friday session and gathered community energy.</p>
-            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
-        </div>
-        <div class="entry-full hidden">
-            <ul>
-                <li><b>Description:</b> Reflected on ideas around system thinking, testing culture, and sharing learnings.</li>
-                <li><b>Key Takeaway:</b> A tester grows faster in community soil than in individual silence.</li>
-                <li><b>Personal Reflection:</b> Every MoT session feels like a campfire for testers — warm, real, and raw.</li>
-            </ul>
-            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
-        </div>
-    </div>
-</article>
-
-<article class="timeline-entry" data-category="learning">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-        <div class="entry-header">
-            <span class="entry-date">2nd April</span>
-            <span class="category-tag" role="button" data-category="learning">Learning</span>
-        </div>
-        <h2>Automation Explorations</h2>
-        <div class="entry-preview">
-            <p><b>Learning:</b> Continued exploring frameworks and approaches in automation.</p>
-            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
-        </div>
-        <div class="entry-full hidden">
-            <ul>
-                <li><b>Description:</b> Looked into hybrid design, locator strategies, and test reporting enhancements.</li>
-                <li><b>Key Takeaway:</b> Automation is a dance between reliability and readability.</li>
-                <li><b>Personal Reflection:</b> The more I automate, the more I learn to debug myself too.</li>
-            </ul>
-            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
-        </div>
-    </div>
-</article>
-
-<article class="timeline-entry" data-category="learning">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-        <div class="entry-header">
-            <span class="entry-date">1st April</span>
-            <span class="category-tag" role="button" data-category="learning">Learning</span>
-        </div>
-        <h2>Myntra Automation using Pytest + BDD</h2>
-        <div class="entry-preview">
-            <p><b>Learning:</b> Automated key workflows on Myntra.com using Pytest and BDD approach.</p>
-            <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
-        </div>
-        <div class="entry-full hidden">
-            <ul>
-                <li><b>Description:</b> Designed and implemented login and product flow scenarios using Gherkin and Pytest fixtures.</li>
-                <li><b>Key Takeaway:</b> BDD bridges the gap between business needs and technical tests beautifully.</li>
-                <li><b>Personal Reflection:</b> Watching tests run on a real site I shop from? Kind of poetic, honestly.</li>
-            </ul>
-            <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
-        </div>
-    </div>
-</article>
 
   </div>
 
