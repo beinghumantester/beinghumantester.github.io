@@ -1,5 +1,5 @@
 ---
-permalink: /exploring-tools/coding-tools
+permalink: /echoes2/coding-tools
 title: ""
 author_profile: true
 redirect_from: 
