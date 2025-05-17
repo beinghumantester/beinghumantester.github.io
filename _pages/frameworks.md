@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-# My Testing Toolkit: Not Just Tools, but Trusty Companions 
+# My Testing Toolkit: Not Just Tools, but Trusty Companions
 
 *Some tools came my way while I was just exploring  
 Some stayed because they helped me fix tricky bugs  
