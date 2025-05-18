@@ -7,17 +7,28 @@ redirect_from:
   - /markdown.html
 ---
 
+# Coding Tools I Keep Going Back To  
 
-# My Testing Toolkit: Not Just Tools, but Trusty Companions
+*These are the coding tools I use every day. Nothing fancy , just reliable tools that help me write better code and solve problems. Even though I tried many over the years, but these are the ones I keep coming back to.*
 
-*Some tools came my way while I was just exploring  
-Some stayed because they helped me fix tricky bugs  
-Each one has its own use  
-Together, they make testing a bit smoother every day *
+---
 
 # Tools I Use for Writing Code  
-- PyCharm – My main IDE for working on Python projects  
-- VS Code – Quick and lightweight, good for small tasks  
-- Notepad++ – Handy for quick edits and logs  
-- Eclipse – Mostly for Java-based work  
 
+- **PyCharm**  
+  When I’m working on Python projects, this is my go-to. It understands my code better than I do sometimes, and the debugging feels smooth.
+
+- **Visual Studio Code**  
+  Clean, quick, and flexible. I often use it for light edits, Markdown writing, or when I just want to open a folder without loading a whole IDE.
+
+- **Notepad++**  
+  My forever friend for checking logs, comparing files, or making quick notes. Light and reliable.
+
+- **Eclipse**  
+  This one comes out when I’m working with Java. A bit heavy, but still gets the job done when I need it.
+
+---
+
+*Some days it's about building features  
+Other days, it's just staring at logs  
+Either way, the tools help keep things moving*

@@ -2,20 +2,30 @@
 permalink: /exploring-tools/inspect-tools
 title: ""
 author_profile: true
-redirect_from: 
+redirect_from:
   - /md/
   - /markdown.html
 ---
 
+# Inspect Tools That Save Me From XPath Nightmares  
 
-# My Testing Toolkit: Not Just Tools, but Trusty Companions
+*Sometimes it’s not the script  
+It’s the selector that refuses to behave  
+These tools don’t write my test cases  
+But they do help me find the path to write them better*
 
-*Some tools came my way while I was just exploring  
-Some stayed because they helped me fix tricky bugs  
-Each one has its own use  
-Together, they make testing a bit smoother every day *
-
+---
 
 # Tools I Use for Inspecting Elements  
-- DevTools – Built into the browser, very helpful  
-- SelectorHub – Makes finding XPath and selectors easier  
+
+- **DevTools**  
+  Built right into the browser and always the first thing I open. Whether it's checking HTML structure, tracking network calls, or testing selectors, this one’s my everyday companion.
+
+- **SelectorHub**  
+  Makes life easier when I’m hunting down XPath and CSS selectors. Shows smart suggestions and helps me verify them instantly — super handy during automation scripting.
+
+---
+
+*Locators break  
+DOMs change  
+But these tools help me stay one step ahead*
