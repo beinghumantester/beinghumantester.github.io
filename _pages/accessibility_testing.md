@@ -1,5 +1,5 @@
 ---
-permalink: /exploring-tools/
+permalink: /exploring-tools/accessibility-testing
 title: ""
 author_profile: true
 redirect_from: 
