@@ -1,5 +1,5 @@
 ---
-permalink: /exploring-tools/
+permalink: /exploring-tools/ai-testing-tools
 title: ""
 author_profile: true
 redirect_from: 
