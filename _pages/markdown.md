@@ -9,12 +9,19 @@ redirect_from:
 
 # My Testing Toolkit: Not Just Tools, but Trusty Companions
 
+
+## [Beyond the Toolkit: My Ongoing Exploration of Testing & AI Tools](/exploring-tools/tools-under-testing)
+A peek into the AI and testing tools I’m currently exploring, not yet in my toolkit, but full of potential.
+Some impress, some surprise but all are teaching me something new. 
+
+
+# Explore My Tools by Category
+
 *Some tools came my way while I was just exploring  
 Some stayed because they helped me fix tricky bugs  
 Each one has its own use  
 Together, they make testing a bit smoother every day*
 
-# Explore My Tools by Category
 
 ## [Coding Tools](/exploring-tools/coding-tools)  
 A peek into the editors and IDEs I use for writing code every day  
@@ -28,7 +35,7 @@ Making sure applications are usable for everyone, with tools that check accessib
 ## [API Testing Tools](/exploring-tools/api-tools)  
 Tools I trust for designing, sending, and testing APIs effectively  
 
-## [CI/CD and Version Control Tools](/exploring-tools/ci-d-tools)  
+## [CI/CD and Version Control Tools](/exploring-tools/ci-cd-tools)  
 From automation to collaboration, these tools help me keep things moving in the pipeline  
 
 ## [Frameworks I Work With](/exploring-tools/frameworks)  

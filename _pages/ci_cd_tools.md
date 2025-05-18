@@ -1,5 +1,5 @@
 ---
-permalink: /exploring-tools/ci-d-tools
+permalink: /exploring-tools/ci-cd-tools
 title: ""
 author_profile: true
 redirect_from:
