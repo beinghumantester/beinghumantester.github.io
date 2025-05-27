@@ -17,6 +17,9 @@ main:
         
   - title: "Books"
     url: /year-archive/
+  
+  - title: "Resources"
+    url: /talk
     
   - title: "CV"
     url: /cv/
