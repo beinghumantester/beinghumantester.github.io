@@ -19,6 +19,149 @@ author_profile: true
   </header>
 
   <div class="timeline">
+  <article class="timeline-entry" data-category="personal growth">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">12th June</span>
+      <span class="category-tag" role="button" data-category="personal growth">Personal Growth</span>
+    </div>
+    <h2>Book Event and Reflections</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Attended an online book reading event and reflected on strategies for growth.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Attended an online book reading event and reflected on strategies for growth.</li>
+        <li><b>Description:</b> The event gave me simple but deep insights about growth and how small habits make a big difference over time. It felt like a quiet reminder to keep going, one step at a time.</li>
+        <li><b>Key Takeaway:</b> Growth doesn’t need big moves. Even quiet moments can teach something.</li>
+        <li><b>Personal Reflection:</b> Sometimes all you need is to listen and pause. That’s what this event gave me.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="personal growth">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">11th June</span>
+      <span class="category-tag" role="button" data-category="personal growth">Personal Growth</span>
+    </div>
+    <h2>Growth Driven Strategy</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Read about growth driven strategy and how it applies beyond business.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Read about growth driven strategy and how it applies beyond business.</li>
+        <li><b>Description:</b> It focused on how growth should be planned with flexibility. Like in testing too, you can't fix everything at once. You grow with feedback, small releases, and constant learning.</li>
+        <li><b>Key Takeaway:</b> Strategy isn’t a one-time thing. It’s a path that changes with time.</li>
+        <li><b>Personal Reflection:</b> I think it made me more open to adjust my ways, both in work and outside it.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">10th June</span>
+      <span class="category-tag" role="button" data-category="testing">Testing</span>
+    </div>
+    <h2>Black Box Testing</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Practiced black box testing and its use in real projects.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Practiced black box testing and its use in real projects.</li>
+        <li><b>Description:</b> I tested features without knowing what’s inside the code. It helped focus more on expected results and user point of view.</li>
+        <li><b>Key Takeaway:</b> Sometimes not knowing the inside makes you see the outside more clearly.</li>
+        <li><b>Personal Reflection:</b> It’s a reminder that testing is also about thinking like the user.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">9th June</span>
+      <span class="category-tag" role="button" data-category="testing">Testing</span>
+    </div>
+    <h2>Understanding Jenkins</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Looked into Jenkins and how it supports automation.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Looked into Jenkins and how it supports automation.</li>
+        <li><b>Description:</b> I learned how Jenkins helps build and test code automatically. It makes the process smoother and avoids missing steps.</li>
+        <li><b>Key Takeaway:</b> Automating builds helps save time and reduces chances of forgetting important things.</li>
+        <li><b>Personal Reflection:</b> This made me think about how small tools make big changes in team speed.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">8th June</span>
+      <span class="category-tag" role="button" data-category="testing">Testing</span>
+    </div>
+    <h2>What is MCP?</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Explored MCP and its role in testing workflows.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Explored MCP and its role in testing workflows.</li>
+        <li><b>Description:</b> I learned about Minimum Complete Product and how it helps in delivering useful things fast without waiting for perfect solutions.</li>
+        <li><b>Key Takeaway:</b> Start small, ship early, and learn quickly.</li>
+        <li><b>Personal Reflection:</b> This made me rethink how I plan work. Maybe it’s okay to aim for good enough at first.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="testing">
+  <div class="timeline-dot"></></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">7th June</span>
+      <span class="category-tag" role="button" data-category="testing">Testing</span>
+    </div>
+    <h2>Parametrization in Pytest</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Revisited parametrization and its impact in reducing code in tests.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Revisited parametrization and its impact in reducing code in tests.</li>
+        <li><b>Description:</b> I used pytest.mark.parametrize to run the same test with different values. It saved effort and made results more reliable.</li>
+        <li><b>Key Takeaway:</b> One line of smart code is better than ten lines of the same thing.</li>
+        <li><b>Personal Reflection:</b> It’s always the small tricks that make your work smoother.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
 
 <article class="timeline-entry" data-category="testing">
   <div class="timeline-dot"></div>
