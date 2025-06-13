@@ -19,48 +19,48 @@ author_profile: true
   </header>
 
   <div class="timeline">
-  <article class="timeline-entry" data-category="personal growth">
+<article class="timeline-entry" data-category="testing">
   <div class="timeline-dot"></div>
   <div class="timeline-content">
     <div class="entry-header">
       <span class="entry-date">12th June</span>
-      <span class="category-tag" role="button" data-category="personal growth">Personal Growth</span>
+      <span class="category-tag" role="button" data-category="testing">Testing</span>
     </div>
-    <h2>Book Event and Reflections</h2>
+    <h2>Parametrization in Pytest</h2>
     <div class="entry-preview">
-      <p><b>Learning:</b> Attended an online book reading event and reflected on strategies for growth.</p>
+      <p><b>Learning:</b> Practiced test parametrization using Pytest.</p>
       <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
     </div>
     <div class="entry-full hidden">
       <ul>
-        <li><b>Learning:</b> Attended an online book reading event and reflected on strategies for growth.</li>
-        <li><b>Description:</b> The event gave me simple but deep insights about growth and how small habits make a big difference over time. It felt like a quiet reminder to keep going, one step at a time.</li>
-        <li><b>Key Takeaway:</b> Growth doesn’t need big moves. Even quiet moments can teach something.</li>
-        <li><b>Personal Reflection:</b> Sometimes all you need is to listen and pause. That’s what this event gave me.</li>
+        <li><b>Learning:</b> Practiced test parametrization using Pytest.</li>
+        <li><b>Description:</b> I explored how parametrization helps in running a single test with different input values. It made the test flow cleaner and reusable.</li>
+        <li><b>Key Takeaway:</b> Parametrization is a smart way to reduce repetition and cover more conditions without writing multiple tests.</li>
+        <li><b>Personal Reflection:</b> Simple concept but brings huge clarity to test coverage. Loved how easy it became to test multiple cases.</li>
       </ul>
       <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
     </div>
   </div>
 </article>
 
-<article class="timeline-entry" data-category="personal growth">
+<article class="timeline-entry" data-category="development">
   <div class="timeline-dot"></div>
   <div class="timeline-content">
     <div class="entry-header">
       <span class="entry-date">11th June</span>
-      <span class="category-tag" role="button" data-category="personal growth">Personal Growth</span>
+      <span class="category-tag" role="button" data-category="development">Development</span>
     </div>
-    <h2>Growth Driven Strategy</h2>
+    <h2>Evaluation of RAG Based LLM</h2>
     <div class="entry-preview">
-      <p><b>Learning:</b> Read about growth driven strategy and how it applies beyond business.</p>
+      <p><b>Learning:</b> Looked into how RAG based LLMs are evaluated.</p>
       <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
     </div>
     <div class="entry-full hidden">
       <ul>
-        <li><b>Learning:</b> Read about growth driven strategy and how it applies beyond business.</li>
-        <li><b>Description:</b> It focused on how growth should be planned with flexibility. Like in testing too, you can't fix everything at once. You grow with feedback, small releases, and constant learning.</li>
-        <li><b>Key Takeaway:</b> Strategy isn’t a one-time thing. It’s a path that changes with time.</li>
-        <li><b>Personal Reflection:</b> I think it made me more open to adjust my ways, both in work and outside it.</li>
+        <li><b>Learning:</b> Looked into how RAG based LLMs are evaluated.</li>
+        <li><b>Description:</b> I read about different methods to assess retrieval-augmented generation models. Focused on output accuracy, data recall, and prompt-response relevance.</li>
+        <li><b>Key Takeaway:</b> It's not just about model response but also how reliable the supporting context is.</li>
+        <li><b>Personal Reflection:</b> This field is growing fast. I’ll need to keep revisiting this to stay updated.</li>
       </ul>
       <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
     </div>
@@ -76,15 +76,15 @@ author_profile: true
     </div>
     <h2>Black Box Testing</h2>
     <div class="entry-preview">
-      <p><b>Learning:</b> Practiced black box testing and its use in real projects.</p>
+      <p><b>Learning:</b> Studied how black box testing works in different scenarios.</p>
       <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
     </div>
     <div class="entry-full hidden">
       <ul>
-        <li><b>Learning:</b> Practiced black box testing and its use in real projects.</li>
-        <li><b>Description:</b> I tested features without knowing what’s inside the code. It helped focus more on expected results and user point of view.</li>
-        <li><b>Key Takeaway:</b> Sometimes not knowing the inside makes you see the outside more clearly.</li>
-        <li><b>Personal Reflection:</b> It’s a reminder that testing is also about thinking like the user.</li>
+        <li><b>Learning:</b> Studied how black box testing works in different scenarios.</li>
+        <li><b>Description:</b> I focused on testing from a user’s point of view, without digging into internal code. Explored how it applies in real-world test cases.</li>
+        <li><b>Key Takeaway:</b> Sometimes not knowing the code helps you catch bugs users will face.</li>
+        <li><b>Personal Reflection:</b> It reminded me that simple testing techniques still solve big problems when used right.</li>
       </ul>
       <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
     </div>
@@ -100,15 +100,15 @@ author_profile: true
     </div>
     <h2>Understanding Jenkins</h2>
     <div class="entry-preview">
-      <p><b>Learning:</b> Looked into Jenkins and how it supports automation.</p>
+      <p><b>Learning:</b> Explored Jenkins basics and job pipelines.</p>
       <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
     </div>
     <div class="entry-full hidden">
       <ul>
-        <li><b>Learning:</b> Looked into Jenkins and how it supports automation.</li>
-        <li><b>Description:</b> I learned how Jenkins helps build and test code automatically. It makes the process smoother and avoids missing steps.</li>
-        <li><b>Key Takeaway:</b> Automating builds helps save time and reduces chances of forgetting important things.</li>
-        <li><b>Personal Reflection:</b> This made me think about how small tools make big changes in team speed.</li>
+        <li><b>Learning:</b> Explored Jenkins basics and job pipelines.</li>
+        <li><b>Description:</b> I went through how to create Jenkins jobs, set up build triggers, and connect it with test scripts. Also tried running a pipeline manually.</li>
+        <li><b>Key Takeaway:</b> Jenkins makes automation easy once set up. Helps in creating repeatable and visible test flows.</li>
+        <li><b>Personal Reflection:</b> A little tricky at first but quite powerful once you figure it out.</li>
       </ul>
       <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
     </div>
@@ -122,46 +122,47 @@ author_profile: true
       <span class="entry-date">8th June</span>
       <span class="category-tag" role="button" data-category="testing">Testing</span>
     </div>
-    <h2>What is MCP?</h2>
+    <h2>Explored MCP and Its Scope</h2>
     <div class="entry-preview">
-      <p><b>Learning:</b> Explored MCP and its role in testing workflows.</p>
+      <p><b>Learning:</b> Learned about MCP and where it fits in testing.</p>
       <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
     </div>
     <div class="entry-full hidden">
       <ul>
-        <li><b>Learning:</b> Explored MCP and its role in testing workflows.</li>
-        <li><b>Description:</b> I learned about Minimum Complete Product and how it helps in delivering useful things fast without waiting for perfect solutions.</li>
-        <li><b>Key Takeaway:</b> Start small, ship early, and learn quickly.</li>
-        <li><b>Personal Reflection:</b> This made me rethink how I plan work. Maybe it’s okay to aim for good enough at first.</li>
+        <li><b>Learning:</b> Learned about MCP and where it fits in testing.</li>
+        <li><b>Description:</b> I looked at how Minimum Complete Product differs from MVP. MCP focuses on testing full flows but in the most trimmed way possible.</li>
+        <li><b>Key Takeaway:</b> MCP is good for serious testing when MVP becomes too basic for real checks.</li>
+        <li><b>Personal Reflection:</b> This was a new angle for me. Will definitely use it for better planning.</li>
       </ul>
       <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
     </div>
   </div>
 </article>
 
-<article class="timeline-entry" data-category="testing">
-  <div class="timeline-dot"></></div>
+<article class="timeline-entry" data-category="personal growth">
+  <div class="timeline-dot"></div>
   <div class="timeline-content">
     <div class="entry-header">
       <span class="entry-date">7th June</span>
-      <span class="category-tag" role="button" data-category="testing">Testing</span>
+      <span class="category-tag" role="button" data-category="personal growth">Personal Growth</span>
     </div>
-    <h2>Parametrization in Pytest</h2>
+    <h2>Book Event and Reflections</h2>
     <div class="entry-preview">
-      <p><b>Learning:</b> Revisited parametrization and its impact in reducing code in tests.</p>
+      <p><b>Learning:</b> Attended a book reading on Growth Driven Testing.</p>
       <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
     </div>
     <div class="entry-full hidden">
       <ul>
-        <li><b>Learning:</b> Revisited parametrization and its impact in reducing code in tests.</li>
-        <li><b>Description:</b> I used pytest.mark.parametrize to run the same test with different values. It saved effort and made results more reliable.</li>
-        <li><b>Key Takeaway:</b> One line of smart code is better than ten lines of the same thing.</li>
-        <li><b>Personal Reflection:</b> It’s always the small tricks that make your work smoother.</li>
+        <li><b>Learning:</b> Attended a book reading on Growth Driven Testing.</li>
+        <li><b>Description:</b> Joined an online session about the book and picked up new ideas around value-driven testing and how mindset shapes test approaches.</li>
+        <li><b>Key Takeaway:</b> Testing is not just about bugs. It’s about direction, value, and growth.</li>
+        <li><b>Personal Reflection:</b> Felt more connected to why I test. Sometimes a book shows you what you already knew, just in a better way.</li>
       </ul>
       <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
     </div>
   </div>
 </article>
+
 
 <article class="timeline-entry" data-category="testing">
   <div class="timeline-dot"></div>
