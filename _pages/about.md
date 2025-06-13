@@ -25,6 +25,8 @@ redirect_from:
       <div class="skill-card">Mobile App Testing</div>
       <div class="skill-card">CI/CD Pipelines</div>
       <div class="skill-card">QA Documentation</div>
+      <div class="skill-card">Pytest & Behave</div>
+      <div class="skill-card">Database Testing</div>
     </div>
   </div>
   <div class="achievements-section">
