@@ -24,6 +24,248 @@ author_profile: true
   <div class="timeline-dot"></div>
   <div class="timeline-content">
     <div class="entry-header">
+      <span class="entry-date">24th July</span>
+      <span class="category-tag" role="button" data-category="testing">Testing</span>
+    </div>
+    <h2>Accessibility Testing</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Explored basic concepts around accessibility testing.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Explored how accessibility testing helps users with disabilities.</li>
+        <li><b>Description:</b> Learned about screen readers, color contrast, and keyboard-only navigation. Tried some simple tools to check accessibility issues.</li>
+        <li><b>Key Takeaway:</b> Accessibility is not optional. It's about respect and inclusion.</li>
+        <li><b>Personal Reflection:</b> Realized how easy it is to overlook users who depend on these features. Testing should always include them too.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="development">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">23rd July</span>
+      <span class="category-tag" role="button" data-category="development">Development</span>
+    </div>
+    <h2>REST Assured with Python</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Practiced API automation using Python.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Practiced REST Assured flows using Python libraries.</li>
+        <li><b>Description:</b> Built simple API requests, handled responses, and added validations. Compared REST Assured in Java and Python for better understanding.</li>
+        <li><b>Key Takeaway:</b> Understanding flow is more important than syntax when it comes to API testing.</li>
+        <li><b>Personal Reflection:</b> Python makes automation a bit simpler, but the logic still matters more than the language.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="development">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">22nd July</span>
+      <span class="category-tag" role="button" data-category="development">Development</span>
+    </div>
+    <h2>Tuples and Dictionary Practice</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Practiced Python data structures like tuples and dictionaries.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Deep-dived into working with tuples and dictionaries in Python.</li>
+        <li><b>Description:</b> Wrote small programs to store, update, and fetch data using different combinations. Played around with real-world scenarios.</li>
+        <li><b>Key Takeaway:</b> The right structure makes code easier to read and handle.</li>
+        <li><b>Personal Reflection:</b> Even the simplest topics have layers. Basics aren’t boring when applied the right way.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="development">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">21st July</span>
+      <span class="category-tag" role="button" data-category="development">Development</span>
+    </div>
+    <h2>Docker Basics</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Explored the basics of Docker and how containers work.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Understood the idea of containers and Docker images.</li>
+        <li><b>Description:</b> Created basic containers, learned to pull images, and run applications inside them. Got familiar with Docker CLI and Dockerfile.</li>
+        <li><b>Key Takeaway:</b> Docker helps keep the environment clean and predictable.</li>
+        <li><b>Personal Reflection:</b> Felt like moving from a messy desk to a clean one. Easier to manage and run things.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="development">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">20th July</span>
+      <span class="category-tag" role="button" data-category="development">Development</span>
+    </div>
+    <h2>Prompt Engineering Basics</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Learned prompt structuring and ways to communicate better with LLMs.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Learned the difference between vague and precise prompts.</li>
+        <li><b>Description:</b> Practiced prompt writing for specific tasks. Explored system vs user prompts and the role of instructions.</li>
+        <li><b>Key Takeaway:</b> A good prompt is half the work done. Clarity brings quality.</li>
+        <li><b>Personal Reflection:</b> Prompts are not about magic. They’re about knowing what you want.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="personal growth">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">19th July</span>
+      <span class="category-tag" role="button" data-category="personal growth">Personal Growth</span>
+    </div>
+    <h2>Reflections from Growth Driven Strategy</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Continued reading the book Growth Driven Strategy.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Understood how mindset and clarity lead to progress.</li>
+        <li><b>Description:</b> Explored how growth is not about size but direction. Strategy works best when paired with purpose.</li>
+        <li><b>Key Takeaway:</b> Don't just grow. Grow with focus.</li>
+        <li><b>Personal Reflection:</b> Sometimes books remind you to pause and question your speed.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="development">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">18th July</span>
+      <span class="category-tag" role="button" data-category="development">Development</span>
+    </div>
+    <h2>Practicing JavaScript Functions</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Wrote programs using functions and arrays in JavaScript.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Practiced reusable functions with parameters and return types.</li>
+        <li><b>Description:</b> Solved basic logic problems using JavaScript. Focused on loops, arrays, and conditions.</li>
+        <li><b>Key Takeaway:</b> Repetition builds intuition. Logic becomes clear through practice.</li>
+        <li><b>Personal Reflection:</b> No shortcut here. Just code and patience.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="development">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">17th July</span>
+      <span class="category-tag" role="button" data-category="development">Development</span>
+    </div>
+    <h2>Started Playwright Basics</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Began exploring Playwright for browser automation.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Understood how Playwright works with multiple browsers.</li>
+        <li><b>Description:</b> Installed and ran first few scripts. Compared a few commands with Selenium to notice the differences.</li>
+        <li><b>Key Takeaway:</b> Simple syntax but powerful behind the scenes.</li>
+        <li><b>Personal Reflection:</b> Felt refreshing to try something new after years of Selenium.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="personal growth">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">16th July</span>
+      <span class="category-tag" role="button" data-category="personal growth">Personal Growth</span>
+    </div>
+    <h2>Open Source Reflection</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Revisited thoughts around open source and contribution.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Reflected on how open source helps in real learning and collaboration.</li>
+        <li><b>Description:</b> Cleaned up a few old branches and fixed one minor issue. Felt good to be back.</li>
+        <li><b>Key Takeaway:</b> Contribution does not have to be big. It just has to start.</li>
+        <li><b>Personal Reflection:</b> Sometimes you just need to reopen the repo and show up.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+<article class="timeline-entry" data-category="development">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
+      <span class="entry-date">15th July</span>
+      <span class="category-tag" role="button" data-category="development">Development</span>
+    </div>
+    <h2>Arrays Practice in JavaScript</h2>
+    <div class="entry-preview">
+      <p><b>Learning:</b> Solved basic array problems using JavaScript.</p>
+      <button class="expand-btn" onclick="toggleContent(this)">Read More</button>
+    </div>
+    <div class="entry-full hidden">
+      <ul>
+        <li><b>Learning:</b> Focused on iteration, filtering, and sorting arrays.</li>
+        <li><b>Description:</b> Used loops and built simple programs. Tried map, filter, and reduce too.</li>
+        <li><b>Key Takeaway:</b> Arrays are the building blocks for working with data.</li>
+        <li><b>Personal Reflection:</b> Once you get used to the syntax, logic becomes fun.</li>
+      </ul>
+      <button class="expand-btn" onclick="toggleContent(this)">Show Less</button>
+    </div>
+  </div>
+</article>
+
+
+
+<article class="timeline-entry" data-category="testing">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="entry-header">
       <span class="entry-date">14th July</span>
       <span class="category-tag" role="button" data-category="testing">Testing</span>
     </div>
