@@ -13,11 +13,11 @@ location: "City"
 
 ## Why Every Tester Needs a Skills Map
 
-In testing, it's easy to get caught up in the cycle of running test cases, reporting bugs, attending standups, and moving to the next task. But over time, the real challenge is not just doing the work. It is about understanding where we are heading and how we are growing.
+In testing, it is easy to get caught up in the cycle of running test cases, reporting bugs, attending standups, and moving to the next task. But over time, the real challenge is not just doing the work. It is about understanding where we are heading and how we are growing.
 
 That’s why I created this skills map.
 
-The image below is a personal visual of how my testing journey connects with the different skills I’ve picked up along the way. From technical concepts to mindset and tools, I wanted to put everything in one place. Not because it follows a perfect structure, but because that is how I often work some skills support others, some overlap, and many evolve depending on the project or team I am part of.
+The image below is a personal visual of how my testing journey connects with the different skills I have picked up along the way. From technical concepts to mindset and tools, I wanted to put everything in one place. Not because it follows a perfect structure, but because that is how I often work some skills support others, some overlap, and many evolve depending on the project or team I am part of.
 
 Having this kind of map makes a big difference.
 
