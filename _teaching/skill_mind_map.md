@@ -1,10 +1,10 @@
 ---
 title: "3 years of Software Testing in Mind-Map  "
 collection: testing-musings
-type: "Automation Testing"
+type: "Mind-Map"
 permalink: /testing-musings/skill-mind-map
-venue: "Bug"
-date: 2024-10-10
+venue: "Skill"
+
 location: "City"
 ---
 
