@@ -4,7 +4,7 @@ collection: testing-musings
 type: "Mind-Map"
 permalink: /testing-musings/skill-mind-map
 venue: "Skill"
-
+date: 2025-08-02
 location: "City"
 ---
 
