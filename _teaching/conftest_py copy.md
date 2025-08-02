@@ -2,7 +2,7 @@
 title: "3 years of Software Testing in Mind-Map  "
 collection: testing-musings
 type: "Automation Testing"
-permalink: /testing-musings/conftest-py
+permalink: /testing-musings/skill-mind-map
 venue: "Bug"
 date: 2024-10-10
 location: "City"
