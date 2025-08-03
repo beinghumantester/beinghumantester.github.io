@@ -8,97 +8,113 @@ date: 2024-10-10
 location: "Error-Code"
 ---
 
-<style>
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin: 40px auto;
-    max-width: 1200px;
-  }
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 1rem;
+    }
+    h2 {
+      text-align: center;
+      margin: 2rem 0 1rem;
+      padding: 1rem;
+      background-color: #eee;
+      border-radius: 0.5rem;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      perspective: 1000px;
+    }
+    .card-inner {
+      position: relative;
+      width: 100%;
+      min-height: 200px;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+    }
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 0.5rem;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .card-front {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .card-back {
+      transform: rotateY(180deg);
+      font-size: 0.95rem;
+      text-align: center;
+      justify-content: center;
+    }
+    .info    { background-color: #facc15; } /* 1xx - yellow */
+    .success { background-color: #4ade80; } /* 2xx - green */
+    .redirect{ background-color: #a78bfa; } /* 3xx - purple */
+    .client  { background-color: #fb923c; } /* 4xx - orange */
+    .server  { background-color: #f87171; } /* 5xx - red */
+  </style>
+</head>
+<body>
 
-  .section-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    border-bottom: 2px solid #ccc;
-    margin: 60px auto 20px;
-    text-align: center;
-    width: 100%;
-  }
+<h1 style="text-align:center">Complete HTTP Status Code Cards</h1>
 
-  .flip-card {
-    background-color: transparent;
-    width: 250px;
-    height: 150px;
-    perspective: 1000px;
-  }
-
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-  }
-
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border: 2px solid;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .flip-card-front {
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-
-  .flip-card-back {
-    transform: rotateY(180deg);
-    font-size: 0.95rem;
-  }
-
-  .yellow { border-color: #FFD700; background: #FFFAE6; }
-  .green { border-color: #4CAF50; background: #E8F5E9; }
-  .purple { border-color: #9C27B0; background: #F3E5F5; }
-  .orange { border-color: #FF9800; background: #FFF3E0; }
-  .red { border-color: #F44336; background: #FFEBEE; }
-</style>
-
-<div class="section-title">1xx Informational</div>
+<h2>1xx Status Codes - Informational</h2>
 <div class="card-container">
-  <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front yellow">100 💬<br>Continue</div>
-      <div class="flip-card-back yellow">The server has received the request headers and the client should proceed to send the request body.</div>
-    </div>
-  </div>
-  <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front yellow">101 🔄<br>Switching Protocols</div>
-      <div class="flip-card-back yellow">The requester has asked the server to switch protocols and the server has agreed to do so.</div>
-    </div>
-  </div>
-  <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front yellow">102 ⏳<br>Processing</div>
-      <div class="flip-card-back yellow">WebDAV request received and being processed, but no response is available yet.</div>
-    </div>
-  </div>
+  <div class="card"><div class="card-inner info">
+    <div class="card-front">100<br>Keep Going</div>
+    <div class="card-back">Server received request headers and client should proceed with request body</div>
+  </div></div>
+  <div class="card"><div class="card-inner info">
+    <div class="card-front">101<br>Protocol Switch</div>
+    <div class="card-back">Server is switching to protocol requested by client in Upgrade header</div>
+  </div></div>
+  <div class="card"><div class="card-inner info">
+    <div class="card-front">102<br>Still Working</div>
+    <div class="card-back">Server is processing the request but no response is available yet</div>
+  </div></div>
+  <div class="card"><div class="card-inner info">
+    <div class="card-front">103<br>Heads Up</div>
+    <div class="card-back">Server is sending preliminary response headers while preparing final response</div>
+  </div></div>
 </div>
 
-<!-- Remaining 2xx, 3xx, 4xx, 5xx series cards to be appended here in same structure -->
+<h2>2xx Status Codes - Success</h2>
+<div class="card-container">
+  <!-- All 2xx Cards -->
+</div>
+
+<h2>3xx Status Codes - Redirection</h2>
+<div class="card-container">
+  <!-- All 3xx Cards -->
+</div>
+
+<h2>4xx Status Codes - Client Error</h2>
+<div class="card-container">
+  <!-- All 4xx Cards -->
+</div>
+
+<h2>5xx Status Codes - Server Error</h2>
+<div class="card-container">
+  <!-- All 5xx Cards -->
+</div>
+
+</body>
+</html>
+
