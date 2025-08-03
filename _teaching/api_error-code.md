@@ -38,6 +38,18 @@ location: "HTTP Error Code"
   gap: 8px;
   font-weight: 600;
   font-size: 14px;
+  background: rgba(255,255,255,0.1);
+  padding: 8px 15px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.legend-item:hover {
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.2);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .legend-color {
@@ -143,12 +155,14 @@ location: "HTTP Error Code"
 }
 
 .stats-container {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: white;
+  color: #333;
   padding: 20px;
   border-radius: 15px;
   margin: 30px 0;
   text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 1px solid #e0e0e0;
 }
 
 .stats-grid {
@@ -159,10 +173,17 @@ location: "HTTP Error Code"
 }
 
 .stat-item {
-  background: rgba(255,255,255,0.1);
+  background: #f5f5f5;
   padding: 15px;
   border-radius: 10px;
-  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.stat-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background: #eeeeee;
 }
 
 .stat-number {
@@ -175,6 +196,7 @@ location: "HTTP Error Code"
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: #666;
 }
 
 @media (max-width: 768px) {
@@ -263,112 +285,10 @@ location: "HTTP Error Code"
   <h2 class="section-title">🟡 1xx - Informational Responses</h2>
   <div class="card-grid">
     <div class="card-container">
-      <div class="card red">
-        <div class="card-front">
-          <div class="status-code">503</div>
-          <div class="status-name">Server Busy</div>
-        </div>
-        <div class="card-back">Server temporarily unable to handle request due to overload or maintenance</div>
-      </div>
-    </div>
-    <div class="card-container">
-      <div class="card red">
-        <div class="card-front">
-          <div class="status-code">504</div>
-          <div class="status-name">Gateway Timeout</div>
-        </div>
-        <div class="card-back">Server acting as gateway did not receive timely response from upstream</div>
-      </div>
-    </div>
-    <div class="card-container">
-      <div class="card red">
-        <div class="card-front">
-          <div class="status-code">505</div>
-          <div class="status-name">HTTP Version Unsupported</div>
-        </div>
-        <div class="card-back">HTTP version used in request is not supported by server</div>
-      </div>
-    </div>
-    <div class="card-container">
-      <div class="card red">
-        <div class="card-front">
-          <div class="status-code">506</div>
-          <div class="status-name">Config Error</div>
-        </div>
-        <div class="card-back">Server has internal configuration error in content negotiation</div>
-      </div>
-    </div>
-    <div class="card-container">
-      <div class="card red">
-        <div class="card-front">
-          <div class="status-code">507</div>
-          <div class="status-name">Storage Full</div>
-        </div>
-        <div class="card-back">Server cannot store representation needed to complete request</div>
-      </div>
-    </div>
-    <div class="card-container">
-      <div class="card red">
-        <div class="card-front">
-          <div class="status-code">508</div>
-          <div class="status-name">Infinite Loop</div>
-        </div>
-        <div class="card-back">Server detected infinite loop while processing request</div>
-      </div>
-    </div>
-    <div class="card-container">
-      <div class="card red">
-        <div class="card-front">
-          <div class="status-code">510</div>
-          <div class="status-name">Extension Required</div>
-        </div>
-        <div class="card-back">Further extensions required for server to fulfill request</div>
-      </div>
-    </div>
-    <div class="card-container">
-      <div class="card red">
-        <div class="card-front">
-          <div class="status-code">511</div>
-          <div class="status-name">Network Auth Needed</div>
-        </div>
-        <div class="card-back">Client needs to authenticate to gain network access</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="stats-container" style="margin-top: 40px;">
-  <h3>💡 Pro Tips for API Testing</h3>
-  <div style="text-align: left; margin-top: 20px;">
-    <p><strong>🔍 Testing Strategy:</strong></p>
-    <ul style="margin: 10px 0; padding-left: 20px;">
-      <li>Always test for common 4xx errors (400, 401, 403, 404)</li>
-      <li>Simulate server errors (5xx) for resilience testing</li>
-      <li>Verify redirect handling for 3xx responses</li>
-      <li>Test rate limiting scenarios (429)</li>
-    </ul>
-    
-    <p style="margin-top: 20px;"><strong>🚀 Quick Reference:</strong></p>
-    <ul style="margin: 10px 0; padding-left: 20px;">
-      <li><strong>2xx:</strong> Success - Everything worked as expected</li>
-      <li><strong>4xx:</strong> Client Error - Check your request</li>
-      <li><strong>5xx:</strong> Server Error - Not your fault, try again later</li>
-    </ul>
-  </div>
-</div>
-
----
-
-<div style="text-align: center; margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 10px;">
-  <p><strong>📚 Learning Resources</strong></p>
-  <p>Hover over any card to reveal the detailed explanation. Use this as a quick reference during API development and testing!</p>
-  <p style="margin-top: 15px; font-size: 14px; color: #666;">
-    <em>Created for API developers, testers, and anyone working with HTTP protocols. Bookmark this page for quick reference!</em>
-  </p>
-</div>d yellow">
+      <div class="card yellow">
         <div class="card-front">
           <div class="status-code">100</div>
-          <div class="status-name">Keep Going</div>
+          <div class="status-name">Continue</div>
         </div>
         <div class="card-back">Server received request headers and client should proceed with request body</div>
       </div>
@@ -377,7 +297,7 @@ location: "HTTP Error Code"
       <div class="card yellow">
         <div class="card-front">
           <div class="status-code">101</div>
-          <div class="status-name">Protocol Switch</div>
+          <div class="status-name">Switching Protocols</div>
         </div>
         <div class="card-back">Server is switching to protocol requested by client in Upgrade header</div>
       </div>
@@ -386,7 +306,7 @@ location: "HTTP Error Code"
       <div class="card yellow">
         <div class="card-front">
           <div class="status-code">102</div>
-          <div class="status-name">Still Working</div>
+          <div class="status-name">Processing</div>
         </div>
         <div class="card-back">Server is processing the request but no response is available yet</div>
       </div>
@@ -395,7 +315,7 @@ location: "HTTP Error Code"
       <div class="card yellow">
         <div class="card-front">
           <div class="status-code">103</div>
-          <div class="status-name">Heads Up</div>
+          <div class="status-name">Early Hints</div>
         </div>
         <div class="card-back">Server is sending preliminary response headers while preparing final response</div>
       </div>
@@ -410,7 +330,7 @@ location: "HTTP Error Code"
       <div class="card green">
         <div class="card-front">
           <div class="status-code">200</div>
-          <div class="status-name">All Good</div>
+          <div class="status-name">OK</div>
         </div>
         <div class="card-back">Request was successful and server returned requested data</div>
       </div>
@@ -419,7 +339,7 @@ location: "HTTP Error Code"
       <div class="card green">
         <div class="card-front">
           <div class="status-code">201</div>
-          <div class="status-name">Successfully Created</div>
+          <div class="status-name">Created</div>
         </div>
         <div class="card-back">Request was successful and a new resource was created</div>
       </div>
@@ -428,7 +348,7 @@ location: "HTTP Error Code"
       <div class="card green">
         <div class="card-front">
           <div class="status-code">202</div>
-          <div class="status-name">Request Queued</div>
+          <div class="status-name">Accepted</div>
         </div>
         <div class="card-back">Request was received but processing is not yet complete</div>
       </div>
@@ -437,7 +357,7 @@ location: "HTTP Error Code"
       <div class="card green">
         <div class="card-front">
           <div class="status-code">203</div>
-          <div class="status-name">Modified Info</div>
+          <div class="status-name">Non-Authoritative Info</div>
         </div>
         <div class="card-back">Request successful but response contains modified information from proxy/cache</div>
       </div>
@@ -446,7 +366,7 @@ location: "HTTP Error Code"
       <div class="card green">
         <div class="card-front">
           <div class="status-code">204</div>
-          <div class="status-name">Success No Data</div>
+          <div class="status-name">No Content</div>
         </div>
         <div class="card-back">Request successful but no content to return in response body</div>
       </div>
@@ -455,7 +375,7 @@ location: "HTTP Error Code"
       <div class="card green">
         <div class="card-front">
           <div class="status-code">205</div>
-          <div class="status-name">Reset Form</div>
+          <div class="status-name">Reset Content</div>
         </div>
         <div class="card-back">Request successful and client should reset the form/document</div>
       </div>
@@ -464,7 +384,7 @@ location: "HTTP Error Code"
       <div class="card green">
         <div class="card-front">
           <div class="status-code">206</div>
-          <div class="status-name">Partial Data</div>
+          <div class="status-name">Partial Content</div>
         </div>
         <div class="card-back">Server is delivering only part of resource due to Range header</div>
       </div>
@@ -473,7 +393,7 @@ location: "HTTP Error Code"
       <div class="card green">
         <div class="card-front">
           <div class="status-code">207</div>
-          <div class="status-name">Multiple Results</div>
+          <div class="status-name">Multi-Status</div>
         </div>
         <div class="card-back">Multiple operations performed with individual status for each in response body</div>
       </div>
@@ -482,7 +402,7 @@ location: "HTTP Error Code"
       <div class="card green">
         <div class="card-front">
           <div class="status-code">208</div>
-          <div class="status-name">Already Mentioned</div>
+          <div class="status-name">Already Reported</div>
         </div>
         <div class="card-back">Resource was already mentioned earlier in the same response</div>
       </div>
@@ -491,7 +411,7 @@ location: "HTTP Error Code"
       <div class="card green">
         <div class="card-front">
           <div class="status-code">226</div>
-          <div class="status-name">Instance Modified</div>
+          <div class="status-name">IM Used</div>
         </div>
         <div class="card-back">Server fulfilled GET request using instance manipulations</div>
       </div>
@@ -506,7 +426,7 @@ location: "HTTP Error Code"
       <div class="card purple">
         <div class="card-front">
           <div class="status-code">300</div>
-          <div class="status-name">Choose Option</div>
+          <div class="status-name">Multiple Choices</div>
         </div>
         <div class="card-back">Multiple options available for the resource - client should choose one</div>
       </div>
@@ -515,7 +435,7 @@ location: "HTTP Error Code"
       <div class="card purple">
         <div class="card-front">
           <div class="status-code">301</div>
-          <div class="status-name">Moved Forever</div>
+          <div class="status-name">Moved Permanently</div>
         </div>
         <div class="card-back">Resource has permanently moved to new URL specified in Location header</div>
       </div>
@@ -524,7 +444,7 @@ location: "HTTP Error Code"
       <div class="card purple">
         <div class="card-front">
           <div class="status-code">302</div>
-          <div class="status-name">Moved Temporarily</div>
+          <div class="status-name">Found</div>
         </div>
         <div class="card-back">Resource temporarily moved to different URL specified in Location header</div>
       </div>
@@ -533,7 +453,7 @@ location: "HTTP Error Code"
       <div class="card purple">
         <div class="card-front">
           <div class="status-code">303</div>
-          <div class="status-name">Look Elsewhere</div>
+          <div class="status-name">See Other</div>
         </div>
         <div class="card-back">Response can be found at different URI using GET method</div>
       </div>
@@ -542,7 +462,7 @@ location: "HTTP Error Code"
       <div class="card purple">
         <div class="card-front">
           <div class="status-code">304</div>
-          <div class="status-name">Use Cache</div>
+          <div class="status-name">Not Modified</div>
         </div>
         <div class="card-back">Cached version is still valid - no modification since last request</div>
       </div>
@@ -559,17 +479,8 @@ location: "HTTP Error Code"
     <div class="card-container">
       <div class="card purple">
         <div class="card-front">
-          <div class="status-code">306</div>
-          <div class="status-name">Status Unused</div>
-        </div>
-        <div class="card-back">Reserved status code that is no longer used</div>
-      </div>
-    </div>
-    <div class="card-container">
-      <div class="card purple">
-        <div class="card-front">
           <div class="status-code">307</div>
-          <div class="status-name">Temp Redirect Same Method</div>
+          <div class="status-name">Temporary Redirect</div>
         </div>
         <div class="card-back">Resource temporarily moved but client must use same HTTP method</div>
       </div>
@@ -578,7 +489,7 @@ location: "HTTP Error Code"
       <div class="card purple">
         <div class="card-front">
           <div class="status-code">308</div>
-          <div class="status-name">Perm Redirect Same Method</div>
+          <div class="status-name">Permanent Redirect</div>
         </div>
         <div class="card-back">Resource permanently moved but client must use same HTTP method</div>
       </div>
@@ -593,7 +504,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">400</div>
-          <div class="status-name">Invalid Request</div>
+          <div class="status-name">Bad Request</div>
         </div>
         <div class="card-back">Server cannot process request due to malformed syntax or invalid data</div>
       </div>
@@ -602,7 +513,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">401</div>
-          <div class="status-name">Login Required</div>
+          <div class="status-name">Unauthorized</div>
         </div>
         <div class="card-back">Authentication is required to access the requested resource</div>
       </div>
@@ -611,7 +522,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">402</div>
-          <div class="status-name">Payment Needed</div>
+          <div class="status-name">Payment Required</div>
         </div>
         <div class="card-back">Reserved for future use in digital payment systems</div>
       </div>
@@ -620,7 +531,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">403</div>
-          <div class="status-name">Access Denied</div>
+          <div class="status-name">Forbidden</div>
         </div>
         <div class="card-back">Server understands request but refuses to authorize access</div>
       </div>
@@ -638,7 +549,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">405</div>
-          <div class="status-name">Method Blocked</div>
+          <div class="status-name">Method Not Allowed</div>
         </div>
         <div class="card-back">HTTP method used is not supported for this resource</div>
       </div>
@@ -647,7 +558,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">406</div>
-          <div class="status-name">Format Rejected</div>
+          <div class="status-name">Not Acceptable</div>
         </div>
         <div class="card-back">Server cannot produce response matching Accept headers criteria</div>
       </div>
@@ -656,7 +567,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">407</div>
-          <div class="status-name">Proxy Login Required</div>
+          <div class="status-name">Proxy Auth Required</div>
         </div>
         <div class="card-back">Client must authenticate with proxy before accessing resource</div>
       </div>
@@ -665,7 +576,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">408</div>
-          <div class="status-name">Request Expired</div>
+          <div class="status-name">Request Timeout</div>
         </div>
         <div class="card-back">Server timed out waiting for complete request from client</div>
       </div>
@@ -674,7 +585,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">409</div>
-          <div class="status-name">Resource Conflict</div>
+          <div class="status-name">Conflict</div>
         </div>
         <div class="card-back">Request conflicts with current state of target resource</div>
       </div>
@@ -683,7 +594,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">410</div>
-          <div class="status-name">Permanently Gone</div>
+          <div class="status-name">Gone</div>
         </div>
         <div class="card-back">Requested resource is no longer available and will not be available again</div>
       </div>
@@ -692,7 +603,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">411</div>
-          <div class="status-name">Size Required</div>
+          <div class="status-name">Length Required</div>
         </div>
         <div class="card-back">Server requires Content-Length header to process request</div>
       </div>
@@ -701,7 +612,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">412</div>
-          <div class="status-name">Condition Failed</div>
+          <div class="status-name">Precondition Failed</div>
         </div>
         <div class="card-back">Server does not meet preconditions specified in request headers</div>
       </div>
@@ -710,7 +621,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">413</div>
-          <div class="status-name">Request Too Big</div>
+          <div class="status-name">Payload Too Large</div>
         </div>
         <div class="card-back">Request payload exceeds server's size limits</div>
       </div>
@@ -719,7 +630,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">414</div>
-          <div class="status-name">URL Too Long</div>
+          <div class="status-name">URI Too Long</div>
         </div>
         <div class="card-back">Request URI is longer than server is willing to interpret</div>
       </div>
@@ -728,7 +639,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">415</div>
-          <div class="status-name">Format Not Supported</div>
+          <div class="status-name">Unsupported Media Type</div>
         </div>
         <div class="card-back">Media type of request payload is not supported by server</div>
       </div>
@@ -737,7 +648,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">416</div>
-          <div class="status-name">Range Invalid</div>
+          <div class="status-name">Range Not Satisfiable</div>
         </div>
         <div class="card-back">Range specified in Range header cannot be fulfilled</div>
       </div>
@@ -746,7 +657,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">417</div>
-          <div class="status-name">Expectation Not Met</div>
+          <div class="status-name">Expectation Failed</div>
         </div>
         <div class="card-back">Server cannot meet requirements of Expect request header</div>
       </div>
@@ -755,7 +666,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">418</div>
-          <div class="status-name">Coffee Teapot Error</div>
+          <div class="status-name">I'm a Teapot</div>
         </div>
         <div class="card-back">April Fool's joke - server refuses to brew coffee because it's a teapot</div>
       </div>
@@ -763,17 +674,17 @@ location: "HTTP Error Code"
     <div class="card-container">
       <div class="card orange">
         <div class="card-front">
-          <div class="status-code">420</div>
-          <div class="status-name">Slow Down</div>
+          <div class="status-code">421</div>
+          <div class="status-name">Misdirected Request</div>
         </div>
-        <div class="card-back">Rate limiting response used by Twitter API</div>
+        <div class="card-back">Request was directed at server that cannot produce response</div>
       </div>
     </div>
     <div class="card-container">
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">422</div>
-          <div class="status-name">Data Invalid</div>
+          <div class="status-name">Unprocessable Entity</div>
         </div>
         <div class="card-back">Request is well-formed but contains semantic errors</div>
       </div>
@@ -782,7 +693,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">423</div>
-          <div class="status-name">Resource Locked</div>
+          <div class="status-name">Locked</div>
         </div>
         <div class="card-back">Resource being accessed is locked and cannot be modified</div>
       </div>
@@ -791,7 +702,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">424</div>
-          <div class="status-name">Dependency Failed</div>
+          <div class="status-name">Failed Dependency</div>
         </div>
         <div class="card-back">Request failed because it depends on another failed request</div>
       </div>
@@ -800,7 +711,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">425</div>
-          <div class="status-name">Request Too Early</div>
+          <div class="status-name">Too Early</div>
         </div>
         <div class="card-back">Server unwilling to process request that might be replayed</div>
       </div>
@@ -809,7 +720,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">426</div>
-          <div class="status-name">Upgrade Needed</div>
+          <div class="status-name">Upgrade Required</div>
         </div>
         <div class="card-back">Client must switch to different protocol to continue</div>
       </div>
@@ -818,7 +729,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">428</div>
-          <div class="status-name">Condition Required</div>
+          <div class="status-name">Precondition Required</div>
         </div>
         <div class="card-back">Server requires request to be conditional with appropriate headers</div>
       </div>
@@ -827,7 +738,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">429</div>
-          <div class="status-name">Rate Limit Hit</div>
+          <div class="status-name">Too Many Requests</div>
         </div>
         <div class="card-back">Client has exceeded rate limit for requests in given time period</div>
       </div>
@@ -836,7 +747,7 @@ location: "HTTP Error Code"
       <div class="card orange">
         <div class="card-front">
           <div class="status-code">431</div>
-          <div class="status-name">Headers Too Big</div>
+          <div class="status-name">Request Header Fields Too Large</div>
         </div>
         <div class="card-back">Request header fields are too large for server to process</div>
       </div>
@@ -844,46 +755,10 @@ location: "HTTP Error Code"
     <div class="card-container">
       <div class="card orange">
         <div class="card-front">
-          <div class="status-code">444</div>
-          <div class="status-name">Silent Drop</div>
-        </div>
-        <div class="card-back">Nginx server returns no information and closes connection</div>
-      </div>
-    </div>
-    <div class="card-container">
-      <div class="card orange">
-        <div class="card-front">
-          <div class="status-code">449</div>
-          <div class="status-name">Try Again</div>
-        </div>
-        <div class="card-back">Client should retry request after performing appropriate action</div>
-      </div>
-    </div>
-    <div class="card-container">
-      <div class="card orange">
-        <div class="card-front">
-          <div class="status-code">450</div>
-          <div class="status-name">Parental Block</div>
-        </div>
-        <div class="card-back">Access blocked by Windows Parental Controls</div>
-      </div>
-    </div>
-    <div class="card-container">
-      <div class="card orange">
-        <div class="card-front">
           <div class="status-code">451</div>
-          <div class="status-name">Legal Block</div>
+          <div class="status-name">Unavailable For Legal Reasons</div>
         </div>
         <div class="card-back">Resource unavailable due to legal restrictions</div>
-      </div>
-    </div>
-    <div class="card-container">
-      <div class="card orange">
-        <div class="card-front">
-          <div class="status-code">499</div>
-          <div class="status-name">Client Disconnected</div>
-        </div>
-        <div class="card-back">Client closed connection before server could send response</div>
       </div>
     </div>
   </div>
@@ -896,7 +771,7 @@ location: "HTTP Error Code"
       <div class="card red">
         <div class="card-front">
           <div class="status-code">500</div>
-          <div class="status-name">Server Broke</div>
+          <div class="status-name">Internal Server Error</div>
         </div>
         <div class="card-back">Server encountered unexpected condition preventing request fulfillment</div>
       </div>
@@ -905,7 +780,7 @@ location: "HTTP Error Code"
       <div class="card red">
         <div class="card-front">
           <div class="status-code">501</div>
-          <div class="status-name">Feature Missing</div>
+          <div class="status-name">Not Implemented</div>
         </div>
         <div class="card-back">Server does not support functionality required to fulfill request</div>
       </div>
@@ -914,10 +789,91 @@ location: "HTTP Error Code"
       <div class="card red">
         <div class="card-front">
           <div class="status-code">502</div>
-          <div class="status-name">Gateway Error</div>
+          <div class="status-name">Bad Gateway</div>
         </div>
         <div class="card-back">Server acting as gateway received invalid response from upstream server</div>
       </div>
     </div>
     <div class="card-container">
-      <div class="car
+      <div class="card red">
+        <div class="card-front">
+          <div class="status-code">503</div>
+          <div class="status-name">Service Unavailable</div>
+        </div>
+        <div class="card-back">Server temporarily unable to handle request due to overload or maintenance</div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card red">
+        <div class="card-front">
+          <div class="status-code">504</div>
+          <div class="status-name">Gateway Timeout</div>
+        </div>
+        <div class="card-back">Server acting as gateway did not receive timely response from upstream</div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card red">
+        <div class="card-front">
+          <div class="status-code">505</div>
+          <div class="status-name">HTTP Version Not Supported</div>
+        </div>
+        <div class="card-back">HTTP version used in request is not supported by server</div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card red">
+        <div class="card-front">
+          <div class="status-code">506</div>
+          <div class="status-name">Variant Also Negotiates</div>
+        </div>
+        <div class="card-back">Server has internal configuration error in content negotiation</div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card red">
+        <div class="card-front">
+          <div class="status-code">507</div>
+          <div class="status-name">Insufficient Storage</div>
+        </div>
+        <div class="card-back">Server cannot store representation needed to complete request</div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card red">
+        <div class="card-front">
+          <div class="status-code">508</div>
+          <div class="status-name">Loop Detected</div>
+        </div>
+        <div class="card-back">Server detected infinite loop while processing request</div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card red">
+        <div class="card-front">
+          <div class="status-code">510</div>
+          <div class="status-name">Not Extended</div>
+        </div>
+        <div class="card-back">Further extensions required for server to fulfill request</div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card red">
+        <div class="card-front">
+          <div class="status-code">511</div>
+          <div class="status-name">Network Authentication Required</div>
+        </div>
+        <div class="card-back">Client needs to authenticate to gain network access</div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card red">
+        <div class="card-front">
+          <div class="status-code">599</div>
+          <div class="status-name">Network Connect Timeout Error</div>
+        </div>
+        <div class="card-back">Network connection timeout occurred while processing request</div>
+      </div>
+    </div>
+  </div>
+</div>
