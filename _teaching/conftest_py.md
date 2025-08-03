@@ -4,7 +4,7 @@ collection: testing-musings
 type: "Automation Testing"
 permalink: /testing-musings/conftest-py
 venue: "Bug"
-date: 2024-10-10
+date: 2025-08-02
 location: "City"
 ---
 
