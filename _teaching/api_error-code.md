@@ -228,8 +228,7 @@ location: "HTTP Error Code"
 </style>
 
 <div class="header">
-  <h1>🚀 HTTP Status Code Flashcards</h1>
-  <p>Interactive reference guide for API developers and testers</p>
+  <h1>HTTP Status Code Flashcards</h1>
 </div>
 
 <div class="legend">
