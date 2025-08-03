@@ -8,171 +8,166 @@ date: 2024-10-10
 location: "Error-Code"
 ---
 
-<!-- HTTP Status Code Cards - Color Coded Flip Cards -->
+<!-- BEGIN: HTTP Status Code Flip Cards -->
 <style>
-  .http-cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 16px;
-    margin: 2rem 0;
-  }
-  .http-flip-card {
+  .flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 180px;
     perspective: 1000px;
+    margin: 10px;
   }
-  .http-flip-inner {
+  .flip-card-inner {
     position: relative;
     width: 100%;
-    height: 160px;
+    height: 100%;
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
   }
-  .http-flip-card:hover .http-flip-inner {
+  .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
-  .http-card-front, .http-card-back {
+  .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 12px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px;
-    font-size: 1rem;
-    font-weight: bold;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  }
-  .http-card-front {
-    z-index: 2;
-  }
-  .http-card-back {
-    transform: rotateY(180deg);
-    font-weight: normal;
-  }
-  .border-title {
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    border: 2px solid #999;
     border-radius: 8px;
-    margin: 2rem 0 1rem;
-    background: #f2f2f2;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
   }
-  .yellow { background-color: #f5c542; }
-  .green { background-color: #4CAF50; }
-  .purple { background-color: #9c27b0; }
-  .orange { background-color: #FF9800; }
-  .red { background-color: #f44336; }
+  .flip-card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+  }
+  .flip-card-back {
+    transform: rotateY(180deg);
+    font-size: 14px;
+    overflow-y: auto;
+    line-height: 1.4;
+  }
+  .status-1xx { border: 3px solid #f1c40f; background: #f9e79f; color: #000; }
+  .status-2xx { border: 3px solid #27ae60; background: #a9dfbf; color: #000; }
+  .status-3xx { border: 3px solid #9b59b6; background: #d7bde2; color: #000; }
+  .status-4xx { border: 3px solid #e67e22; background: #f8c471; color: #000; }
+  .status-5xx { border: 3px solid #e74c3c; background: #f5b7b1; color: #000; }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+  }
 </style>
 
-<div class="border-title">1xx - Informational Responses</div>
-<div class="http-cards-container">
-  <div class="http-flip-card"><div class="http-flip-inner">
-    <div class="http-card-front yellow">100 Continue</div>
-    <div class="http-card-back yellow">Server has received the request headers. Client can proceed with request body.</div>
-  </div></div>
-
-  <div class="http-flip-card"><div class="http-flip-inner">
-    <div class="http-card-front yellow">101 Switching Protocols</div>
-    <div class="http-card-back yellow">Client requested protocol switch. Server agrees and is switching.</div>
-  </div></div>
-
-  <div class="http-flip-card"><div class="http-flip-inner">
-    <div class="http-card-front yellow">102 Processing</div>
-    <div class="http-card-back yellow">Server has received and is processing the request, but no response yet.</div>
-  </div></div>
+<div class="card-container">
+  <!-- Sample Card -->
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front status-1xx">
+        <div>100</div>
+        <div>Continue</div>
+      </div>
+      <div class="flip-card-back status-1xx">
+        Interim response. Request received and not rejected. Client should continue sending the rest of the request.
+      </div>
+    </div>
+  </div>
+  <!-- Repeat this block for all codes, using correct color class and description -->
+  <!-- Cards will be programmatically inserted below -->
 </div>
 
-<div class="border-title">2xx - Success</div>
-<div class="http-cards-container">
-  <div class="http-flip-card"><div class="http-flip-inner">
-    <div class="http-card-front green">200 OK</div>
-    <div class="http-card-back green">The request succeeded and the server responded with the requested data.</div>
-  </div></div>
+<script>
+  const codes = [
+    { code: 100, title: "Continue", desc: "Interim response. Request received and not rejected. Client should continue sending the rest of the request." },
+    { code: 101, title: "Switching Protocol", desc: "Sent in response to Upgrade header. Server is switching protocols." },
+    { code: 102, title: "Processing (WebDAV)", desc: "Server has received and is processing the request. No response yet." },
+    { code: 103, title: "Early Hints", desc: "Client should start preloading resources while server prepares the final response." },
+    { code: 200, title: "OK", desc: "The request has succeeded." },
+    { code: 201, title: "Created", desc: "The request succeeded, and a new resource was created." },
+    { code: 202, title: "Accepted", desc: "The request was received but is not yet completed." },
+    { code: 203, title: "Non-Authoritative Information", desc: "Metadata returned is from a third-party copy, not original server." },
+    { code: 204, title: "No Content", desc: "Request successful, but no content to return." },
+    { code: 205, title: "Reset Content", desc: "Client should reset the form/view that submitted the request." },
+    { code: 206, title: "Partial Content", desc: "Only part of the resource was returned, due to a range request." },
+    { code: 207, title: "Multi-Status (WebDAV)", desc: "Multiple operations' results are described in the body." },
+    { code: 208, title: "Already Reported (WebDAV)", desc: "Resource mentioned earlier in the response." },
+    { code: 226, title: "IM Used", desc: "Response is result of one or more instance-manipulations." },
+    { code: 300, title: "Multiple Choices", desc: "The request has more than one possible response." },
+    { code: 301, title: "Moved Permanently", desc: "Resource permanently moved to a new URI." },
+    { code: 302, title: "Found", desc: "Resource temporarily moved to a different URI." },
+    { code: 303, title: "See Other", desc: "Resource can be found at another URI using GET." },
+    { code: 304, title: "Not Modified", desc: "Resource not modified. Use cached version." },
+    { code: 305, title: "Use Proxy (Deprecated)", desc: "Must access the resource through a proxy." },
+    { code: 306, title: "(Unused)", desc: "Reserved but not used anymore." },
+    { code: 307, title: "Temporary Redirect", desc: "Resource temporarily moved, same method to be used." },
+    { code: 308, title: "Permanent Redirect", desc: "Resource permanently moved, same method to be used." },
+    { code: 400, title: "Bad Request", desc: "Server couldn't understand the request due to invalid syntax." },
+    { code: 401, title: "Unauthorized", desc: "Request requires authentication." },
+    { code: 402, title: "Payment Required", desc: "Reserved for future use, mainly for digital payments." },
+    { code: 403, title: "Forbidden", desc: "Client does not have access rights to the content." },
+    { code: 404, title: "Not Found", desc: "Server can’t find the requested resource." },
+    { code: 405, title: "Method Not Allowed", desc: "Request method is known but not supported for the resource." },
+    { code: 406, title: "Not Acceptable", desc: "Requested content not acceptable per Accept headers." },
+    { code: 407, title: "Proxy Authentication Required", desc: "Client must authenticate with the proxy." },
+    { code: 408, title: "Request Timeout", desc: "Client didn’t send full request in time." },
+    { code: 409, title: "Conflict", desc: "Conflict with current resource state." },
+    { code: 410, title: "Gone", desc: "Requested resource is permanently gone." },
+    { code: 411, title: "Length Required", desc: "Content-Length header is missing." },
+    { code: 412, title: "Precondition Failed", desc: "Server does not meet request preconditions." },
+    { code: 413, title: "Request Entity Too Large", desc: "Request is too large for the server to handle." },
+    { code: 414, title: "Request-URI Too Long", desc: "URI too long for server to process." },
+    { code: 415, title: "Unsupported Media Type", desc: "Media type is not supported." },
+    { code: 416, title: "Requested Range Not Satisfiable", desc: "Cannot fulfill the range specified." },
+    { code: 417, title: "Expectation Failed", desc: "Server can't meet expectations in request headers." },
+    { code: 418, title: "I'm a teapot", desc: "RFC joke code. Not expected to be implemented." },
+    { code: 420, title: "Enhance Your Calm (Twitter)", desc: "Client is being rate-limited." },
+    { code: 422, title: "Unprocessable Entity", desc: "Request is syntactically correct but can't be processed." },
+    { code: 423, title: "Locked", desc: "Resource is locked." },
+    { code: 424, title: "Failed Dependency", desc: "Request failed because of another request failure." },
+    { code: 425, title: "Too Early", desc: "Server unwilling to risk replay attack." },
+    { code: 426, title: "Upgrade Required", desc: "Client must upgrade to another protocol." },
+    { code: 428, title: "Precondition Required", desc: "Request must be conditional." },
+    { code: 429, title: "Too Many Requests", desc: "Rate limit exceeded." },
+    { code: 431, title: "Request Header Fields Too Large", desc: "Header fields too large to process." },
+    { code: 444, title: "No Response (Nginx)", desc: "Server returns nothing and closes connection." },
+    { code: 449, title: "Retry With (Microsoft)", desc: "Retry the request after taking proper action." },
+    { code: 450, title: "Blocked by Windows Parental Controls", desc: "Blocked by parental control settings." },
+    { code: 451, title: "Unavailable For Legal Reasons", desc: "Resource cannot be legally provided." },
+    { code: 499, title: "Client Closed Request (Nginx)", desc: "Client closed the connection before server responded." },
+    { code: 500, title: "Internal Server Error", desc: "Unexpected server error." },
+    { code: 501, title: "Not Implemented", desc: "Server doesn't support the request method." },
+    { code: 502, title: "Bad Gateway", desc: "Invalid response from upstream server." },
+    { code: 503, title: "Service Unavailable", desc: "Server not ready to handle request." },
+    { code: 504, title: "Gateway Timeout", desc: "Upstream server did not respond in time." },
+    { code: 505, title: "HTTP Version Not Supported", desc: "Server doesn't support the HTTP version used." },
+    { code: 506, title: "Variant Also Negotiates", desc: "Configuration error due to nested negotiation." },
+    { code: 507, title: "Insufficient Storage", desc: "Server can’t store the representation to complete request." },
+    { code: 508, title: "Loop Detected", desc: "Server detected infinite loop." },
+    { code: 510, title: "Not Extended", desc: "Further extensions required to fulfill request." },
+    { code: 511, title: "Network Authentication Required", desc: "Client must authenticate to access network." },
+  ];
 
-  <div class="http-flip-card"><div class="http-flip-inner">
-    <div class="http-card-front green">201 Created</div>
-    <div class="http-card-back green">A new resource has been created successfully.</div>
-  </div></div>
-
-  <div class="http-flip-card"><div class="http-flip-inner">
-    <div class="http-card-front green">202 Accepted</div>
-    <div class="http-card-back green">Request accepted but not completed yet. It may be processed later.</div>
-  </div></div>
-
-  <div class="http-flip-card"><div class="http-flip-inner">
-    <div class="http-card-front green">204 No Content</div>
-    <div class="http-card-back green">Request processed successfully but no content is returned.</div>
-  </div></div>
-</div>
-
-<div class="border-title">3xx - Redirection</div>
-<div class="http-cards-container">
-  <div class="http-flip-card"><div class="http-flip-inner">
-    <div class="http-card-front purple">301 Moved Permanently</div>
-    <div class="http-card-back purple">Resource has been permanently moved to a new URL.</div>
-  </div></div>
-
-  <div class="http-flip-card"><div class="http-flip-inner">
-    <div class="http-card-front purple">302 Found</div>
-    <div class="http-card-back purple">Resource temporarily located at a different URL.</div>
-  </div></div>
-
-  <div class="http-flip-card"><div class="http-flip-inner">
-    <div class="http-card-front purple">304 Not Modified</div>
-    <div class="http-card-back purple">The resource hasn't changed since the last request.</div>
-  </div></div>
-</div>
-
-<div class="border-title">4xx - Client Errors</div>
-<div class="http-cards-container">
-  <div class="http-flip-card"><div class="http-flip-inner">
-    <div class="http-card-front orange">400 Bad Request</div>
-    <div class="http-card-back orange">The request is invalid or malformed.</div>
-  </div></div>
-
-  <div class="http-flip-card"><div class="http-flip-inner">
-    <div class="http-card-front orange">401 Unauthorized</div>
-    <div class="http-card-back orange">Authentication is required and has failed or is missing.</div>
-  </div></div>
-
-  <div class="http-flip-card"><div class="http-flip-inner">
-    <div class="http-card-front orange">403 Forbidden</div>
-    <div class="http-card-back orange">Client does not have permission to access the resource.</div>
-  </div></div>
-
-  <div class="http-flip-card"><div class="http-flip-inner">
-    <div class="http-card-front orange">404 Not Found</div>
-    <div class="http-card-back orange">Requested resource could not be found on the server.</div>
-  </div></div>
-</div>
-
-<div class="border-title">5xx - Server Errors</div>
-<div class="http-cards-container">
-  <div class="http-flip-card"><div class="http-flip-inner">
-    <div class="http-card-front red">500 Internal Server Error</div>
-    <div class="http-card-back red">Server encountered an unexpected issue while processing the request.</div>
-  </div></div>
-
-  <div class="http-flip-card"><div class="http-flip-inner">
-    <div class="http-card-front red">501 Not Implemented</div>
-    <div class="http-card-back red">Server doesn't support the requested functionality.</div>
-  </div></div>
-
-  <div class="http-flip-card"><div class="http-flip-inner">
-    <div class="http-card-front red">502 Bad Gateway</div>
-    <div class="http-card-back red">Received an invalid response from an upstream server.</div>
-  </div></div>
-
-  <div class="http-flip-card"><div class="http-flip-inner">
-    <div class="http-card-front red">503 Service Unavailable</div>
-    <div class="http-card-back red">Server is currently overloaded or down for maintenance.</div>
-  </div></div>
-</div>
-
+  const container = document.querySelector(".card-container");
+  codes.forEach(({ code, title, desc }) => {
+    const div = document.createElement("div");
+    const series = Math.floor(code / 100);
+    div.className = "flip-card";
+    div.innerHTML = `
+      <div class="flip-card-inner">
+        <div class="flip-card-front status-${series}xx">
+          <div>${code}</div>
+          <div>${title}</div>
+        </div>
+        <div class="flip-card-back status-${series}xx">
+          ${desc}
+        </div>
+      </div>
+    `;
+    container.appendChild(div);
+  });
+</script>
+<!-- END: HTTP Status Code Flip Cards -->
