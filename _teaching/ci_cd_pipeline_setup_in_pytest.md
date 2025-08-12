@@ -129,7 +129,7 @@ pipeline {
         success {
             script {
                 mail to: 'recipient@example.com',
-                     subject: "✅ BUILD SUCCESS: ${env.JOB_NAME} [${env.BUILD_NUMBER}]",
+                     subject: " BUILD SUCCESS: ${env.JOB_NAME} [${env.BUILD_NUMBER}]",
                      body: """
 Build Success!
 
@@ -144,7 +144,7 @@ Build URL: ${env.BUILD_URL}
         failure {
             script {
                 mail to: 'recipient@example.com',
-                     subject: "❌ BUILD FAILURE: ${env.JOB_NAME} [${env.BUILD_NUMBER}]",
+                     subject: " BUILD FAILURE: ${env.JOB_NAME} [${env.BUILD_NUMBER}]",
                      body: """
 Build Failed!
 
@@ -159,7 +159,7 @@ Check console output: ${env.BUILD_URL}console
         unstable {
             script {
                 mail to: 'recipient@example.com',
-                     subject: "⚠️ BUILD UNSTABLE: ${env.JOB_NAME} [${env.BUILD_NUMBER}]",
+                     subject: " BUILD UNSTABLE: ${env.JOB_NAME} [${env.BUILD_NUMBER}]",
                      body: """
 Build Unstable!
 
