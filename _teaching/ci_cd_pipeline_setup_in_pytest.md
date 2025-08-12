@@ -24,7 +24,7 @@ In this guide, we’ll create a **Jenkins pipeline** that:
 ---
 
 
-<img src='/images/skill-map.jpeg'>
+<img src='/images/ci_cd_flow.png'>
 
 
 ## 1. Prerequisites
