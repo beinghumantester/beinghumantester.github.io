@@ -1,4 +1,3 @@
-
 ---
 title: "CI/CD Pipeline for Pytest Projects"
 collection: testing-musings
