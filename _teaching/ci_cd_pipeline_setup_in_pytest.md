@@ -1,7 +1,7 @@
 ---
 title: "CI/CD Pipeline for Pytest Projects"
 collection: testing-musings
-type: "CI/CD Pipeline"
+type: "CI CD Pipeline"
 permalink: /testing-musings/ci_cd_pipeline_setup_in_pytest
 venue: "Jenkins"
 date: 2025-08-12
