@@ -233,3 +233,6 @@ CMD ["pytest"]
 ## Final Workflow
 
 **GitHub Commit → Jenkins Build → Test with Pytest → Docker Image Build → Push to Docker Hub → Email Notification**
+
+## Reference Project 
+- https://github.com/beinghumantester/selenium-python-practical
