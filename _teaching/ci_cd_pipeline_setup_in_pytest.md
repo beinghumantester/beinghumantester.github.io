@@ -24,7 +24,7 @@ In this guide, we’ll create a **Jenkins pipeline** that:
 ---
 
 
-<img src='/images/ci_cd_flow.png'>
+<img src='/images/cicd_flow.png'>
 
 
 ## 1. Prerequisites
