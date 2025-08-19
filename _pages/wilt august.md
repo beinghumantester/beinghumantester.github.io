@@ -409,7 +409,7 @@ author_profile: true
 
 
 <div class="archives-link">
-    <a href="/wilt-june">View Previous Entries</a>
+    <a href="/wilt-july">View Previous Entries</a>
   </div>
 </div>
 
