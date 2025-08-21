@@ -90,6 +90,12 @@ redirect_from:
   </div>
 </div>
 
+  <!-- Updated Ministry of Testing Badge -->
+  <div class="card mot-card">
+      <img src="/images/QABash.com-Logo-4.png" alt="Ambassador of QA Bash" class="qabadge-badge" />
+  </div>
+</div>
+
 
 
   <div class="certifications-section">
