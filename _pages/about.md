@@ -98,6 +98,13 @@ redirect_from:
       <img src="/images/mot_badge.jpg" alt="Ministry of Testing Badge" class="mot-badge" />
   </div>
 </div>
+  <!-- Updated Sparks Badge -->
+  <div class="card mot-card">
+      <img src="/images/sparks.png" alt="Sparks Badge" class="mot-badge" />
+  </div>
+</div>
+
+
 
   <div class="certifications-section">
     <h2>📜 Certifications</h2>
