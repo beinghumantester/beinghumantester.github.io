@@ -84,11 +84,7 @@ redirect_from:
     <p>Actively contributing to open-source testing frameworks and tools to empower the QA community.</p>
   </div>
 
-  <!-- Updated Ministry of Testing Badge -->
-  <div class="card mot-card">
-      <img src="/images/mot_badge.jpg" alt="Ministry of Testing Badge" class="mot-badge" />
-  </div>
-</div>
+
 
 
 
@@ -97,7 +93,11 @@ redirect_from:
       <img src="/images/Ambassador_Of_QA-Bash_Community.png" alt="Ambassador of QA-Bash Community" class="qabash-badge" />
   </div>
 </div>
-
+  <!-- Updated Ministry of Testing Badge -->
+  <div class="card mot-card">
+      <img src="/images/mot_badge.jpg" alt="Ministry of Testing Badge" class="mot-badge" />
+  </div>
+</div>
 
   <div class="certifications-section">
     <h2>📜 Certifications</h2>
