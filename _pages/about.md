@@ -90,8 +90,6 @@ redirect_from:
   </div>
 </div>
 
-
-
   <div class="certifications-section">
     <h2>📜 Certifications</h2>
     <div class="cert-container">
