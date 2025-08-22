@@ -89,6 +89,7 @@ redirect_from:
       <img src="/images/mot_badge.jpg" alt="Ministry of Testing Badge" class="mot-badge" />
   </div>
   <div class="card mot-card">
+  <h3>Ambassador of QA Bash</h3>
       <img src="/images/Ambassador_Of_QA-Bash_Community.png" alt="Ambassador of QA Bash Badge" class="mot-badge" />
   </div>
   <div class="card mot-card">
