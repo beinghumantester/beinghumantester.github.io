@@ -90,6 +90,18 @@ redirect_from:
   </div>
 </div>
 
+   <div class="icon">🚀</div>
+    <h3>Open Source Contributor</h3>
+    <p>Actively contributing to open-source testing frameworks and tools to empower the QA community.</p>
+  </div>
+
+  <!-- Updated Ministry of Testing Badge -->
+  <div class="card mot-card">
+      <img src="/images/mot_badge.jpg" alt="Ministry of Testing Badge" class="mot-badge" />
+  </div>
+</div>
+
+
   <div class="certifications-section">
     <h2>📜 Certifications</h2>
     <div class="cert-container">
