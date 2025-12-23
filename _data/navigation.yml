@@ -27,5 +27,5 @@ main:
   - title: "WILT"
     url: /wilt/   
     
-  - title: "Exploring Tools"
-    url: /exploring-tools/
+  #- title: "Exploring Tools"
+  #  url: /exploring-tools/
