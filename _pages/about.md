@@ -12,7 +12,7 @@ redirect_from:
     <div class="typewriter">
       <p>Hi, I'm Ujjwal Kumar Singh</p>
       <p>Software Tester</p>
-      <p>Uncovering Glitches & Crafting Quality since 3+ Years.</p>
+      <p>Uncovering Glitches & Crafting Quality since 4 Years.</p>
     </div>
   </div>
   <div class="skills-section">
