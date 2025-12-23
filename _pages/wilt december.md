@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "What I Learned Today"
-permalink: /wilt-december/
+permalink: /wilt/
 author_profile: true
 ---
 
@@ -556,11 +556,11 @@ author_profile: true
 
 
 
-<!---
+
   <div class="archives-link">
-    <a href="/wilt-june">View Previous Entries</a>
+    <a href="/wilt-november">View Previous Entries</a>
   </div>
---->
+
 </div>
 
   
