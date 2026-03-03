@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://beinghumantester.github.io/sitemap.xml
+Sitemap: /sitemap.xml
