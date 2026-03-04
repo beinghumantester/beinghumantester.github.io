@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>SDET.</a>. Ambassador. Quality Advocate. OSS Contributor.
+subtitle: <a href='#'>SDET</a>. Ambassador. Quality Advocate. OSS Contributor.
 
 profile:
   align: right
