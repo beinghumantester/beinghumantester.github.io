@@ -6,12 +6,12 @@ subtitle: <a href='#'>SDET.</a>. Ambassador. Quality Advocate. OSS Contributor.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: 1750298637231.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Ambassador of</p>
+    <p>123 Ministry of Testing,</p>
+    <p>QA Bash</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -28,7 +28,7 @@ latest_posts:
 ---
 
 
-Hi, I'm Ujjwal — a software tester and quality advocate with 4+ years of experience in software development engineering in test (SDET). Currently working at Skeps, Gurgaon, where I help build quality into systems, not just test them at the end.
+Hi, I'm Ujjwal a software tester and quality advocate with 4+ years of experience in software development engineering in test (SDET). Currently working at Skeps, Gurgaon, where I help build quality into systems, not just test them at the end.
 
 I explore how quality works beyond tools and into systems, decisions, and trade-offs. I believe good testing is about asking the right questions, what could go wrong, what matters most, and what evidence do we actually have that the software works.
 
