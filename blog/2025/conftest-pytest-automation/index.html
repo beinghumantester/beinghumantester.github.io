@@ -1,0 +1,489 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Conftest.py and Its Role in Automation | Ujjwal Kumar Singh </title> <meta name="author" content="Ujjwal Kumar Singh"> <meta name="description" content="Understanding how conftest.py helps manage fixtures, configuration, and reusable setup in Pytest automation frameworks."> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?v=a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?v=f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/assets/css/scholar-icons.css?v=62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="/blog/2025/conftest-pytest-automation/"> <script src="/assets/js/theme.js?v=5fea5159b787642c1bbc1f334d60f883"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Ujjwal</span> Kumar Singh </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">articles </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">books </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">speaking </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">ai in testing </a> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Conftest.py and Its Role in Automation</h1> <p class="post-meta"> Created on August 02, 2025 </p> <p class="post-tags"> <a href="/blog/2025"> <i class="fa-solid fa-calendar fa-sm"></i> 2025 </a>   ·   <a href="/blog/tag/testing"> <i class="fa-solid fa-hashtag fa-sm"></i> testing</a>   <a href="/blog/tag/pytest"> <i class="fa-solid fa-hashtag fa-sm"></i> pytest</a>   <a href="/blog/tag/automation"> <i class="fa-solid fa-hashtag fa-sm"></i> automation</a>   <a href="/blog/tag/conftest"> <i class="fa-solid fa-hashtag fa-sm"></i> conftest</a>   ·   <a href="/blog/category/testing"> <i class="fa-solid fa-tag fa-sm"></i> testing</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <h1 id="conftestpy-the-secret-to-scalable-test-architecture-in-pytest">Conftest.py: The Secret to Scalable Test Architecture in Pytest</h1> <p>If you’ve been writing pytest tests for a while, you’ve probably faced this frustrating moment: you have the same fixture copied across multiple test files, and when you need to change something, you’re editing the same code in 10 different places. Or maybe you’re importing fixtures from random test files just to reuse them, making your test suite look like a tangled mess.</p> <p>I’ve been there. After years of writing Selenium tests and building test frameworks, I can tell you that <code class="language-plaintext highlighter-rouge">conftest.py</code> is one of those game-changing features that separates beginner test suites from professional, maintainable ones.</p> <p>In this article, I’ll walk you through everything you need to know about <code class="language-plaintext highlighter-rouge">conftest.py</code> - from the basics to advanced patterns that’ll make your test architecture rock solid. Whether you’re just starting with pytest or you’re looking to refactor your existing test suite, this guide has something for you.</p> <p>Let’s dive in.</p> <hr> <h2 id="what-is-conftestpy-and-why-should-you-care">What is conftest.py and Why Should You Care?</h2> <p>At its core, <code class="language-plaintext highlighter-rouge">conftest.py</code> is a special Python file that pytest automatically discovers and loads. Think of it as a central place where you can define fixtures, hooks, and configurations that multiple test files can use without any imports.</p> <p>Here’s the magic: any fixture you define in <code class="language-plaintext highlighter-rouge">conftest.py</code> becomes automatically available to all test files in that directory and its subdirectories. No imports needed.</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">sample_data</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">{</span><span class="sh">"</span><span class="s">name</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Alice</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">age</span><span class="sh">"</span><span class="p">:</span> <span class="mi">30</span><span class="p">}</span>
+
+<span class="c1"># test_user.py (same directory)
+</span><span class="k">def</span> <span class="nf">test_user_data</span><span class="p">(</span><span class="n">sample_data</span><span class="p">):</span>  <span class="c1"># No import needed!
+</span>    <span class="k">assert</span> <span class="n">sample_data</span><span class="p">[</span><span class="sh">"</span><span class="s">name</span><span class="sh">"</span><span class="p">]</span> <span class="o">==</span> <span class="sh">"</span><span class="s">Alice</span><span class="sh">"</span>
+</code></pre></div></div> <p>But here’s where it gets interesting - <code class="language-plaintext highlighter-rouge">conftest.py</code> isn’t just about fixtures. It’s your control center for:</p> <ul> <li>Shared fixtures across multiple test files</li> <li>Test configuration and setup</li> <li>Custom pytest hooks</li> <li>Plugin integration</li> <li>Environment-specific settings</li> </ul> <hr> <h2 id="the-problem-conftestpy-solves">The Problem conftest.py Solves</h2> <p>Let me paint a picture of what testing looks like without proper use of <code class="language-plaintext highlighter-rouge">conftest.py</code>:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># test_login.py
+</span><span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">webdriver</span><span class="p">():</span>
+    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">()</span>
+    <span class="k">yield</span> <span class="n">driver</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
+
+<span class="c1"># test_dashboard.py  
+</span><span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">webdriver</span><span class="p">():</span>  <span class="c1"># Same fixture copied!
+</span>    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">()</span>
+    <span class="k">yield</span> <span class="n">driver</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
+
+<span class="c1"># test_profile.py
+</span><span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">webdriver</span><span class="p">():</span>  <span class="c1"># And again...
+</span>    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">()</span>
+    <span class="k">yield</span> <span class="n">driver</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
+</code></pre></div></div> <p>This is maintenance nightmare. Change the browser configuration? Edit multiple files. Add a new setup step? Copy-paste everywhere.</p> <p>With <code class="language-plaintext highlighter-rouge">conftest.py</code>, this becomes:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">webdriver</span><span class="p">():</span>
+    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">()</span>
+    <span class="k">yield</span> <span class="n">driver</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
+
+<span class="c1"># All test files can now use 'webdriver' fixture without any setup!
+</span></code></pre></div></div> <p>Clean, maintainable, and follows the DRY principle.</p> <hr> <h2 id="understanding-conftestpy-discovery-and-scope">Understanding conftest.py Discovery and Scope</h2> <p>Pytest’s discovery mechanism for <code class="language-plaintext highlighter-rouge">conftest.py</code> files is both powerful and intuitive. Here’s how it works:</p> <p>The key principle: <strong>fixtures are available to test files in the same directory and all subdirectories</strong>.</p> <p>This hierarchical approach lets you:</p> <ul> <li>Put global fixtures at the project root</li> <li>Add directory-specific fixtures as you go deeper</li> <li>Override fixtures at more specific levels</li> </ul> <hr> <h2 id="basic-usage-patterns">Basic Usage Patterns</h2> <h3 id="simple-shared-fixtures">Simple Shared Fixtures</h3> <p>Let’s start with the most common use case - sharing fixtures across test files:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">from</span> <span class="n">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
+<span class="kn">from</span> <span class="n">selenium.webdriver.chrome.options</span> <span class="kn">import</span> <span class="n">Options</span>
+
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">browser</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Shared browser instance for all tests</span><span class="sh">"""</span>
+    <span class="n">options</span> <span class="o">=</span> <span class="nc">Options</span><span class="p">()</span>
+    <span class="n">options</span><span class="p">.</span><span class="nf">add_argument</span><span class="p">(</span><span class="sh">"</span><span class="s">--headless</span><span class="sh">"</span><span class="p">)</span>
+    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
+    <span class="k">yield</span> <span class="n">driver</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">test_data</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Sample test data for multiple test files</span><span class="sh">"""</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="sh">"</span><span class="s">valid_user</span><span class="sh">"</span><span class="p">:</span> <span class="p">{</span><span class="sh">"</span><span class="s">username</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">testuser</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">password</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">password123</span><span class="sh">"</span><span class="p">},</span>
+        <span class="sh">"</span><span class="s">invalid_user</span><span class="sh">"</span><span class="p">:</span> <span class="p">{</span><span class="sh">"</span><span class="s">username</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">baduser</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">password</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">wrongpass</span><span class="sh">"</span><span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div></div> <p>Now any test file in your project can use these fixtures:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># test_login.py
+</span><span class="k">def</span> <span class="nf">test_valid_login</span><span class="p">(</span><span class="n">browser</span><span class="p">,</span> <span class="n">test_data</span><span class="p">):</span>
+    <span class="c1"># Use browser and test_data fixtures
+</span>    <span class="k">pass</span>
+
+<span class="c1"># test_registration.py  
+</span><span class="k">def</span> <span class="nf">test_user_registration</span><span class="p">(</span><span class="n">browser</span><span class="p">,</span> <span class="n">test_data</span><span class="p">):</span>
+    <span class="c1"># Same fixtures available here too
+</span>    <span class="k">pass</span>
+</code></pre></div></div> <h3 id="configuration-and-environment-setup">Configuration and Environment Setup</h3> <p><code class="language-plaintext highlighter-rouge">conftest.py</code> is perfect for environment-specific configurations:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">import</span> <span class="n">os</span>
+
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">base_url</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Environment-specific base URL</span><span class="sh">"""</span>
+    <span class="n">env</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="nf">getenv</span><span class="p">(</span><span class="sh">"</span><span class="s">TEST_ENV</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">staging</span><span class="sh">"</span><span class="p">)</span>
+    <span class="n">urls</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="sh">"</span><span class="s">staging</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">https://staging.example.com</span><span class="sh">"</span><span class="p">,</span>
+        <span class="sh">"</span><span class="s">production</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">https://example.com</span><span class="sh">"</span><span class="p">,</span>
+        <span class="sh">"</span><span class="s">local</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">http://localhost:3000</span><span class="sh">"</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">urls</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">urls</span><span class="p">[</span><span class="sh">"</span><span class="s">staging</span><span class="sh">"</span><span class="p">])</span>
+
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">api_credentials</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Load API credentials from environment</span><span class="sh">"""</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="sh">"</span><span class="s">api_key</span><span class="sh">"</span><span class="p">:</span> <span class="n">os</span><span class="p">.</span><span class="nf">getenv</span><span class="p">(</span><span class="sh">"</span><span class="s">API_KEY</span><span class="sh">"</span><span class="p">),</span>
+        <span class="sh">"</span><span class="s">secret</span><span class="sh">"</span><span class="p">:</span> <span class="n">os</span><span class="p">.</span><span class="nf">getenv</span><span class="p">(</span><span class="sh">"</span><span class="s">API_SECRET</span><span class="sh">"</span><span class="p">)</span>
+    <span class="p">}</span>
+</code></pre></div></div> <hr> <h2 id="hierarchical-conftestpy-architecture">Hierarchical conftest.py Architecture</h2> <p>Here’s where things get really powerful. You can have multiple <code class="language-plaintext highlighter-rouge">conftest.py</code> files in different directories, each serving different scopes:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>project/
+├── conftest.py              # Global fixtures
+├── tests/
+│   ├── conftest.py          # Test-wide fixtures
+│   ├── unit/
+│   │   ├── conftest.py      # Unit test specific
+│   │   └── test_models.py
+│   ├── integration/
+│   │   ├── conftest.py      # Integration test specific
+│   │   └── test_api.py
+│   └── e2e/
+│       ├── conftest.py      # E2E test specific
+│       └── test_workflows.py
+</code></pre></div></div> <h3 id="real-world-example">Real-World Example</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># project/conftest.py (Global level)
+</span><span class="kn">import</span> <span class="n">pytest</span>
+
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">database_url</span><span class="p">():</span>
+    <span class="k">return</span> <span class="sh">"</span><span class="s">postgresql://test:test@localhost/testdb</span><span class="sh">"</span>
+
+<span class="c1"># tests/conftest.py (Test level)
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">from</span> <span class="n">database</span> <span class="kn">import</span> <span class="n">Database</span>
+
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">db_connection</span><span class="p">(</span><span class="n">database_url</span><span class="p">):</span>
+    <span class="n">db</span> <span class="o">=</span> <span class="nc">Database</span><span class="p">(</span><span class="n">database_url</span><span class="p">)</span>
+    <span class="n">db</span><span class="p">.</span><span class="nf">connect</span><span class="p">()</span>
+    <span class="k">yield</span> <span class="n">db</span>
+    <span class="n">db</span><span class="p">.</span><span class="nf">disconnect</span><span class="p">()</span>
+
+<span class="c1"># tests/unit/conftest.py (Unit test level)
+</span><span class="kn">import</span> <span class="n">pytest</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">mock_external_api</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Mock external API calls for unit tests</span><span class="sh">"""</span>
+    <span class="k">with</span> <span class="nf">patch</span><span class="p">(</span><span class="sh">'</span><span class="s">requests.get</span><span class="sh">'</span><span class="p">)</span> <span class="k">as</span> <span class="n">mock_get</span><span class="p">:</span>
+        <span class="n">mock_get</span><span class="p">.</span><span class="n">return_value</span><span class="p">.</span><span class="n">json</span><span class="p">.</span><span class="n">return_value</span> <span class="o">=</span> <span class="p">{</span><span class="sh">"</span><span class="s">status</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">success</span><span class="sh">"</span><span class="p">}</span>
+        <span class="k">yield</span> <span class="n">mock_get</span>
+
+<span class="c1"># tests/e2e/conftest.py (E2E test level)
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">from</span> <span class="n">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">authenticated_browser</span><span class="p">(</span><span class="n">browser</span><span class="p">,</span> <span class="n">base_url</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Browser with user already logged in</span><span class="sh">"""</span>
+    <span class="n">browser</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="si">{</span><span class="n">base_url</span><span class="si">}</span><span class="s">/login</span><span class="sh">"</span><span class="p">)</span>
+    <span class="c1"># Perform login steps
+</span>    <span class="k">return</span> <span class="n">browser</span>
+</code></pre></div></div> <p>This structure gives you:</p> <ul> <li> <strong>Global fixtures</strong> available everywhere</li> <li> <strong>Specialized fixtures</strong> for specific test types</li> <li> <strong>Clean separation</strong> of concerns</li> <li> <strong>Easy maintenance</strong> - change unit test setup without affecting E2E tests</li> </ul> <hr> <h2 id="advanced-patterns-and-best-practices">Advanced Patterns and Best Practices</h2> <h3 id="fixture-factories-in-conftestpy">Fixture Factories in conftest.py</h3> <p>Sometimes you need more flexibility than static fixtures provide. Factory fixtures are perfect for this:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">from</span> <span class="n">selenium.webdriver.common.by</span> <span class="kn">import</span> <span class="n">By</span>
+<span class="kn">from</span> <span class="n">selenium.webdriver.support.ui</span> <span class="kn">import</span> <span class="n">WebDriverWait</span>
+<span class="kn">from</span> <span class="n">selenium.webdriver.support</span> <span class="kn">import</span> <span class="n">expected_conditions</span> <span class="k">as</span> <span class="n">EC</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">page_object_factory</span><span class="p">(</span><span class="n">browser</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Factory for creating page objects with common functionality</span><span class="sh">"""</span>
+    
+    <span class="k">class</span> <span class="nc">BasePage</span><span class="p">:</span>
+        <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">driver</span><span class="p">):</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">driver</span> <span class="o">=</span> <span class="n">driver</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">wait</span> <span class="o">=</span> <span class="nc">WebDriverWait</span><span class="p">(</span><span class="n">driver</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+        
+        <span class="k">def</span> <span class="nf">find_element</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">locator</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">wait</span><span class="p">.</span><span class="nf">until</span><span class="p">(</span><span class="n">EC</span><span class="p">.</span><span class="nf">presence_of_element_located</span><span class="p">(</span><span class="n">locator</span><span class="p">))</span>
+        
+        <span class="k">def</span> <span class="nf">click_element</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">locator</span><span class="p">):</span>
+            <span class="n">element</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">find_element</span><span class="p">(</span><span class="n">locator</span><span class="p">)</span>
+            <span class="n">element</span><span class="p">.</span><span class="nf">click</span><span class="p">()</span>
+    
+    <span class="k">def</span> <span class="nf">_create_page</span><span class="p">(</span><span class="n">page_class</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nf">page_class</span><span class="p">(</span><span class="n">browser</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">_create_page</span>
+
+<span class="c1"># Usage in tests
+</span><span class="k">def</span> <span class="nf">test_login_page</span><span class="p">(</span><span class="n">page_object_factory</span><span class="p">):</span>
+    <span class="n">login_page</span> <span class="o">=</span> <span class="nf">page_object_factory</span><span class="p">(</span><span class="n">LoginPage</span><span class="p">)</span>
+    <span class="n">login_page</span><span class="p">.</span><span class="nf">enter_credentials</span><span class="p">(</span><span class="sh">"</span><span class="s">user</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">pass</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div> <h3 id="conditional-fixtures">Conditional Fixtures</h3> <p>You can create fixtures that behave differently based on conditions:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">browser</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Browser fixture that adapts based on markers</span><span class="sh">"""</span>
+    <span class="n">browser_name</span> <span class="o">=</span> <span class="sh">"</span><span class="s">chrome</span><span class="sh">"</span>  <span class="c1"># default
+</span>    
+    <span class="c1"># Check for custom markers
+</span>    <span class="k">if</span> <span class="n">request</span><span class="p">.</span><span class="n">node</span><span class="p">.</span><span class="nf">get_closest_marker</span><span class="p">(</span><span class="sh">"</span><span class="s">firefox</span><span class="sh">"</span><span class="p">):</span>
+        <span class="n">browser_name</span> <span class="o">=</span> <span class="sh">"</span><span class="s">firefox</span><span class="sh">"</span>
+    <span class="k">elif</span> <span class="n">request</span><span class="p">.</span><span class="n">node</span><span class="p">.</span><span class="nf">get_closest_marker</span><span class="p">(</span><span class="sh">"</span><span class="s">safari</span><span class="sh">"</span><span class="p">):</span>
+        <span class="n">browser_name</span> <span class="o">=</span> <span class="sh">"</span><span class="s">safari</span><span class="sh">"</span>
+    
+    <span class="k">if</span> <span class="n">browser_name</span> <span class="o">==</span> <span class="sh">"</span><span class="s">firefox</span><span class="sh">"</span><span class="p">:</span>
+        <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Firefox</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">browser_name</span> <span class="o">==</span> <span class="sh">"</span><span class="s">safari</span><span class="sh">"</span><span class="p">:</span>
+        <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Safari</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">()</span>
+    
+    <span class="k">yield</span> <span class="n">driver</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
+
+<span class="c1"># Usage in tests
+</span><span class="nd">@pytest.mark.firefox</span>
+<span class="k">def</span> <span class="nf">test_firefox_specific_feature</span><span class="p">(</span><span class="n">browser</span><span class="p">):</span>
+    <span class="c1"># This test will use Firefox
+</span>    <span class="k">pass</span>
+</code></pre></div></div> <h3 id="data-driven-testing-with-conftestpy">Data-Driven Testing with conftest.py</h3> <p>Perfect for maintaining test data centrally:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">import</span> <span class="n">json</span>
+<span class="kn">import</span> <span class="n">os</span>
+
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_data_loader</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Centralized test data loader</span><span class="sh">"""</span>
+    <span class="k">def</span> <span class="nf">load_data</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+        <span class="n">data_path</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="sh">"</span><span class="s">test_data</span><span class="sh">"</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+        <span class="k">with</span> <span class="nf">open</span><span class="p">(</span><span class="n">data_path</span><span class="p">,</span> <span class="sh">'</span><span class="s">r</span><span class="sh">'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">json</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">load_data</span>
+
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">params</span><span class="o">=</span><span class="p">[</span><span class="sh">"</span><span class="s">valid_users.json</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">invalid_users.json</span><span class="sh">"</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">user_test_data</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">test_data_loader</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Parameterized fixture for different user data sets</span><span class="sh">"""</span>
+    <span class="k">return</span> <span class="nf">test_data_loader</span><span class="p">(</span><span class="n">request</span><span class="p">.</span><span class="n">param</span><span class="p">)</span>
+
+<span class="c1"># Tests automatically run with both data sets
+</span><span class="k">def</span> <span class="nf">test_user_validation</span><span class="p">(</span><span class="n">user_test_data</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">user_test_data</span><span class="p">:</span>
+        <span class="c1"># Test logic here
+</span>        <span class="k">pass</span>
+</code></pre></div></div> <hr> <h2 id="selenium-specific-patterns">Selenium-Specific Patterns</h2> <p>As a Selenium tester, here are some patterns I’ve found incredibly useful:</p> <h3 id="browser-management">Browser Management</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">from</span> <span class="n">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
+<span class="kn">from</span> <span class="n">selenium.webdriver.chrome.options</span> <span class="kn">import</span> <span class="n">Options</span>
+<span class="kn">from</span> <span class="n">selenium.webdriver.firefox.options</span> <span class="kn">import</span> <span class="n">Options</span> <span class="k">as</span> <span class="n">FirefoxOptions</span>
+
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">browser_config</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Centralized browser configuration</span><span class="sh">"""</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="sh">"</span><span class="s">chrome_options</span><span class="sh">"</span><span class="p">:</span> <span class="p">[</span><span class="sh">"</span><span class="s">--headless</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">--no-sandbox</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">--disable-dev-shm-usage</span><span class="sh">"</span><span class="p">],</span>
+        <span class="sh">"</span><span class="s">firefox_options</span><span class="sh">"</span><span class="p">:</span> <span class="p">[</span><span class="sh">"</span><span class="s">--headless</span><span class="sh">"</span><span class="p">],</span>
+        <span class="sh">"</span><span class="s">implicit_wait</span><span class="sh">"</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="sh">"</span><span class="s">page_load_timeout</span><span class="sh">"</span><span class="p">:</span> <span class="mi">30</span>
+    <span class="p">}</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">chrome_browser</span><span class="p">(</span><span class="n">browser_config</span><span class="p">):</span>
+    <span class="n">options</span> <span class="o">=</span> <span class="nc">Options</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">option</span> <span class="ow">in</span> <span class="n">browser_config</span><span class="p">[</span><span class="sh">"</span><span class="s">chrome_options</span><span class="sh">"</span><span class="p">]:</span>
+        <span class="n">options</span><span class="p">.</span><span class="nf">add_argument</span><span class="p">(</span><span class="n">option</span><span class="p">)</span>
+    
+    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">implicitly_wait</span><span class="p">(</span><span class="n">browser_config</span><span class="p">[</span><span class="sh">"</span><span class="s">implicit_wait</span><span class="sh">"</span><span class="p">])</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">set_page_load_timeout</span><span class="p">(</span><span class="n">browser_config</span><span class="p">[</span><span class="sh">"</span><span class="s">page_load_timeout</span><span class="sh">"</span><span class="p">])</span>
+    
+    <span class="k">yield</span> <span class="n">driver</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">firefox_browser</span><span class="p">(</span><span class="n">browser_config</span><span class="p">):</span>
+    <span class="n">options</span> <span class="o">=</span> <span class="nc">FirefoxOptions</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">option</span> <span class="ow">in</span> <span class="n">browser_config</span><span class="p">[</span><span class="sh">"</span><span class="s">firefox_options</span><span class="sh">"</span><span class="p">]:</span>
+        <span class="n">options</span><span class="p">.</span><span class="nf">add_argument</span><span class="p">(</span><span class="n">option</span><span class="p">)</span>
+    
+    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Firefox</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">implicitly_wait</span><span class="p">(</span><span class="n">browser_config</span><span class="p">[</span><span class="sh">"</span><span class="s">implicit_wait</span><span class="sh">"</span><span class="p">])</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">set_page_load_timeout</span><span class="p">(</span><span class="n">browser_config</span><span class="p">[</span><span class="sh">"</span><span class="s">page_load_timeout</span><span class="sh">"</span><span class="p">])</span>
+    
+    <span class="k">yield</span> <span class="n">driver</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
+</code></pre></div></div> <h3 id="page-object-integration">Page Object Integration</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">from</span> <span class="n">pages.login_page</span> <span class="kn">import</span> <span class="n">LoginPage</span>
+<span class="kn">from</span> <span class="n">pages.dashboard_page</span> <span class="kn">import</span> <span class="n">DashboardPage</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">login_page</span><span class="p">(</span><span class="n">browser</span><span class="p">,</span> <span class="n">base_url</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Pre-configured login page object</span><span class="sh">"""</span>
+    <span class="n">browser</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="si">{</span><span class="n">base_url</span><span class="si">}</span><span class="s">/login</span><span class="sh">"</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nc">LoginPage</span><span class="p">(</span><span class="n">browser</span><span class="p">)</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">authenticated_session</span><span class="p">(</span><span class="n">login_page</span><span class="p">,</span> <span class="n">valid_credentials</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Fixture that provides an authenticated browser session</span><span class="sh">"""</span>
+    <span class="n">login_page</span><span class="p">.</span><span class="nf">login</span><span class="p">(</span>
+        <span class="n">valid_credentials</span><span class="p">[</span><span class="sh">"</span><span class="s">username</span><span class="sh">"</span><span class="p">],</span> 
+        <span class="n">valid_credentials</span><span class="p">[</span><span class="sh">"</span><span class="s">password</span><span class="sh">"</span><span class="p">]</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="nc">DashboardPage</span><span class="p">(</span><span class="n">login_page</span><span class="p">.</span><span class="n">driver</span><span class="p">)</span>
+</code></pre></div></div> <hr> <h2 id="testing-conftestpy-and-debugging">Testing conftest.py and Debugging</h2> <h3 id="how-to-test-your-fixtures">How to Test Your Fixtures</h3> <p>Yes, you should test your fixtures too! Here’s how:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># test_conftest.py
+</span><span class="k">def</span> <span class="nf">test_browser_fixture_creates_driver</span><span class="p">(</span><span class="n">browser</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Test that browser fixture works correctly</span><span class="sh">"""</span>
+    <span class="k">assert</span> <span class="n">browser</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span>
+    <span class="k">assert</span> <span class="nf">hasattr</span><span class="p">(</span><span class="n">browser</span><span class="p">,</span> <span class="sh">'</span><span class="s">get</span><span class="sh">'</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nf">hasattr</span><span class="p">(</span><span class="n">browser</span><span class="p">,</span> <span class="sh">'</span><span class="s">find_element</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">test_test_data_fixture_loads_correctly</span><span class="p">(</span><span class="n">test_data</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Test that test data fixture provides expected structure</span><span class="sh">"""</span>
+    <span class="k">assert</span> <span class="sh">"</span><span class="s">valid_user</span><span class="sh">"</span> <span class="ow">in</span> <span class="n">test_data</span>
+    <span class="k">assert</span> <span class="sh">"</span><span class="s">username</span><span class="sh">"</span> <span class="ow">in</span> <span class="n">test_data</span><span class="p">[</span><span class="sh">"</span><span class="s">valid_user</span><span class="sh">"</span><span class="p">]</span>
+    <span class="k">assert</span> <span class="sh">"</span><span class="s">password</span><span class="sh">"</span> <span class="ow">in</span> <span class="n">test_data</span><span class="p">[</span><span class="sh">"</span><span class="s">valid_user</span><span class="sh">"</span><span class="p">]</span>
+</code></pre></div></div> <h3 id="debugging-fixture-issues">Debugging Fixture Issues</h3> <p>Common debugging techniques:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">import</span> <span class="n">logging</span>
+
+<span class="c1"># Enable logging for fixture debugging
+</span><span class="n">logging</span><span class="p">.</span><span class="nf">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="p">.</span><span class="n">INFO</span><span class="p">)</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="p">.</span><span class="nf">getLogger</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">debug_browser</span><span class="p">():</span>
+    <span class="n">logger</span><span class="p">.</span><span class="nf">info</span><span class="p">(</span><span class="sh">"</span><span class="s">Creating browser instance</span><span class="sh">"</span><span class="p">)</span>
+    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">()</span>
+    <span class="n">logger</span><span class="p">.</span><span class="nf">info</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Browser created: </span><span class="si">{</span><span class="n">driver</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+    
+    <span class="k">yield</span> <span class="n">driver</span>
+    
+    <span class="n">logger</span><span class="p">.</span><span class="nf">info</span><span class="p">(</span><span class="sh">"</span><span class="s">Cleaning up browser</span><span class="sh">"</span><span class="p">)</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
+    <span class="n">logger</span><span class="p">.</span><span class="nf">info</span><span class="p">(</span><span class="sh">"</span><span class="s">Browser cleanup complete</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div> <h3 id="using-pytest-fixtures">Using pytest –fixtures</h3> <p>Pytest provides a built-in way to see all available fixtures:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># See all fixtures available in current directory</span>
+pytest <span class="nt">--fixtures</span>
+
+<span class="c"># See fixtures with their source locations</span>
+pytest <span class="nt">--fixtures-per-test</span> test_file.py::test_function
+</code></pre></div></div> <hr> <h2 id="common-pitfalls-and-how-to-avoid-them">Common Pitfalls and How to Avoid Them</h2> <h3 id="1-fixture-name-conflicts">1. Fixture Name Conflicts</h3> <p><strong>Problem</strong>: Multiple <code class="language-plaintext highlighter-rouge">conftest.py</code> files define fixtures with the same name.</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># tests/conftest.py
+</span><span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">user_data</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">{</span><span class="sh">"</span><span class="s">type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">admin</span><span class="sh">"</span><span class="p">}</span>
+
+<span class="c1"># tests/unit/conftest.py
+</span><span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">user_data</span><span class="p">():</span>  <span class="c1"># This overrides the parent fixture!
+</span>    <span class="k">return</span> <span class="p">{</span><span class="sh">"</span><span class="s">type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">regular</span><span class="sh">"</span><span class="p">}</span>
+</code></pre></div></div> <p><strong>Solution</strong>: Use descriptive, specific names and be intentional about overrides.</p> <h3 id="2-scope-mismanagement">2. Scope Mismanagement</h3> <p><strong>Problem</strong>: Using wrong fixture scope leading to performance issues or test isolation problems.</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Bad: Database fixture with function scope - creates DB for every test
+</span><span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">function</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">database</span><span class="p">():</span>
+    <span class="k">return</span> <span class="nf">create_expensive_database</span><span class="p">()</span>
+
+<span class="c1"># Good: Use appropriate scope
+</span><span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">module</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">database</span><span class="p">():</span>
+    <span class="k">return</span> <span class="nf">create_expensive_database</span><span class="p">()</span>
+</code></pre></div></div> <h3 id="3-over-engineering">3. Over-Engineering</h3> <p><strong>Problem</strong>: Creating too many layers of <code class="language-plaintext highlighter-rouge">conftest.py</code> files.</p> <p><strong>Rule of thumb</strong>: If you have more than 3-4 levels of <code class="language-plaintext highlighter-rouge">conftest.py</code> files, you might be over-engineering. Keep it simple.</p> <h3 id="4-import-issues">4. Import Issues</h3> <p><strong>Problem</strong>: Trying to import fixtures from <code class="language-plaintext highlighter-rouge">conftest.py</code>.</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Wrong
+</span><span class="kn">from</span> <span class="n">conftest</span> <span class="kn">import</span> <span class="n">my_fixture</span>  <span class="c1"># Don't do this!
+</span>
+<span class="c1"># Right
+# Just use the fixture name as a parameter
+</span><span class="k">def</span> <span class="nf">test_something</span><span class="p">(</span><span class="n">my_fixture</span><span class="p">):</span>
+    <span class="k">pass</span>
+</code></pre></div></div> <hr> <h2 id="performance-considerations">Performance Considerations</h2> <h3 id="smart-scope-usage">Smart Scope Usage</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">expensive_setup</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Run once per test session - perfect for expensive operations</span><span class="sh">"""</span>
+    <span class="n">database</span> <span class="o">=</span> <span class="nf">create_test_database</span><span class="p">()</span>
+    <span class="nf">load_test_data</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">database</span>
+
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">module</span><span class="sh">"</span><span class="p">)</span> 
+<span class="k">def</span> <span class="nf">module_specific_setup</span><span class="p">(</span><span class="n">expensive_setup</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Build on session fixture for module-specific needs</span><span class="sh">"""</span>
+    <span class="nf">setup_module_data</span><span class="p">(</span><span class="n">expensive_setup</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">expensive_setup</span>
+
+<span class="nd">@pytest.fixture</span>  <span class="c1"># function scope - default
+</span><span class="k">def</span> <span class="nf">clean_state</span><span class="p">(</span><span class="n">module_specific_setup</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Reset state for each test</span><span class="sh">"""</span>
+    <span class="nf">reset_data</span><span class="p">(</span><span class="n">module_specific_setup</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">module_specific_setup</span>
+</code></pre></div></div> <h3 id="lazy-loading">Lazy Loading</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">heavy_resource</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Only create the resource when actually used</span><span class="sh">"""</span>
+    <span class="n">resource</span> <span class="o">=</span> <span class="bp">None</span>
+    
+    <span class="k">def</span> <span class="nf">get_resource</span><span class="p">():</span>
+        <span class="k">nonlocal</span> <span class="n">resource</span>
+        <span class="k">if</span> <span class="n">resource</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">resource</span> <span class="o">=</span> <span class="nf">create_expensive_resource</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">resource</span>
+    
+    <span class="k">return</span> <span class="n">get_resource</span>
+</code></pre></div></div> <hr> <h2 id="real-world-project-structure">Real-World Project Structure</h2> <p>Here’s how I typically structure a real Selenium project:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>selenium_project/
+├── conftest.py                 # Global fixtures (browser, base_url)
+├── pytest.ini                 # Pytest configuration
+├── requirements.txt
+├── pages/                     # Page Object Models
+│   ├── __init__.py
+│   ├── base_page.py
+│   └── login_page.py
+├── test_data/                 # Test data files
+│   ├── users.json
+│   └── products.json
+├── tests/
+│   ├── conftest.py            # Test-wide fixtures (auth, data loaders)
+│   ├── smoke/
+│   │   ├── conftest.py        # Smoke test fixtures
+│   │   └── test_critical_paths.py
+│   ├── regression/
+│   │   ├── conftest.py        # Regression-specific fixtures
+│   │   └── test_full_workflows.py
+│   └── api/
+│       ├── conftest.py        # API testing fixtures
+│       └── test_endpoints.py
+├── utils/                     # Helper utilities
+│   ├── __init__.py
+│   └── database_helper.py
+└── reports/                   # Test reports output
+</code></pre></div></div> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Root conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">from</span> <span class="n">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
+
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">base_url</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">os</span><span class="p">.</span><span class="nf">getenv</span><span class="p">(</span><span class="sh">"</span><span class="s">BASE_URL</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">https://staging.example.com</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">browser</span><span class="p">():</span>
+    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">()</span>
+    <span class="k">yield</span> <span class="n">driver</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
+
+<span class="c1"># tests/conftest.py  
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">from</span> <span class="n">utils.database_helper</span> <span class="kn">import</span> <span class="n">DatabaseHelper</span>
+
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">db_helper</span><span class="p">():</span>
+    <span class="n">helper</span> <span class="o">=</span> <span class="nc">DatabaseHelper</span><span class="p">()</span>
+    <span class="n">helper</span><span class="p">.</span><span class="nf">connect</span><span class="p">()</span>
+    <span class="k">yield</span> <span class="n">helper</span>
+    <span class="n">helper</span><span class="p">.</span><span class="nf">disconnect</span><span class="p">()</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">clean_database</span><span class="p">(</span><span class="n">db_helper</span><span class="p">):</span>
+    <span class="k">yield</span> <span class="n">db_helper</span>
+    <span class="n">db_helper</span><span class="p">.</span><span class="nf">clean_test_data</span><span class="p">()</span>
+
+<span class="c1"># tests/smoke/conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">quick_browser</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Headless browser for smoke tests</span><span class="sh">"""</span>
+    <span class="n">options</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">ChromeOptions</span><span class="p">()</span>
+    <span class="n">options</span><span class="p">.</span><span class="nf">add_argument</span><span class="p">(</span><span class="sh">"</span><span class="s">--headless</span><span class="sh">"</span><span class="p">)</span>
+    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
+    <span class="k">yield</span> <span class="n">driver</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
+</code></pre></div></div> <hr> <h2 id="integration-with-cicd">Integration with CI/CD</h2> <p><code class="language-plaintext highlighter-rouge">conftest.py</code> shines in CI/CD environments:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">import</span> <span class="n">os</span>
+
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">ci_browser</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Browser configuration optimized for CI environment</span><span class="sh">"""</span>
+    <span class="n">options</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">ChromeOptions</span><span class="p">()</span>
+    
+    <span class="k">if</span> <span class="n">os</span><span class="p">.</span><span class="nf">getenv</span><span class="p">(</span><span class="sh">"</span><span class="s">CI</span><span class="sh">"</span><span class="p">):</span>
+        <span class="c1"># CI-specific options
+</span>        <span class="n">options</span><span class="p">.</span><span class="nf">add_argument</span><span class="p">(</span><span class="sh">"</span><span class="s">--headless</span><span class="sh">"</span><span class="p">)</span>
+        <span class="n">options</span><span class="p">.</span><span class="nf">add_argument</span><span class="p">(</span><span class="sh">"</span><span class="s">--no-sandbox</span><span class="sh">"</span><span class="p">)</span>
+        <span class="n">options</span><span class="p">.</span><span class="nf">add_argument</span><span class="p">(</span><span class="sh">"</span><span class="s">--disable-dev-shm-usage</span><span class="sh">"</span><span class="p">)</span>
+        <span class="n">options</span><span class="p">.</span><span class="nf">add_argument</span><span class="p">(</span><span class="sh">"</span><span class="s">--disable-gpu</span><span class="sh">"</span><span class="p">)</span>
+        <span class="n">options</span><span class="p">.</span><span class="nf">add_argument</span><span class="p">(</span><span class="sh">"</span><span class="s">--window-size=1920,1080</span><span class="sh">"</span><span class="p">)</span>
+    
+    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">driver</span>
+
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_environment</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Determine test environment from CI variables</span><span class="sh">"""</span>
+    <span class="k">if</span> <span class="n">os</span><span class="p">.</span><span class="nf">getenv</span><span class="p">(</span><span class="sh">"</span><span class="s">GITHUB_ACTIONS</span><span class="sh">"</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sh">"</span><span class="s">github_ci</span><span class="sh">"</span>
+    <span class="k">elif</span> <span class="n">os</span><span class="p">.</span><span class="nf">getenv</span><span class="p">(</span><span class="sh">"</span><span class="s">JENKINS_URL</span><span class="sh">"</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sh">"</span><span class="s">jenkins</span><span class="sh">"</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sh">"</span><span class="s">local</span><span class="sh">"</span>
+</code></pre></div></div> <hr> <h2 id="migration-strategy-from-scattered-fixtures-to-conftestpy">Migration Strategy: From Scattered Fixtures to conftest.py</h2> <p>If you have an existing test suite with scattered fixtures, here’s how to migrate:</p> <h3 id="step-1-audit-existing-fixtures">Step 1: Audit Existing Fixtures</h3> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Find all fixture definitions</span>
+<span class="nb">grep</span> <span class="nt">-r</span> <span class="s2">"@pytest.fixture"</span> tests/ <span class="nt">--include</span><span class="o">=</span><span class="s2">"*.py"</span>
+</code></pre></div></div> <h3 id="step-2-identify-common-patterns">Step 2: Identify Common Patterns</h3> <p>Group fixtures by:</p> <ul> <li>Usage frequency (how many test files use them)</li> <li>Scope (session, module, function)</li> <li>Domain (browser-related, data-related, etc.)</li> </ul> <h3 id="step-3-create-hierarchical-structure">Step 3: Create Hierarchical Structure</h3> <p>Start with the most commonly used fixtures at the root level:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py (root level)
+</span><span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">browser</span><span class="p">():</span>  <span class="c1"># Used by 80% of tests
+</span>    <span class="c1"># Move most common browser fixture here
+</span>
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">test_user</span><span class="p">():</span>  <span class="c1"># Used across multiple domains
+</span>    <span class="c1"># Common user fixture
+</span></code></pre></div></div> <h3 id="step-4-migrate-gradually">Step 4: Migrate Gradually</h3> <p>Don’t try to move everything at once. Migrate one domain at a time:</p> <ol> <li>Browser/WebDriver fixtures first</li> <li>Common test data second</li> <li>Domain-specific fixtures last</li> </ol> <h3 id="step-5-clean-up">Step 5: Clean Up</h3> <p>Remove duplicate fixtures and unused imports as you go.</p> <hr> <h2 id="conclusion">Conclusion</h2> <p><code class="language-plaintext highlighter-rouge">conftest.py</code> is more than just a place to put shared fixtures - it’s the foundation of a scalable, maintainable test architecture. When used properly, it:</p> <ul> <li> <strong>Eliminates code duplication</strong> across your test suite</li> <li> <strong>Provides clear separation</strong> between different test domains</li> <li> <strong>Makes test maintenance</strong> significantly easier</li> <li> <strong>Enables powerful patterns</strong> like fixture factories and conditional fixtures</li> <li> <strong>Scales beautifully</strong> from small projects to enterprise test suites</li> </ul> <p>The key is to start simple and evolve your <code class="language-plaintext highlighter-rouge">conftest.py</code> structure as your test suite grows. Don’t over-engineer from the beginning, but don’t ignore it either.</p> <p>Here are the main takeaways:</p> <ol> <li> <strong>Use hierarchical structure</strong> - Global fixtures at the root, specific ones deeper in the tree</li> <li> <strong>Choose appropriate scopes</strong> - Session for expensive setup, function for test isolation</li> <li> <strong>Keep fixtures focused</strong> - Each fixture should have a single, clear responsibility</li> <li> <strong>Name fixtures clearly</strong> - Future you (and your team) will thank you</li> <li> <strong>Test your fixtures</strong> - They’re code too, they can have bugs</li> </ol> <p>Start by moving your most commonly used fixtures to <code class="language-plaintext highlighter-rouge">conftest.py</code>, and gradually build out your structure. You’ll be amazed at how much cleaner and more maintainable your test suite becomes.</p> <p>Remember, good test architecture is not about following rigid rules - it’s about making your life easier when you’re debugging that failing test at 2 AM. And trust me, <code class="language-plaintext highlighter-rouge">conftest.py</code> will definitely make that easier.</p> </div> </article> <br> <hr> <br> <ul class="list-disc pl-8"></ul> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/" target="_blank">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2" target="_blank">Displaying External Posts on Your al-folio Blog</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/postbot-postman-ai-assistant/">Postbot in Postman</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/python-assert-vs-pytest-assert/">Python Assert vs Pytest Assert</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2025/selenium-grid-pytest/">Selenium Grid With Pytest</a> </li> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Ujjwal Kumar Singh. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?v=85ddb88934d28b74e78031fd54cf8308"></script> <script src="/assets/js/no_defer.js?v=2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?v=c15de51d4bb57887caa2c21988d97279"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/js/mathjax-setup.js?v=a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/assets/js/progress-bar.js?v=2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?v=f40d453793ff4f64e238e420181a1d17"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/js/search/ninja-keys.min.js?v=a3446f084dcaecc5f75aa1757d087dcf"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/js/search-setup.js?v=6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/assets/js/search-data.js"></script> <script src="/assets/js/shortcut-key.js?v=ccc841c459bfc0e64c1c2b5acd10df02"></script> </body> </html>

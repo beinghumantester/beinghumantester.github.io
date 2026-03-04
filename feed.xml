@@ -1,748 +1,702 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml"/><link href="/" rel="alternate" type="text/html" hreflang="en"/><updated>2026-03-04T13:41:00+00:00</updated><id>/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">a post with plotly.js</title><link href="/blog/2025/plotly/" rel="alternate" type="text/html" title="a post with plotly.js"/><published>2025-03-26T14:24:00+00:00</published><updated>2025-03-26T14:24:00+00:00</updated><id>/blog/2025/plotly</id><content type="html" xml:base="/blog/2025/plotly/"><![CDATA[<p>This is an example post with some <a href="https://plotly.com/javascript/">plotly</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">plotly
-</span><span class="sb">{
-  "data": [
-    {
-      "x": [1, 2, 3, 4],
-      "y": [10, 15, 13, 17],
-      "type": "scatter"
-    },
-    {
-      "x": [1, 2, 3, 4],
-      "y": [16, 5, 11, 9],
-      "type": "scatter"
-    }
-  ]
-}</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Which generates:</p> <pre><code class="language-plotly">{
-  "data": [
-    {
-      "x": [1, 2, 3, 4],
-      "y": [10, 15, 13, 17],
-      "type": "scatter"
-    },
-    {
-      "x": [1, 2, 3, 4],
-      "y": [16, 5, 11, 9],
-      "type": "scatter"
-    }
-  ]
-}
-</code></pre> <p>Also another example chart.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">plotly
-</span><span class="sb">{
-  "data": [
-    {
-      "x": [1, 2, 3, 4],
-      "y": [10, 15, 13, 17],
-      "mode": "markers"
-    },
-    {
-      "x": [2, 3, 4, 5],
-      "y": [16, 5, 11, 9],
-      "mode": "lines"
-    },
-    {
-      "x": [1, 2, 3, 4],
-      "y": [12, 9, 15, 12],
-      "mode": "lines+markers"
-    }
-  ],
-  "layout": {
-    "title": {
-      "text": "Line and Scatter Plot"
-    }
-  }
-}</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>This is how it looks like:</p> <pre><code class="language-plotly">{
-  "data": [
-    {
-      "x": [1, 2, 3, 4],
-      "y": [10, 15, 13, 17],
-      "mode": "markers"
-    },
-    {
-      "x": [2, 3, 4, 5],
-      "y": [16, 5, 11, 9],
-      "mode": "lines"
-    },
-    {
-      "x": [1, 2, 3, 4],
-      "y": [12, 9, 15, 12],
-      "mode": "lines+markers"
-    }
-  ],
-  "layout": {
-    "title": {
-      "text": "Line and Scatter Plot"
-    }
-  }
-}
-</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="charts"/><summary type="html"><![CDATA[this is what included plotly.js code could look like]]></summary></entry><entry><title type="html">a post with image galleries</title><link href="/blog/2024/photo-gallery/" rel="alternate" type="text/html" title="a post with image galleries"/><published>2024-12-04T01:59:00+00:00</published><updated>2024-12-04T01:59:00+00:00</updated><id>/blog/2024/photo-gallery</id><content type="html" xml:base="/blog/2024/photo-gallery/"><![CDATA[<p>The images in this post are all zoomable, arranged into different mini-galleries using different libraries.</p> <h2 id="lightbox2"><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox2</a></h2> <p><a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg"/></a> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"/></a> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"/></a></p> <hr/> <h2 id="photoswipe"><a href="https://photoswipe.com/">PhotoSwipe</a></h2> <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started"> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt=""/> </a> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-2500.jpg" data-pswp-width="1875" data-pswp-height="2500" data-cropped="true" target="_blank"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg" alt=""/> </a> <a href="https://unsplash.com" data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" data-pswp-width="2500" data-pswp-height="1666" target="_blank"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt=""/> </a> <div> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg" data-pswp-width="2500" data-pswp-height="1667" target="_blank"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt=""/> </a> </div> </div> <hr/> <h2 id="spotlight-js"><a href="https://nextapps-de.github.io/spotlight/">Spotlight JS</a></h2> <div class="spotlight-group"> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg"/> </a> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"/> </a> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"/> </a> </div> <div class="spotlight-group"> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-200.jpg"/> </a> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-200.jpg"/> </a> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg"/> </a> </div> <hr/> <h2 id="venobox"><a href="https://veno.es/venobox/">Venobox</a></h2> <p><a class="venobox" data-gall="myGallery" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg"/></a> <a class="venobox" data-gall="myGallery" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"/></a> <a class="venobox" data-gall="myGallery" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"/></a></p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="images"/><summary type="html"><![CDATA[this is what included image galleries could look like]]></summary></entry><entry><title type="html">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</title><link href="/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra/" rel="alternate" type="text/html" title="Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra"/><published>2024-05-14T00:00:00+00:00</published><updated>2024-05-14T00:00:00+00:00</updated><id>/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra</id><content type="html" xml:base="/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra/"><![CDATA[<p>Learn more:Learn more:Learn more:Learn more:Learn more:Learn more:May 14, 2024 We’re introducing a series of updates across the Gemini family of models, including the new 1.5 Flash, our lightweight model for speed and efficiency, and Project Astra, our vision for the future of AI assistants. In December, we launched our first natively multimodal model Gemini 1.0 in three sizes: Ultra, Pro and Nano. Just a few months later we released 1.5 Pro, with enhanced performance and a breakthrough long context window of 1 million tokens.Developers and enterprise customers have been putting 1.5 Pro to use in incredible ways and finding its long context window, multimodal reasoning capabilities and impressive overall performance incredibly useful.We know from user feedback that some applications need lower latency and a lower cost to serve. This inspired us to keep innovating, so today, we’re introducing Gemini 1.5 Flash: a model that’s lighter-weight than 1.5 Pro, and designed to be fast and efficient to serve at scale.Both 1.5 Pro and 1.5 Flash are available in public preview with a 1 million token context window in Google AI Studio and Vertex AI. And now, 1.5 Pro is also available with a 2 million token context window via waitlist to developers using the API and to Google Cloud customers.We’re also introducing updates across the Gemini family of models, announcing our next generation of open models, Gemma 2, and sharing progress on the future of AI assistants, with Project Astra.Context lengths of leading foundation models compared with Gemini 1.5’s 2 million token capability1.5 Flash is the newest addition to the Gemini model family and the fastest Gemini model served in the API. It’s optimized for high-volume, high-frequency tasks at scale, is more cost-efficient to serve and features our breakthrough long context window.While it’s a lighter weight model than 1.5 Pro, it’s highly capable of multimodal reasoning across vast amounts of information and delivers impressive quality for its size.The new Gemini 1.5 Flash model is optimized for speed and efficiency, is highly capable of multimodal reasoning and features our breakthrough long context window.1.5 Flash excels at summarization, chat applications, image and video captioning, data extraction from long documents and tables, and more. This is because it’s been trained by 1.5 Pro through a process called “distillation,” where the most essential knowledge and skills from a larger model are transferred to a smaller, more efficient model.Read more about 1.5 Flash in our updated Gemini 1.5 technical report, on the Gemini technology page, and learn about 1.5 Flash’s availability and pricing.Over the last few months, we’ve significantly improved 1.5 Pro, our best model for general performance across a wide range of tasks.Beyond extending its context window to 2 million tokens, we’ve enhanced its code generation, logical reasoning and planning, multi-turn conversation, and audio and image understanding through data and algorithmic advances. We see strong improvements on public and internal benchmarks for each of these tasks.1.5 Pro can now follow increasingly complex and nuanced instructions, including ones that specify product-level behavior involving role, format and style. We’ve improved control over the model’s responses for specific use cases, like crafting the persona and response style of a chat agent or automating workflows through multiple function calls. And we’ve enabled users to steer model behavior by setting system instructions.We added audio understanding in the Gemini API and Google AI Studio, so 1.5 Pro can now reason across image and audio for videos uploaded in Google AI Studio. And we’re now integrating 1.5 Pro into Google products, including Gemini Advanced and in Workspace apps.Read more about 1.5 Pro in our updated Gemini 1.5 technical report and on the Gemini technology page.Gemini Nano is expanding beyond text-only inputs to include images as well. Starting with Pixel, applications using Gemini Nano with Multimodality will be able to understand the world the way people do — not just through text, but also through sight, sound and spoken language.Read more about Gemini 1.0 Nano on Android.Today, we’re also sharing a series of updates to Gemma, our family of open models built from the same research and technology used to create the Gemini models.We’re announcing Gemma 2, our next generation of open models for responsible AI innovation. Gemma 2 has a new architecture designed for breakthrough performance and efficiency, and will be available in new sizes.The Gemma family is also expanding with PaliGemma, our first vision-language model inspired by PaLI-3. And we’ve upgraded our Responsible Generative AI Toolkit with LLM Comparator for evaluating the quality of model responses.Read more on the Developer blog.As part of Google DeepMind’s mission to build AI responsibly to benefit humanity, we’ve always wanted to develop universal AI agents that can be helpful in everyday life. That’s why today, we’re sharing our progress in building the future of AI assistants with Project Astra (advanced seeing and talking responsive agent).To be truly useful, an agent needs to understand and respond to the complex and dynamic world just like people do — and take in and remember what it sees and hears to understand context and take action. It also needs to be proactive, teachable and personal, so users can talk to it naturally and without lag or delay.While we’ve made incredible progress developing AI systems that can understand multimodal information, getting response time down to something conversational is a difficult engineering challenge. Over the past few years, we’ve been working to improve how our models perceive, reason and converse to make the pace and quality of interaction feel more natural.Building on Gemini, we’ve developed prototype agents that can process information faster by continuously encoding video frames, combining the video and speech input into a timeline of events, and caching this information for efficient recall.By leveraging our leading speech models, we also enhanced how they sound, giving the agents a wider range of intonations. These agents can better understand the context they’re being used in, and respond quickly, in conversation.With technology like this, it’s easy to envision a future where people could have an expert AI assistant by their side, through a phone or glasses. And some of these capabilities are coming to Google products, like the Gemini app and web experience, later this year.We’ve made incredible progress so far with our family of Gemini models, and we’re always striving to advance the state-of-the-art even further. By investing in a relentless production line of innovation, we’re able to explore new ideas at the frontier, while also unlocking the possibility of new and exciting Gemini use cases.Learn more about Gemini and its capabilities. Your information will be used in accordance with Google’s privacy policy.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      Done. Just one step more.
-    
-      Check your inbox to confirm your subscription.
-    You are already subscribed to our newsletter.
-    You can also subscribe with a
-    different email address
-    
-    .
-    
-  Let’s stay in touch. Get the latest news from Google in your inbox.
-          Follow Us
-</code></pre></div></div>]]></content><author><name></name></author><category term="external-posts"/><category term="google"/><summary type="html"><![CDATA[We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.]]></summary></entry><entry><title type="html">a post with tabs</title><link href="/blog/2024/tabs/" rel="alternate" type="text/html" title="a post with tabs"/><published>2024-05-01T00:32:13+00:00</published><updated>2024-05-01T00:32:13+00:00</updated><id>/blog/2024/tabs</id><content type="html" xml:base="/blog/2024/tabs/"><![CDATA[<p>This is how a post with <a href="https://github.com/Ovski4/jekyll-tabs">tabs</a> looks like. Note that the tabs could be used for different purposes, not only for code.</p> <h2 id="first-tabs">First tabs</h2> <p>To add tabs, use the following syntax:</p> <div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">tabs</span><span class="w"> </span><span class="nv">group-name</span><span class="w"> </span><span class="cp">%}</span>
-
-<span class="cp">{%</span><span class="w"> </span><span class="nt">tab</span><span class="w"> </span><span class="nv">group-name</span><span class="w"> </span><span class="nv">tab-name-1</span><span class="w"> </span><span class="cp">%}</span>
-
-Content 1
-
-<span class="cp">{%</span><span class="w"> </span><span class="nt">endtab</span><span class="w"> </span><span class="cp">%}</span>
-
-<span class="cp">{%</span><span class="w"> </span><span class="nt">tab</span><span class="w"> </span><span class="nv">group-name</span><span class="w"> </span><span class="nv">tab-name-2</span><span class="w"> </span><span class="cp">%}</span>
-
-Content 2
-
-<span class="cp">{%</span><span class="w"> </span><span class="nt">endtab</span><span class="w"> </span><span class="cp">%}</span>
-
-<span class="cp">{%</span><span class="w"> </span><span class="nt">endtabs</span><span class="w"> </span><span class="cp">%}</span>
-</code></pre></div></div> <p>With this you can generate visualizations like:</p> <ul id="log" class="tab" data-tab="be364b18-adab-476b-a812-1ca4dc91d068" data-name="log"> <li class="active" id="log-php"> <a href="#">php </a> </li> <li id="log-js"> <a href="#">js </a> </li> <li id="log-ruby"> <a href="#">ruby </a> </li> </ul> <ul class="tab-content" id="be364b18-adab-476b-a812-1ca4dc91d068" data-name="log"> <li class="active"> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">var_dump</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">);</span>
-</code></pre></div></div> </li> <li> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello</span><span class="dl">"</span><span class="p">);</span>
-</code></pre></div></div> </li> <li> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">pputs</span> <span class="dl">'</span><span class="s1">hello</span><span class="dl">'</span>
-</code></pre></div></div> </li> </ul> <h2 id="another-example">Another example</h2> <ul id="data-struct" class="tab" data-tab="382025c9-489c-4224-9f46-e681022201c3" data-name="data-struct"> <li class="active" id="data-struct-yaml"> <a href="#">yaml </a> </li> <li id="data-struct-json"> <a href="#">json </a> </li> </ul> <ul class="tab-content" id="382025c9-489c-4224-9f46-e681022201c3" data-name="data-struct"> <li class="active"> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hello</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="s2">"</span><span class="s">whatsup"</span>
-  <span class="pi">-</span> <span class="s2">"</span><span class="s">hi"</span>
-</code></pre></div></div> </li> <li> <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"hello"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"whatsup"</span><span class="p">,</span><span class="w"> </span><span class="s2">"hi"</span><span class="p">]</span><span class="w">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml"/><link href="/" rel="alternate" type="text/html" hreflang="en"/><updated>2026-03-04T15:28:10+00:00</updated><id>/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">Postbot in Postman</title><link href="/blog/2025/postbot-postman-ai-assistant/" rel="alternate" type="text/html" title="Postbot in Postman"/><published>2025-11-12T00:00:00+00:00</published><updated>2025-11-12T00:00:00+00:00</updated><id>/blog/2025/postbot-postman-ai-assistant</id><content type="html" xml:base="/blog/2025/postbot-postman-ai-assistant/"><![CDATA[<p>Postbot is Postman’s AI-powered assistant designed to streamline API testing by generating test scripts, suggesting assertions, and automating repetitive tasks. It helps testers improve efficiency by reducing manual effort in writing test cases.</p> <h2 id="what-is-postbot">What is Postbot?</h2> <p>Postbot leverages AI to assist testers in automating API validations. It can analyze API responses, suggest test cases, and even generate JavaScript-based tests to validate different aspects of API behavior.</p> <h2 id="key-features-of-postbot">Key Features of Postbot</h2> <ol> <li><strong>Auto-Generated Test Scripts</strong>: Postbot can generate JavaScript-based test scripts tailored to API responses.</li> <li><strong>Assertion Suggestions</strong>: It suggests assertions based on response data, ensuring comprehensive test coverage.</li> <li><strong>Code Debugging</strong>: Identifies potential issues in test scripts and provides suggestions for improvement.</li> <li><strong>Natural Language Interaction</strong>: Users can instruct Postbot using plain English to generate or modify test cases.</li> <li><strong>Seamless Integration</strong>: Works within the Postman environment, making it easy to incorporate AI-powered testing into existing workflows.</li> </ol> <h2 id="using-postbot-for-api-testing">Using Postbot for API Testing</h2> <p>To utilize Postbot in Postman:</p> <ol> <li>Open Postman and send an API request.</li> <li>Navigate to the “Tests” tab.</li> <li>Click on “Ask Postbot” and describe the test you want to generate.</li> <li>Review and modify the generated script if needed.</li> </ol> <h3 id="example-generating-an-assertion-with-postbot">Example: Generating an Assertion with Postbot</h3> <p>Consider an API response returning user details:</p> <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">101</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"John Doe"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"johndoe@example.com"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre></div></div> </li> </ul> <h2 id="tabs-for-something-else">Tabs for something else</h2> <ul id="something-else" class="tab" data-tab="c47f4bb1-74d4-465d-807b-49fffaf61d59" data-name="something-else"> <li class="active" id="something-else-text"> <a href="#">text </a> </li> <li id="something-else-quote"> <a href="#">quote </a> </li> <li id="something-else-list"> <a href="#">list </a> </li> </ul> <ul class="tab-content" id="c47f4bb1-74d4-465d-807b-49fffaf61d59" data-name="something-else"> <li class="active"> <p>Regular text</p> </li> <li> <blockquote> <p>A quote</p> </blockquote> </li> <li> <p>Hipster list</p> <ul> <li>brunch</li> <li>fixie</li> <li>raybans</li> <li>messenger bag</li> </ul> </li> </ul>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is what included tabs in a post could look like]]></summary></entry><entry><title type="html">a post with typograms</title><link href="/blog/2024/typograms/" rel="alternate" type="text/html" title="a post with typograms"/><published>2024-04-29T23:36:10+00:00</published><updated>2024-04-29T23:36:10+00:00</updated><id>/blog/2024/typograms</id><content type="html" xml:base="/blog/2024/typograms/"><![CDATA[<p>This is an example post with some <a href="https://github.com/google/typograms/">typograms</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">typograms
-</span><span class="sb">+----+
-|    |---&gt; My first diagram!
-+----+</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Which generates:</p> <pre><code class="language-typograms">+----+
-|    |---&gt; My first diagram!
-+----+
-</code></pre> <p>Another example:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">typograms
-</span><span class="sb">.------------------------.
-|.----------------------.|
-||"https://example.com" ||
-|'----------------------'|
-| ______________________ |
-||                      ||
-||   Welcome!           ||
-||                      ||
-||                      ||
-||  .----------------.  ||
-||  | username       |  ||
-||  '----------------'  ||
-||  .----------------.  ||
-||  |"*******"       |  ||
-||  '----------------'  ||
-||                      ||
-||  .----------------.  ||
-||  |   "Sign-up"    |  ||
-||  '----------------'  ||
-||                      ||
-|+----------------------+|
-.------------------------.</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>which generates:</p> <pre><code class="language-typograms">.------------------------.
-|.----------------------.|
-||"https://example.com" ||
-|'----------------------'|
-| ______________________ |
-||                      ||
-||   Welcome!           ||
-||                      ||
-||                      ||
-||  .----------------.  ||
-||  | username       |  ||
-||  '----------------'  ||
-||  .----------------.  ||
-||  |"*******"       |  ||
-||  '----------------'  ||
-||                      ||
-||  .----------------.  ||
-||  |   "Sign-up"    |  ||
-||  '----------------'  ||
-||                      ||
-|+----------------------+|
-.------------------------.
-</code></pre> <p>For more examples, check out the <a href="https://google.github.io/typograms/#examples">typograms documentation</a>.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="diagrams"/><summary type="html"><![CDATA[this is what included typograms code could look like]]></summary></entry><entry><title type="html">a post that can be cited</title><link href="/blog/2024/post-citation/" rel="alternate" type="text/html" title="a post that can be cited"/><published>2024-04-28T15:06:00+00:00</published><updated>2024-04-28T15:06:00+00:00</updated><id>/blog/2024/post-citation</id><content type="html" xml:base="/blog/2024/post-citation/"><![CDATA[<p>This is an example post that can be cited. The content of the post ends here, while the citation information is automatically provided below. The only thing needed is for you to set the <code class="language-plaintext highlighter-rouge">citation</code> key in the front matter to <code class="language-plaintext highlighter-rouge">true</code>.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="citation"/><summary type="html"><![CDATA[this is what a post that can be cited looks like]]></summary></entry><entry><title type="html">a post with pseudo code</title><link href="/blog/2024/pseudocode/" rel="alternate" type="text/html" title="a post with pseudo code"/><published>2024-04-15T00:01:00+00:00</published><updated>2024-04-15T00:01:00+00:00</updated><id>/blog/2024/pseudocode</id><content type="html" xml:base="/blog/2024/pseudocode/"><![CDATA[<p>This is an example post with some pseudo code rendered by <a href="https://github.com/SaswatPadhi/pseudocode.js">pseudocode</a>. The example presented here is the same as the one in the <a href="https://saswat.padhi.me/pseudocode.js/">pseudocode.js</a> documentation, with only one simple but important change: everytime you would use <code class="language-plaintext highlighter-rouge">$</code>, you should use <code class="language-plaintext highlighter-rouge">$$</code> instead. Also, note that the <code class="language-plaintext highlighter-rouge">pseudocode</code> key in the front matter is set to <code class="language-plaintext highlighter-rouge">true</code> to enable the rendering of pseudo code. As an example, using this code:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">pseudocode
-</span><span class="sb">% This quicksort algorithm is extracted from Chapter 7, Introduction to Algorithms (3rd edition)
-\begin{algorithm}
-\caption{Quicksort}
-\begin{algorithmic}
-\PROCEDURE{Quicksort}{$$A, p, r$$}
-    \IF{$$p &lt; r$$}
-        \STATE $$q = $$ \CALL{Partition}{$$A, p, r$$}
-        \STATE \CALL{Quicksort}{$$A, p, q - 1$$}
-        \STATE \CALL{Quicksort}{$$A, q + 1, r$$}
-    \ENDIF
-\ENDPROCEDURE
-\PROCEDURE{Partition}{$$A, p, r$$}
-    \STATE $$x = A[r]$$
-    \STATE $$i = p - 1$$
-    \FOR{$$j = p$$ \TO $$r - 1$$}
-        \IF{$$A[j] &lt; x$$}
-            \STATE $$i = i + 1$$
-            \STATE exchange
-            $$A[i]$$ with $$A[j]$$
-        \ENDIF
-        \STATE exchange $$A[i]$$ with $$A[r]$$
-    \ENDFOR
-\ENDPROCEDURE
-\end{algorithmic}
-\end{algorithm}</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Generates:</p> <pre><code class="language-pseudocode">% This quicksort algorithm is extracted from Chapter 7, Introduction to Algorithms (3rd edition)
-\begin{algorithm}
-\caption{Quicksort}
-\begin{algorithmic}
-\PROCEDURE{Quicksort}{$$A, p, r$$}
-    \IF{$$p &lt; r$$}
-        \STATE $$q = $$ \CALL{Partition}{$$A, p, r$$}
-        \STATE \CALL{Quicksort}{$$A, p, q - 1$$}
-        \STATE \CALL{Quicksort}{$$A, q + 1, r$$}
-    \ENDIF
-\ENDPROCEDURE
-\PROCEDURE{Partition}{$$A, p, r$$}
-    \STATE $$x = A[r]$$
-    \STATE $$i = p - 1$$
-    \FOR{$$j = p$$ \TO $$r - 1$$}
-        \IF{$$A[j] &lt; x$$}
-            \STATE $$i = i + 1$$
-            \STATE exchange
-            $$A[i]$$ with $$A[j]$$
-        \ENDIF
-        \STATE exchange $$A[i]$$ with $$A[r]$$
-    \ENDFOR
-\ENDPROCEDURE
-\end{algorithmic}
-\end{algorithm}
-</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is what included pseudo code could look like]]></summary></entry><entry><title type="html">a post with code diff</title><link href="/blog/2024/code-diff/" rel="alternate" type="text/html" title="a post with code diff"/><published>2024-01-27T19:22:00+00:00</published><updated>2024-01-27T19:22:00+00:00</updated><id>/blog/2024/code-diff</id><content type="html" xml:base="/blog/2024/code-diff/"><![CDATA[<p>You can display diff code by using the regular markdown syntax:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">diff
-</span><span class="gh">diff --git a/sample.js b/sample.js
-index 0000001..0ddf2ba
-</span><span class="gd">--- a/sample.js
-</span><span class="gi">+++ b/sample.js
-</span><span class="p">@@ -1 +1 @@</span>
-<span class="gd">-console.log("Hello World!")
-</span><span class="gi">+console.log("Hello from Diff2Html!")</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Which generates:</p> <div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh">diff --git a/sample.js b/sample.js
-index 0000001..0ddf2ba
-</span><span class="gd">--- a/sample.js
-</span><span class="gi">+++ b/sample.js
-</span><span class="p">@@ -1 +1 @@</span>
-<span class="gd">-console.log("Hello World!")
-</span><span class="gi">+console.log("Hello from Diff2Html!")
-</span></code></pre></div></div> <p>But this is difficult to read, specially if you have a large diff. You can use <a href="https://diff2html.xyz/">diff2html</a> to display a more readable version of the diff. For this, just use <code class="language-plaintext highlighter-rouge">diff2html</code> instead of <code class="language-plaintext highlighter-rouge">diff</code> for the code block language:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">diff2html
-</span><span class="sb">diff --git a/sample.js b/sample.js
-index 0000001..0ddf2ba
---- a/sample.js
-+++ b/sample.js
-@@ -1 +1 @@
--console.log("Hello World!")
-+console.log("Hello from Diff2Html!")</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>If we use a longer example, for example <a href="https://github.com/rtfpessoa/diff2html/commit/c2c253d3e3f8b8b267f551e659f72b44ca2ac927">this commit from diff2html</a>, it will generate the following output:</p> <pre><code class="language-diff2html">From 2aaae31cc2a37bfff83430c2c914b140bee59b6a Mon Sep 17 00:00:00 2001
-From: Rodrigo Fernandes &lt;rtfrodrigo@gmail.com&gt;
-Date: Sun, 9 Oct 2016 16:41:54 +0100
-Subject: [PATCH 1/2] Initial template override support
+</span></code></pre></div></div> <p>Using Postbot, we can generate an assertion to validate the response:</p> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">tests</span><span class="p">[</span><span class="dl">"</span><span class="s2">User ID is correct</span><span class="dl">"</span><span class="p">]</span> <span class="o">=</span> <span class="nx">responseJson</span><span class="p">.</span><span class="nx">id</span> <span class="o">===</span> <span class="mi">101</span><span class="p">;</span>
+<span class="nx">tests</span><span class="p">[</span><span class="dl">"</span><span class="s2">Name is present</span><span class="dl">"</span><span class="p">]</span> <span class="o">=</span> <span class="nx">responseJson</span><span class="p">.</span><span class="nf">hasOwnProperty</span><span class="p">(</span><span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">);</span>
+<span class="nx">tests</span><span class="p">[</span><span class="dl">"</span><span class="s2">Email format is valid</span><span class="dl">"</span><span class="p">]</span> <span class="o">=</span> <span class="sr">/</span><span class="se">[</span><span class="sr">A-Za-z0-9._%+-</span><span class="se">]</span><span class="sr">+@</span><span class="se">[</span><span class="sr">A-Za-z0-9.-</span><span class="se">]</span><span class="sr">+</span><span class="se">\.[</span><span class="sr">A-Z|a-z</span><span class="se">]{2,}</span><span class="sr">/</span><span class="p">.</span><span class="nf">test</span><span class="p">(</span><span class="nx">responseJson</span><span class="p">.</span><span class="nx">email</span><span class="p">);</span>
+</code></pre></div></div> <p>Postbot reduces the effort required to write these test cases manually.</p> <h2 id="best-practices-for-using-postbot">Best Practices for Using Postbot</h2> <ol> <li><strong>Review Generated Scripts</strong>: AI-generated code should always be reviewed and refined for accuracy.</li> <li><strong>Customize Assertions</strong>: Modify assertions to align with specific API testing requirements.</li> <li><strong>Use Descriptive Test Names</strong>: Ensure test case descriptions are clear and meaningful.</li> <li><strong>Leverage AI for Repetitive Tasks</strong>: Automate common assertions to improve efficiency.</li> <li><strong>Stay Updated</strong>: Postbot is continuously evolving; exploring its latest capabilities can enhance your testing workflow.</li> </ol> <h2 id="conclusion">Conclusion</h2> <p>Postbot in Postman enhances API testing by automating test case generation, suggesting assertions, and reducing manual effort. By integrating AI into the testing process, Postbot allows testers to focus more on exploratory and strategic testing while ensuring better test coverage and efficiency.</p>]]></content><author><name></name></author><category term="testing"/><category term="testing"/><category term="api-testing"/><category term="postman"/><category term="ai"/><category term="automation"/><summary type="html"><![CDATA[Exploring Postbot, Postman's AI powered assistant that enhances API testing efficiency.]]></summary></entry><entry><title type="html">Python Assert vs Pytest Assert</title><link href="/blog/2025/python-assert-vs-pytest-assert/" rel="alternate" type="text/html" title="Python Assert vs Pytest Assert"/><published>2025-10-22T00:00:00+00:00</published><updated>2025-10-22T00:00:00+00:00</updated><id>/blog/2025/python-assert-vs-pytest-assert</id><content type="html" xml:base="/blog/2025/python-assert-vs-pytest-assert/"><![CDATA[<p>Assertions play a crucial role in validating expected behavior in test automation. Python provides a built-in <code class="language-plaintext highlighter-rouge">assert</code> statement, while Pytest enhances it with powerful assertion introspection and detailed error reporting.</p> <h2 id="pythons-built-in-assert">Python’s Built-in Assert</h2> <p>Python’s <code class="language-plaintext highlighter-rouge">assert</code> is a simple debugging aid used to verify conditions during execution. If the condition evaluates to <code class="language-plaintext highlighter-rouge">False</code>, it raises an <code class="language-plaintext highlighter-rouge">AssertionError</code>.</p> <h3 id="example">Example:</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">test_addition</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">4</span>  <span class="c1"># Passes silently
+</span>    <span class="k">assert</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">5</span>  <span class="c1"># Raises AssertionError
+</span></code></pre></div></div> <h3 id="limitations-of-python-assert">Limitations of Python Assert:</h3> <ul> <li><code class="language-plaintext highlighter-rouge">assert</code> can be disabled when running Python in optimized mode (<code class="language-plaintext highlighter-rouge">python -O</code>).</li> <li>It does not provide detailed failure messages beyond <code class="language-plaintext highlighter-rouge">AssertionError</code>.</li> <li>It lacks introspection capabilities, making debugging harder.</li> </ul> <h2 id="pytest-assert-enhanced-assertions">Pytest Assert: Enhanced Assertions</h2> <p>Pytest extends the basic <code class="language-plaintext highlighter-rouge">assert</code> by adding rich failure messages and introspection.</p> <h3 id="example-with-pytest">Example with Pytest:</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">test_string_comparison</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="sh">"</span><span class="s">Pytest</span><span class="sh">"</span> <span class="ow">in</span> <span class="sh">"</span><span class="s">Learning Pytest Assertions</span><span class="sh">"</span>
+</code></pre></div></div> <p>If the assertion fails, Pytest provides a detailed output:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AssertionError: assert 'Pytest' in 'Learning Python Assertions'
+</code></pre></div></div> <h3 id="advantages-of-pytest-assert">Advantages of Pytest Assert:</h3> <ul> <li><strong>Descriptive Failure Messages:</strong> Displays expected vs. actual values.</li> <li><strong>Introspection:</strong> Automatically shows variable values when an assertion fails.</li> <li><strong>Integration with Test Frameworks:</strong> Works seamlessly with Pytest’s reporting and logging.</li> </ul> <h2 id="key-differences-between-python-assert-and-pytest-assert">Key Differences Between Python Assert and Pytest Assert</h2> <table> <thead> <tr> <th>Feature</th> <th>Python Assert</th> <th>Pytest Assert</th> </tr> </thead> <tbody> <tr> <td>Error Message</td> <td>Minimal</td> <td>Detailed and introspective</td> </tr> <tr> <td>Can Be Disabled</td> <td>Yes (<code class="language-plaintext highlighter-rouge">-O</code> flag)</td> <td>No</td> </tr> <tr> <td>Introspection</td> <td>No</td> <td>Yes</td> </tr> <tr> <td>Debugging Aid</td> <td>Basic</td> <td>Advanced</td> </tr> <tr> <td>Best for</td> <td>Debugging</td> <td>Automated Testing</td> </tr> </tbody> </table> <h2 id="best-practices">Best Practices</h2> <ol> <li><strong>Use Pytest Assertions for Testing:</strong> Avoid Python’s <code class="language-plaintext highlighter-rouge">assert</code> for test cases, as they can be disabled in optimized mode.</li> <li><strong>Leverage Pytest’s Reporting:</strong> Use Pytest’s introspection capabilities to get meaningful failure reports.</li> <li><strong>Combine with Fixtures:</strong> Enhance test setup using Pytest fixtures for better maintainability.</li> <li><strong>Use Custom Messages:</strong> Provide additional failure messages for clarity.</li> </ol> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">test_division</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="mi">10</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">5</span><span class="p">,</span> <span class="sh">"</span><span class="s">Division result is incorrect</span><span class="sh">"</span>
+</code></pre></div></div> <h2 id="conclusion">Conclusion</h2> <p>While Python’s built-in <code class="language-plaintext highlighter-rouge">assert</code> is useful for debugging, Pytest assertions are more suitable for robust test automation. Pytest’s enhanced error reporting and introspection make debugging easier, ensuring a more efficient testing process.</p> <p>By adopting Pytest assertions, testers can improve test reliability, readability, and maintainability in automation frameworks.</p>]]></content><author><name></name></author><category term="testing"/><category term="testing"/><category term="python"/><category term="pytest"/><category term="assertions"/><category term="automation"/><summary type="html"><![CDATA[Understanding the differences between Python's built in assert statement and Pytest's enhanced assertion capabilities.]]></summary></entry><entry><title type="html">Selenium Grid With Pytest</title><link href="/blog/2025/selenium-grid-pytest/" rel="alternate" type="text/html" title="Selenium Grid With Pytest"/><published>2025-09-18T00:00:00+00:00</published><updated>2025-09-18T00:00:00+00:00</updated><id>/blog/2025/selenium-grid-pytest</id><content type="html" xml:base="/blog/2025/selenium-grid-pytest/"><![CDATA[<h1 id="setting-up-selenium-grid-with-pytest-framework">Setting Up Selenium Grid with Pytest Framework</h1> <p>Selenium Grid stands out as an essential tool for test automation engineers looking to run tests across multiple browsers and environments simultaneously. When integrated with Pytest, this powerful combination provides a streamlined approach to parallel test execution. This guide walks through the practical steps to establish a working Selenium Grid environment with Pytest.</p> <h2 id="prerequisites">Prerequisites</h2> <p>Before diving into the setup, make sure these components are installed:</p> <ul> <li>Python (version 3.x recommended)</li> <li>Java Runtime Environment (necessary for Selenium Grid operation)</li> <li>Google Chrome and corresponding ChromeDriver</li> <li>A properly configured requirements.txt file</li> </ul> <h2 id="step-1-install-required-dependencies">Step 1: Install Required Dependencies</h2> <p>Begin by creating a clean virtual environment for the project:</p> <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Create isolated environment</span>
+python <span class="nt">-m</span> venv
+<span class="c"># For Mac/Linux systems   </span>
+<span class="nb">source </span>venv/bin/activate
+ <span class="c"># For Windows systems  </span>
+venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate 
+pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
+</code></pre></div></div> <h2 id="step-2-configure-selenium-grid">Step 2: Configure Selenium Grid</h2> <p>Selenium Grid operates on a Hub-Node model. The Hub coordinates test distribution while Nodes execute the actual tests.</p> <ol> <li>Download the latest Selenium Server JAR file(latest version 4.29.0) from the Selenium website https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.29.0/selenium-server-4.29.0.jar</li> <li>Launch the Hub server:</li> </ol> <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-jar</span> selenium-server-4.29.0.jar hub <span class="nt">--host</span> 0.0.0.0 <span class="nt">--port</span> 4444
+</code></pre></div></div> <ol> <li>Start a Node and connect it to the Hub:</li> </ol> <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-jar</span> selenium-server-4.29.0.jar node <span class="nt">--hub</span> http://172.18.208.1:4444
+</code></pre></div></div> <p>In this example, <code class="language-plaintext highlighter-rouge">172.18.208.1</code> is the IP address of the machine running the Hub. Your IP address might be different depending on your network configuration.</p> <h3 id="finding-your-hub-ip-address">Finding Your Hub IP Address</h3> <p>To determine the Selenium Grid hub URL, check the logs displayed in your terminal after running the hub command. Once the hub starts, look for a log line that mentions:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Selenium Grid ready on: http://&lt;your-machine-ip&gt;:4444
+</code></pre></div></div> <p>Alternatively, if you need to explicitly find the IP address of your machine, you can run:</p> <ul> <li>On <strong>Windows (CMD or PowerShell)</strong>: <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ipconfig
+</code></pre></div> </div> <p>Look for the <code class="language-plaintext highlighter-rouge">IPv4 Address</code> under your active network adapter.</p> </li> <li>On <strong>macOS/Linux</strong>: <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ifconfig | <span class="nb">grep</span> <span class="s2">"inet "</span>
+</code></pre></div> </div> <p>or</p> <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">hostname</span> <span class="nt">-I</span>
+</code></pre></div> </div> </li> </ul> <p>For the node, after running:</p> <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-jar</span> selenium-server-4.29.0.jar node <span class="nt">--hub</span> http://172.18.208.1:4444
+</code></pre></div></div> <p>Check the terminal output to verify that the node is successfully connected to the hub.</p> <p>If you are running Selenium Grid inside a <strong>Docker container</strong>, the IP might be different (e.g., <code class="language-plaintext highlighter-rouge">172.x.x.x</code>). You can find it by running:</p> <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker network inspect bridge
+</code></pre></div></div> <h2 id="step-3-confirm-grid-functionality">Step 3: Confirm Grid Functionality</h2> <p>Verify the Grid setup by opening a browser and navigating to:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost:4444
+</code></pre></div></div> <p>A successful setup displays the Grid console interface showing connected Nodes ready for test execution.</p> <h2 id="step-4-integrate-pytest-with-selenium-grid">Step 4: Integrate Pytest with Selenium Grid</h2> <p>Configure Pytest to utilize the Grid through either a configuration file or directly in test scripts.</p> <p>Example configuration file (config.json):</p> <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"grid_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://localhost:4444/wd/hub"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"browser"</span><span class="p">:</span><span class="w"> </span><span class="s2">"chrome"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div> <p>Alternatively, implement Grid connection in test code:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
 
----
- scripts/hulk.js                    |  4 ++--
- src/diff2html.js                   |  3 +--
- src/file-list-printer.js           | 11 ++++++++---
- src/hoganjs-utils.js               | 29 +++++++++++++++++------------
- src/html-printer.js                |  6 ++++++
- src/line-by-line-printer.js        |  6 +++++-
- src/side-by-side-printer.js        |  6 +++++-
- test/file-list-printer-tests.js    |  2 +-
- test/hogan-cache-tests.js          | 18 +++++++++++++++---
- test/line-by-line-tests.js         |  3 +--
- test/side-by-side-printer-tests.js |  3 +--
- 11 files changed, 62 insertions(+), 29 deletions(-)
+<span class="k">def</span> <span class="nf">test_example</span><span class="p">():</span>
+    <span class="n">options</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">ChromeOptions</span><span class="p">()</span>
+    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Remote</span><span class="p">(</span>
+        <span class="n">command_executor</span><span class="o">=</span><span class="sh">"</span><span class="s">http://172.18.208.1:4444/wd/hub</span><span class="sh">"</span><span class="p">,</span>
+        <span class="n">options</span><span class="o">=</span><span class="n">options</span>
+    <span class="p">)</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">"</span><span class="s">https://example.com</span><span class="sh">"</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="sh">"</span><span class="s">Example Domain</span><span class="sh">"</span> <span class="ow">in</span> <span class="n">driver</span><span class="p">.</span><span class="n">title</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
+</code></pre></div></div> <p>Note how we’re using the specific IP address in the command_executor parameter, matching the one used when starting the node.</p> <h2 id="step-5-run-tests-on-the-grid">Step 5: Run Tests on the Grid</h2> <p>Execute tests against the Grid infrastructure:</p> <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pytest <span class="nt">--grid-url</span> http://172.18.208.1:4444/wd/hub <span class="nt">--browser</span> chrome
+</code></pre></div></div> <p>For enhanced parallel execution capabilities:</p> <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pytest <span class="nt">-n</span> 3 <span class="nt">--html</span><span class="o">=</span>reports/report.html
+</code></pre></div></div> <p>This command distributes test execution across three concurrent browser instances, significantly reducing total runtime.</p> <h2 id="step-6-review-test-results">Step 6: Review Test Results</h2> <p>Following test execution, examine the generated reports located in the <code class="language-plaintext highlighter-rouge">reports/</code> directory. The HTML report format provides comprehensive insights into test status, execution logs, and failure details.</p> <h2 id="troubleshooting-common-issues">Troubleshooting Common Issues</h2> <p>When encountering setup problems:</p> <ul> <li><strong>Node registration failures</strong>: Confirm Hub IP address and port settings in Node configuration</li> <li><strong>Browser launch issues</strong>: Verify correct WebDriver installation and version compatibility</li> <li><strong>Connection errors</strong>: Ensure both Hub and Nodes are running and network connectivity exists between them</li> </ul> <p>By following this implementation approach, testing teams can drastically reduce execution time while maintaining comprehensive browser coverage. The Selenium Grid and Pytest combination delivers an ideal balance of performance and reliability for modern test automation needs.</p>]]></content><author><name></name></author><category term="testing"/><category term="testing"/><category term="selenium"/><category term="pytest"/><category term="automation"/><category term="parallel-testing"/><summary type="html"><![CDATA[Parallel Testing Made Simple. Learn how to set up Selenium Grid with a Pytest automation framework for scalable browser testing.]]></summary></entry><entry><title type="html">CI/CD Pipeline for Pytest Projects</title><link href="/blog/2025/cicd-pytest-jenkins/" rel="alternate" type="text/html" title="CI/CD Pipeline for Pytest Projects"/><published>2025-08-12T00:00:00+00:00</published><updated>2025-08-12T00:00:00+00:00</updated><id>/blog/2025/cicd-pytest-jenkins</id><content type="html" xml:base="/blog/2025/cicd-pytest-jenkins/"><![CDATA[<h1 id="setting-up-a-cicd-pipeline-for-pytest-projects-with-jenkins--docker">Setting Up a CI/CD Pipeline for Pytest Projects with Jenkins &amp; Docker</h1> <p>Continuous Integration (CI) and Continuous Deployment (CD) help automate the process of building, testing, and deploying applications.</p> <p>In this guide, we’ll create a <strong>Jenkins pipeline</strong> that:</p> <ol> <li>Pulls Python project code from <strong>GitHub</strong></li> <li>Installs dependencies and runs <strong>Pytest</strong> tests</li> <li>Builds a <strong>Docker image</strong> of the project</li> <li>Pushes the image to <strong>Docker Hub</strong></li> <li>Sends an email notification for build success or failure</li> </ol> <p><img src="/assets/img/cicd_flow.png" alt="CI CD Flow"/></p> <h2 id="1-prerequisites">1. Prerequisites</h2> <p>Before starting, ensure you have:</p> <ul> <li>GitHub account with your Pytest project</li> <li>Jenkins installed and running</li> <li>Docker installed on the Jenkins server</li> <li>Docker Hub account</li> <li>Python and pip installed</li> <li>Basic understanding of Git, Docker, and Jenkins pipelines</li> </ul> <hr/> <h2 id="2-step-1--push-your-project-to-github">2. Step 1 – Push Your Project to GitHub</h2> <ol> <li>Create a new GitHub repository (public or private).</li> <li>Push your Pytest project code to it:</li> </ol> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git init
+git remote add origin https://github.com/&lt;your-username&gt;/&lt;your-repo&gt;.git
+git add <span class="nb">.</span>
+git commit <span class="nt">-m</span> <span class="s2">"Initial commit"</span>
+git push origin main
+</code></pre></div></div> <hr/> <h2 id="3-step-2--create-a-jenkins-pipeline-job">3. Step 2 – Create a Jenkins Pipeline Job</h2> <ol> <li>Open <strong>Jenkins Dashboard</strong>.</li> <li>Click <strong>New Item</strong>, give a pipeline name, select <strong>Pipeline</strong>, and click <strong>OK</strong>.</li> <li>Add a description such as: <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This pipeline pulls code, runs tests, builds a Docker image, and pushes it to Docker Hub.
+</code></pre></div> </div> </li> <li>Check <strong>GitHub Project</strong> and paste your GitHub repo URL.</li> <li>In <strong>Build Triggers</strong>, select <strong>GitHub hook trigger for GITScm polling</strong>.</li> </ol> <hr/> <h2 id="4-step-3--create-a-jenkinsfile">4. Step 3 – Create a Jenkinsfile</h2> <p>The <strong>Jenkinsfile</strong> defines your pipeline steps. Place it in the root of your GitHub project so Jenkins can read it automatically.</p> <p>Example <strong>Jenkinsfile</strong>:</p> <div class="language-groovy highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pipeline</span> <span class="o">{</span>
+    <span class="n">agent</span> <span class="n">any</span>
 
-diff --git a/scripts/hulk.js b/scripts/hulk.js
-index 5a793c18..a4b1a4d5 100755
---- a/scripts/hulk.js
-+++ b/scripts/hulk.js
-@@ -173,11 +173,11 @@ function namespace(name) {
- // write a template foreach file that matches template extension
- templates = extractFiles(options.argv.remain)
-   .map(function(file) {
--    var openedFile = fs.readFileSync(file, 'utf-8');
-+    var openedFile = fs.readFileSync(file, 'utf-8').trim();
-     var name;
-     if (!openedFile) return;
-     name = namespace(path.basename(file).replace(/\..*$/, ''));
--    openedFile = removeByteOrderMark(openedFile.trim());
-+    openedFile = removeByteOrderMark(openedFile);
-     openedFile = wrap(file, name, openedFile);
-     if (!options.outputdir) return openedFile;
-     fs.writeFileSync(path.join(options.outputdir, name + '.js')
-diff --git a/src/diff2html.js b/src/diff2html.js
-index 21b0119e..64e138f5 100644
---- a/src/diff2html.js
-+++ b/src/diff2html.js
-@@ -7,7 +7,6 @@
+    <span class="n">stages</span> <span class="o">{</span>
+        <span class="n">stage</span><span class="o">(</span><span class="s1">'Checkout Code'</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">steps</span> <span class="o">{</span>
+                <span class="n">git</span> <span class="nl">branch:</span> <span class="s1">'main'</span><span class="o">,</span> <span class="nl">url:</span> <span class="s1">'https://github.com/&lt;your-username&gt;/&lt;your-repo&gt;.git'</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
 
- (function() {
-   var diffParser = require('./diff-parser.js').DiffParser;
--  var fileLister = require('./file-list-printer.js').FileListPrinter;
-   var htmlPrinter = require('./html-printer.js').HtmlPrinter;
+        <span class="n">stage</span><span class="o">(</span><span class="s1">'List Files'</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">steps</span> <span class="o">{</span>
+                <span class="n">bat</span> <span class="s1">'dir'</span> <span class="c1">// Use 'ls' for Linux</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
 
-   function Diff2Html() {
-@@ -43,7 +42,7 @@
+        <span class="n">stage</span><span class="o">(</span><span class="s1">'Install Dependencies'</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">steps</span> <span class="o">{</span>
+                <span class="n">bat</span> <span class="s1">'pip install -r requirements.txt'</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
 
-     var fileList = '';
-     if (configOrEmpty.showFiles === true) {
--      fileList = fileLister.generateFileList(diffJson, configOrEmpty);
-+      fileList = htmlPrinter.generateFileListSummary(diffJson, configOrEmpty);
-     }
+        <span class="n">stage</span><span class="o">(</span><span class="s1">'Run Pytest'</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">steps</span> <span class="o">{</span>
+                <span class="n">bat</span> <span class="s1">'pytest'</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
 
-     var diffOutput = '';
-diff --git a/src/file-list-printer.js b/src/file-list-printer.js
-index e408d9b2..1e0a2c61 100644
---- a/src/file-list-printer.js
-+++ b/src/file-list-printer.js
-@@ -8,11 +8,16 @@
- (function() {
-   var printerUtils = require('./printer-utils.js').PrinterUtils;
+        <span class="n">stage</span><span class="o">(</span><span class="s1">'Build Docker Image'</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">steps</span> <span class="o">{</span>
+                <span class="n">script</span> <span class="o">{</span>
+                    <span class="n">bat</span> <span class="s1">'docker build -t &lt;dockerhub-username&gt;/&lt;image-name&gt; .'</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
 
--  var hoganUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+  var hoganUtils;
-+
-   var baseTemplatesPath = 'file-summary';
-   var iconsBaseTemplatesPath = 'icon';
+        <span class="n">stage</span><span class="o">(</span><span class="s1">'Push Docker Image'</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">steps</span> <span class="o">{</span>
+                <span class="n">script</span> <span class="o">{</span>
+                    <span class="n">withCredentials</span><span class="o">([</span><span class="n">string</span><span class="o">(</span><span class="nl">credentialsId:</span> <span class="s1">'dockerhub-pwd'</span><span class="o">,</span> <span class="nl">variable:</span> <span class="s1">'dockerhubpwd'</span><span class="o">)])</span> <span class="o">{</span>
+                        <span class="n">bat</span> <span class="s2">"""
+                        docker login -u &lt;dockerhub-username&gt; -p ${dockerhubpwd}
+                        docker push &lt;dockerhub-username&gt;/&lt;image-name&gt;
+                        """</span>
+                    <span class="o">}</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
 
--  function FileListPrinter() {
-+  function FileListPrinter(config) {
-+    this.config = config;
-+
-+    var HoganJsUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+    hoganUtils = new HoganJsUtils(config);
-   }
+    <span class="n">post</span> <span class="o">{</span>
+        <span class="n">success</span> <span class="o">{</span>
+            <span class="n">script</span> <span class="o">{</span>
+                <span class="n">mail</span> <span class="nl">to:</span> <span class="s1">'recipient@example.com'</span><span class="o">,</span>
+                     <span class="nl">subject:</span> <span class="s2">" BUILD SUCCESS: ${env.JOB_NAME} [${env.BUILD_NUMBER}]"</span><span class="o">,</span>
+                     <span class="nl">body:</span> <span class="s2">"""
+Build Success!
 
-   FileListPrinter.prototype.generateFileList = function(diffFiles) {
-@@ -38,5 +43,5 @@
-     });
-   };
+Job: ${env.JOB_NAME}
+Build Number: ${env.BUILD_NUMBER}
+Status: ${currentBuild.currentResult}
 
--  module.exports.FileListPrinter = new FileListPrinter();
-+  module.exports.FileListPrinter = FileListPrinter;
- })();
-diff --git a/src/hoganjs-utils.js b/src/hoganjs-utils.js
-index 9949e5fa..0dda08d7 100644
---- a/src/hoganjs-utils.js
-+++ b/src/hoganjs-utils.js
-@@ -8,18 +8,19 @@
- (function() {
-   var fs = require('fs');
-   var path = require('path');
--
-   var hogan = require('hogan.js');
+Build URL: ${env.BUILD_URL}
+                     """</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">failure</span> <span class="o">{</span>
+            <span class="n">script</span> <span class="o">{</span>
+                <span class="n">mail</span> <span class="nl">to:</span> <span class="s1">'recipient@example.com'</span><span class="o">,</span>
+                     <span class="nl">subject:</span> <span class="s2">" BUILD FAILURE: ${env.JOB_NAME} [${env.BUILD_NUMBER}]"</span><span class="o">,</span>
+                     <span class="nl">body:</span> <span class="s2">"""
+Build Failed!
 
-   var hoganTemplates = require('./templates/diff2html-templates.js');
+Job: ${env.JOB_NAME}
+Build Number: ${env.BUILD_NUMBER}
+Status: ${currentBuild.currentResult}
 
--  var templatesPath = path.resolve(__dirname, 'templates');
-+  var extraTemplates;
+Check console output: ${env.BUILD_URL}console
+                     """</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">unstable</span> <span class="o">{</span>
+            <span class="n">script</span> <span class="o">{</span>
+                <span class="n">mail</span> <span class="nl">to:</span> <span class="s1">'recipient@example.com'</span><span class="o">,</span>
+                     <span class="nl">subject:</span> <span class="s2">" BUILD UNSTABLE: ${env.JOB_NAME} [${env.BUILD_NUMBER}]"</span><span class="o">,</span>
+                     <span class="nl">body:</span> <span class="s2">"""
+Build Unstable!
 
--  function HoganJsUtils() {
-+  function HoganJsUtils(configuration) {
-+    this.config = configuration || {};
-+    extraTemplates = this.config.templates || {};
-   }
+Some tests may have failed.
 
--  HoganJsUtils.prototype.render = function(namespace, view, params, configuration) {
--    var template = this.template(namespace, view, configuration);
-+  HoganJsUtils.prototype.render = function(namespace, view, params) {
-+    var template = this.template(namespace, view);
-     if (template) {
-       return template.render(params);
-     }
-@@ -27,17 +28,16 @@
-     return null;
-   };
+Job: ${env.JOB_NAME}
+Build Number: ${env.BUILD_NUMBER}
 
--  HoganJsUtils.prototype.template = function(namespace, view, configuration) {
--    var config = configuration || {};
-+  HoganJsUtils.prototype.template = function(namespace, view) {
-     var templateKey = this._templateKey(namespace, view);
+Build URL: ${env.BUILD_URL}
+                     """</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <hr/> <h2 id="5-step-4--add-docker-hub-credentials-to-jenkins">5. Step 4 – Add Docker Hub Credentials to Jenkins</h2> <ol> <li>Go to <strong>Jenkins Dashboard → Manage Jenkins → Credentials</strong>.</li> <li>Select <strong>(global)</strong> → <strong>Add Credentials</strong>.</li> <li>In <strong>Kind</strong>, select <strong>Secret Text</strong>.</li> <li>Paste your Docker Hub password in <strong>Secret</strong>.</li> <li>Set <strong>ID</strong> as <code class="language-plaintext highlighter-rouge">dockerhub-pwd</code> (this matches the Jenkinsfile).</li> </ol> <hr/> <h2 id="6-step-5--create-a-dockerfile">6. Step 5 – Create a Dockerfile</h2> <p>Place a <strong>Dockerfile</strong> in your project root:</p> <div class="language-dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">FROM</span><span class="s"> python:3.10</span>
 
--    return this._getTemplate(templateKey, config);
-+    return this._getTemplate(templateKey);
-   };
+<span class="k">WORKDIR</span><span class="s"> /app</span>
 
--  HoganJsUtils.prototype._getTemplate = function(templateKey, config) {
-+  HoganJsUtils.prototype._getTemplate = function(templateKey) {
-     var template;
+<span class="k">COPY</span><span class="s"> requirements.txt .</span>
+<span class="k">RUN </span>pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
 
--    if (!config.noCache) {
-+    if (!this.config.noCache) {
-       template = this._readFromCache(templateKey);
-     }
+<span class="k">COPY</span><span class="s"> . .</span>
 
-@@ -53,6 +53,7 @@
+<span class="k">CMD</span><span class="s"> ["pytest"]</span>
+</code></pre></div></div> <hr/> <h2 id="7-step-6--build-and-run-the-pipeline">7. Step 6 – Build and Run the Pipeline</h2> <ol> <li>Commit your <strong>Jenkinsfile</strong> and <strong>Dockerfile</strong> to GitHub.</li> <li>Open Jenkins, click <strong>Build Now</strong> on your pipeline.</li> <li>Jenkins will: <ul> <li>Pull the code from GitHub</li> <li>List project files</li> <li>Install dependencies</li> <li>Run Pytest tests</li> <li>Build and tag a Docker image</li> <li>Push the image to Docker Hub</li> <li>Send an email notification with the build result</li> </ul> </li> </ol> <hr/> <h2 id="8-troubleshooting-common-issues">8. Troubleshooting Common Issues</h2> <ul> <li><strong>DNS issues in Docker</strong> – Update network settings to use <code class="language-plaintext highlighter-rouge">8.8.8.8</code> and <code class="language-plaintext highlighter-rouge">8.8.4.4</code> as DNS servers.</li> <li><strong>Permission denied for Docker commands</strong> – Ensure Jenkins user is in the <code class="language-plaintext highlighter-rouge">docker</code> group.</li> <li><strong>Docker login failures</strong> – Check credentials in Jenkins.</li> </ul> <hr/> <h2 id="final-workflow">Final Workflow</h2> <p><strong>GitHub Commit → Jenkins Build → Test with Pytest → Docker Image Build → Push to Docker Hub → Email Notification</strong></p> <h2 id="reference-project">Reference Project</h2> <ul> <li><a href="https://github.com/beinghumantester/selenium-python-practical"> Jenkins Docker Example</a></li> </ul>]]></content><author><name></name></author><category term="testing"/><category term="testing"/><category term="pytest"/><category term="ci-cd"/><category term="jenkins"/><category term="docker"/><summary type="html"><![CDATA[Setting up a Jenkins pipeline for Python testing projects using Pytest and Docker.]]></summary></entry><entry><title type="html">Green Testing in the Age of AI</title><link href="/blog/2025/green-testing-ai/" rel="alternate" type="text/html" title="Green Testing in the Age of AI"/><published>2025-08-05T00:00:00+00:00</published><updated>2025-08-05T00:00:00+00:00</updated><id>/blog/2025/green-testing-ai</id><content type="html" xml:base="/blog/2025/green-testing-ai/"><![CDATA[<p>In an age where artificial intelligence is transforming our testing methodologies, another revolution quietly unfolds alongside it, the movement toward Green Testing. As software testers with over a decade in the field and several years specializing in AI testing tools, we have observed how our testing processes contribute significantly to our digital carbon footprint. This is not just an environmental concern. It represents a fundamental shift in how we should approach quality assurance in the 2020s and beyond.</p> <h2 id="what-is-green-testing">What is Green Testing?</h2> <p>Green Testing refers to the practice of minimizing the environmental footprint during software testing. This means optimizing test processes to reduce energy consumption, hardware usage, and carbon emissions. Instead of running every test under the sun, it is about being strategic and testing smarter. The goal is simple: delivering high-quality software while minimizing the strain on the environment.</p> <p>With the rise of AI and machine learning, the demand for powerful hardware and prolonged testing cycles has amplified. As a result, the environmental costs associated with model validation and software testing are substantial. Optimizing these practices becomes essential not just for operational efficiency but also for a more sustainable future.</p> <h2 id="the-environmental-impact-of-testing">The Environmental Impact of Testing</h2> <p>Software testing is often seen as an afterthought in the development cycle. However, the energy consumed during the testing phase is substantial, particularly for AI-driven applications. The UMass Amherst study on AI model training emissions provides a sobering view of this impact. It estimates that the carbon footprint of training a single AI model can emit as much carbon as five times the lifetime emissions of an average car.</p> <p>While this study focuses on model training, the testing phase has a similar, albeit less discussed, environmental cost. AI testing often involves running large-scale test suites, sometimes repeatedly, across multiple environments. Each test consumes energy ,energy that is primarily drawn from non-renewable sources. Reducing the environmental impact of this process requires more than just reducing the number of tests; it demands a systemic approach to how tests are managed, executed, and optimized.</p> <h2 id="real-world-examples-of-green-testing">Real-World Examples of Green Testing</h2> <p>While the idea of Green Testing may sound abstract, some companies are already paving the way with measurable and verified efforts.</p> <h3 id="ibms-sustainable-software-engineering">IBM’s Sustainable Software Engineering</h3> <p>IBM has been actively working toward sustainable software engineering. Their practices, such as containerization for testing, help create efficient, low-overhead environments that consume less energy. Through programs like the <strong>IBM Sustainability Accelerator</strong>, they apply hybrid cloud and AI technologies to scale eco-friendly initiatives, indirectly promoting greener software development and testing.</p> <h3 id="accentures-green-software-development-lifecycle">Accenture’s Green Software Development Lifecycle</h3> <p>Accenture offers a <strong>Green Software Development Lifecycle</strong> framework that identifies areas where emissions can be reduced across technology, process, and team levels. By embedding eco-friendly practices throughout the software lifecycle, including testing phases, they help organizations lower their environmental impact while improving operational efficiency.</p> <h3 id="googles-energy-efficient-software-guidelines">Google’s Energy-Efficient Software Guidelines</h3> <p>Google has taken a leadership role by publishing <strong>Green Software Engineering Guidelines</strong>. These guidelines encourage developers and testers to focus on energy-efficient coding and resource optimization, supporting a broader movement toward sustainable software development and testing practices.</p> <h2 id="ai-specific-testing-challenges">AI-Specific Testing Challenges</h2> <p>While Green Testing is broadly applicable across different software domains, AI-specific testing comes with its own unique challenges. AI models require validation across multiple datasets and environments, making the testing process more resource-intensive. Moreover, the complexity of AI models means that traditional testing approaches may not always be suitable.</p> <h3 id="a-few-ways-to-tackle-these-ai-specific-challenges">A few ways to tackle these AI-specific challenges:</h3> <ul> <li><strong>Test Optimization</strong>: Focusing on core model performance tests and validating results with smaller, curated datasets can reduce the number of test executions, cutting down resource usage.</li> <li><strong>Model Version Control</strong>: Instead of retraining and testing models from scratch, companies can adopt versioning strategies that enable testing on pre-trained models, reducing computational cost.</li> <li><strong>AI-Specific Tools</strong>: Leveraging tools designed for AI testing ,such as model explainability tools ,can improve testing efficiency, offering more targeted test scenarios that focus on AI behaviors rather than blanket testing across all inputs.</li> </ul> <h2 id="the-economic-and-environmental-benefits-of-green-testing">The Economic and Environmental Benefits of Green Testing</h2> <p>While sustainability is often seen as a cost rather than a benefit, Green Testing actually offers a compelling business case. The adoption of eco-friendly testing practices leads to tangible cost savings:</p> <ul> <li><strong>Energy Savings</strong>: By minimizing unnecessary test executions and optimizing hardware usage, companies can drastically reduce their energy bills.</li> <li><strong>Hardware Optimization</strong>: Efficient use of resources means fewer hardware upgrades and replacements, saving companies money while also reducing e-waste.</li> <li><strong>Reputation Gains</strong>: Companies that embrace sustainable practices often gain a competitive edge, attracting customers who value environmental responsibility.</li> </ul> <p>As businesses face mounting pressure to reduce their carbon footprint, integrating Green Testing into the software development lifecycle can lead to substantial economic and environmental benefits. These practices can also improve overall testing efficiency, reducing both time and cost in the long run.</p> <h2 id="implementing-green-testing-challenges-and-resistance">Implementing Green Testing: Challenges and Resistance</h2> <p>Despite the obvious benefits, the implementation of Green Testing is not without challenges. Many teams may resist adopting new testing frameworks, especially when it requires changing established workflows. There can be pushback on the perceived complexity of integrating sustainability-focused practices into existing testing pipelines.</p> <h3 id="a-few-common-obstacles-include">A few common obstacles include:</h3> <ul> <li><strong>Lack of Awareness</strong>: Many development teams are unaware of the environmental cost of software testing or how to reduce it effectively.</li> <li><strong>Resource Constraints</strong>: Some organizations may lack the necessary resources or infrastructure to support eco-friendly testing practices.</li> <li><strong>Cultural Resistance</strong>: Shifting to a more sustainable mindset may require a cultural change within the organization, which can be difficult to implement.</li> </ul> <p>However, overcoming these challenges is crucial for long-term sustainability. Training teams on the benefits of Green Testing, adopting cloud-based testing solutions, and promoting eco-conscious workflows can ease this transition.</p> <h2 id="moving-forward-with-green-testing">Moving Forward with Green Testing</h2> <p>The future of software testing is undoubtedly tied to the integration of sustainability into every stage of the development cycle. As AI continues to grow, so too will the demands placed on testing infrastructures. The need to test smarter, faster, and more sustainably is more pressing than ever before.</p> <p>Green Testing is no longer a mere trend; it is an essential practice that will define the next generation of software development. By embracing it, companies can not only contribute to environmental preservation but also gain economic and operational advantages. As the world moves into a more sustainable future, the role of Green Testing will only become more central to how software is developed, validated, and deployed.</p> <h2 id="conclusion">Conclusion</h2> <p>Green Testing in the age of AI is not just about saving the planet; it is about optimizing the testing process, reducing unnecessary resource consumption, and making smarter decisions. As AI technologies advance and the demand for high-quality software increases, so too does the need for sustainable testing practices. It is time to make testing more efficient, eco-friendly, and future-proof.</p> <p>The world is changing, and so is the way software is tested. It is time to embrace a smarter, greener way forward.</p> <hr/> <h3 id="references">References</h3> <ul> <li><a href="https://www.ibm.com/sustainability/sustainable-software-engineering">IBM: Engineering for Sustainability</a></li> <li><a href="https://www.accenture.com/us-en/insights/technology/green-software">Accenture: Green Software Development Lifecycle</a></li> <li><a href="https://developers.google.com/sustainability/">Google: Green Software Engineering Guidelines</a></li> </ul>]]></content><author><name></name></author><category term="testing"/><category term="testing"/><category term="ai"/><category term="sustainability"/><category term="green-testing"/><summary type="html"><![CDATA[Exploring how software testing practices can contribute to sustainable development in an AI driven world.]]></summary></entry><entry><title type="html">Conftest.py and Its Role in Automation</title><link href="/blog/2025/conftest-pytest-automation/" rel="alternate" type="text/html" title="Conftest.py and Its Role in Automation"/><published>2025-08-02T00:00:00+00:00</published><updated>2025-08-02T00:00:00+00:00</updated><id>/blog/2025/conftest-pytest-automation</id><content type="html" xml:base="/blog/2025/conftest-pytest-automation/"><![CDATA[<h1 id="conftestpy-the-secret-to-scalable-test-architecture-in-pytest">Conftest.py: The Secret to Scalable Test Architecture in Pytest</h1> <p>If you’ve been writing pytest tests for a while, you’ve probably faced this frustrating moment: you have the same fixture copied across multiple test files, and when you need to change something, you’re editing the same code in 10 different places. Or maybe you’re importing fixtures from random test files just to reuse them, making your test suite look like a tangled mess.</p> <p>I’ve been there. After years of writing Selenium tests and building test frameworks, I can tell you that <code class="language-plaintext highlighter-rouge">conftest.py</code> is one of those game-changing features that separates beginner test suites from professional, maintainable ones.</p> <p>In this article, I’ll walk you through everything you need to know about <code class="language-plaintext highlighter-rouge">conftest.py</code> - from the basics to advanced patterns that’ll make your test architecture rock solid. Whether you’re just starting with pytest or you’re looking to refactor your existing test suite, this guide has something for you.</p> <p>Let’s dive in.</p> <hr/> <h2 id="what-is-conftestpy-and-why-should-you-care">What is conftest.py and Why Should You Care?</h2> <p>At its core, <code class="language-plaintext highlighter-rouge">conftest.py</code> is a special Python file that pytest automatically discovers and loads. Think of it as a central place where you can define fixtures, hooks, and configurations that multiple test files can use without any imports.</p> <p>Here’s the magic: any fixture you define in <code class="language-plaintext highlighter-rouge">conftest.py</code> becomes automatically available to all test files in that directory and its subdirectories. No imports needed.</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
 
-     try {
-       if (fs.readFileSync) {
-+        var templatesPath = path.resolve(__dirname, 'templates');
-         var templatePath = path.join(templatesPath, templateKey);
-         var templateContent = fs.readFileSync(templatePath + '.mustache', 'utf8');
-         template = hogan.compile(templateContent);
-@@ -66,12 +67,16 @@
-   };
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">sample_data</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">{</span><span class="sh">"</span><span class="s">name</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Alice</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">age</span><span class="sh">"</span><span class="p">:</span> <span class="mi">30</span><span class="p">}</span>
 
-   HoganJsUtils.prototype._readFromCache = function(templateKey) {
--    return hoganTemplates[templateKey];
-+    return extraTemplates[templateKey] || hoganTemplates[templateKey];
-   };
+<span class="c1"># test_user.py (same directory)
+</span><span class="k">def</span> <span class="nf">test_user_data</span><span class="p">(</span><span class="n">sample_data</span><span class="p">):</span>  <span class="c1"># No import needed!
+</span>    <span class="k">assert</span> <span class="n">sample_data</span><span class="p">[</span><span class="sh">"</span><span class="s">name</span><span class="sh">"</span><span class="p">]</span> <span class="o">==</span> <span class="sh">"</span><span class="s">Alice</span><span class="sh">"</span>
+</code></pre></div></div> <p>But here’s where it gets interesting - <code class="language-plaintext highlighter-rouge">conftest.py</code> isn’t just about fixtures. It’s your control center for:</p> <ul> <li>Shared fixtures across multiple test files</li> <li>Test configuration and setup</li> <li>Custom pytest hooks</li> <li>Plugin integration</li> <li>Environment-specific settings</li> </ul> <hr/> <h2 id="the-problem-conftestpy-solves">The Problem conftest.py Solves</h2> <p>Let me paint a picture of what testing looks like without proper use of <code class="language-plaintext highlighter-rouge">conftest.py</code>:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># test_login.py
+</span><span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">webdriver</span><span class="p">():</span>
+    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">()</span>
+    <span class="k">yield</span> <span class="n">driver</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
 
-   HoganJsUtils.prototype._templateKey = function(namespace, view) {
-     return namespace + '-' + view;
-   };
+<span class="c1"># test_dashboard.py  
+</span><span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">webdriver</span><span class="p">():</span>  <span class="c1"># Same fixture copied!
+</span>    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">()</span>
+    <span class="k">yield</span> <span class="n">driver</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
 
--  module.exports.HoganJsUtils = new HoganJsUtils();
-+  HoganJsUtils.prototype.compile = function(templateStr) {
-+    return hogan.compile(templateStr);
-+  };
-+
-+  module.exports.HoganJsUtils = HoganJsUtils;
- })();
-diff --git a/src/html-printer.js b/src/html-printer.js
-index 585d5b66..13f83047 100644
---- a/src/html-printer.js
-+++ b/src/html-printer.js
-@@ -8,6 +8,7 @@
- (function() {
-   var LineByLinePrinter = require('./line-by-line-printer.js').LineByLinePrinter;
-   var SideBySidePrinter = require('./side-by-side-printer.js').SideBySidePrinter;
-+  var FileListPrinter = require('./file-list-printer.js').FileListPrinter;
+<span class="c1"># test_profile.py
+</span><span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">webdriver</span><span class="p">():</span>  <span class="c1"># And again...
+</span>    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">()</span>
+    <span class="k">yield</span> <span class="n">driver</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
+</code></pre></div></div> <p>This is maintenance nightmare. Change the browser configuration? Edit multiple files. Add a new setup step? Copy-paste everywhere.</p> <p>With <code class="language-plaintext highlighter-rouge">conftest.py</code>, this becomes:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">webdriver</span><span class="p">():</span>
+    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">()</span>
+    <span class="k">yield</span> <span class="n">driver</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
 
-   function HtmlPrinter() {
-   }
-@@ -22,5 +23,10 @@
-     return sideBySidePrinter.generateSideBySideJsonHtml(diffFiles);
-   };
+<span class="c1"># All test files can now use 'webdriver' fixture without any setup!
+</span></code></pre></div></div> <p>Clean, maintainable, and follows the DRY principle.</p> <hr/> <h2 id="understanding-conftestpy-discovery-and-scope">Understanding conftest.py Discovery and Scope</h2> <p>Pytest’s discovery mechanism for <code class="language-plaintext highlighter-rouge">conftest.py</code> files is both powerful and intuitive. Here’s how it works:</p> <p>The key principle: <strong>fixtures are available to test files in the same directory and all subdirectories</strong>.</p> <p>This hierarchical approach lets you:</p> <ul> <li>Put global fixtures at the project root</li> <li>Add directory-specific fixtures as you go deeper</li> <li>Override fixtures at more specific levels</li> </ul> <hr/> <h2 id="basic-usage-patterns">Basic Usage Patterns</h2> <h3 id="simple-shared-fixtures">Simple Shared Fixtures</h3> <p>Let’s start with the most common use case - sharing fixtures across test files:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">from</span> <span class="n">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
+<span class="kn">from</span> <span class="n">selenium.webdriver.chrome.options</span> <span class="kn">import</span> <span class="n">Options</span>
 
-+  HtmlPrinter.prototype.generateFileListSummary = function(diffJson, config) {
-+    var fileListPrinter = new FileListPrinter(config);
-+    return fileListPrinter.generateFileList(diffJson);
-+  };
-+
-   module.exports.HtmlPrinter = new HtmlPrinter();
- })();
-diff --git a/src/line-by-line-printer.js b/src/line-by-line-printer.js
-index b07eb53c..d230bedd 100644
---- a/src/line-by-line-printer.js
-+++ b/src/line-by-line-printer.js
-@@ -11,7 +11,8 @@
-   var utils = require('./utils.js').Utils;
-   var Rematch = require('./rematch.js').Rematch;
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">browser</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Shared browser instance for all tests</span><span class="sh">"""</span>
+    <span class="n">options</span> <span class="o">=</span> <span class="nc">Options</span><span class="p">()</span>
+    <span class="n">options</span><span class="p">.</span><span class="nf">add_argument</span><span class="p">(</span><span class="sh">"</span><span class="s">--headless</span><span class="sh">"</span><span class="p">)</span>
+    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
+    <span class="k">yield</span> <span class="n">driver</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
 
--  var hoganUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+  var hoganUtils;
-+
-   var genericTemplatesPath = 'generic';
-   var baseTemplatesPath = 'line-by-line';
-   var iconsBaseTemplatesPath = 'icon';
-@@ -19,6 +20,9 @@
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">test_data</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Sample test data for multiple test files</span><span class="sh">"""</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="sh">"</span><span class="s">valid_user</span><span class="sh">"</span><span class="p">:</span> <span class="p">{</span><span class="sh">"</span><span class="s">username</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">testuser</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">password</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">password123</span><span class="sh">"</span><span class="p">},</span>
+        <span class="sh">"</span><span class="s">invalid_user</span><span class="sh">"</span><span class="p">:</span> <span class="p">{</span><span class="sh">"</span><span class="s">username</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">baduser</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">password</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">wrongpass</span><span class="sh">"</span><span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div></div> <p>Now any test file in your project can use these fixtures:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># test_login.py
+</span><span class="k">def</span> <span class="nf">test_valid_login</span><span class="p">(</span><span class="n">browser</span><span class="p">,</span> <span class="n">test_data</span><span class="p">):</span>
+    <span class="c1"># Use browser and test_data fixtures
+</span>    <span class="k">pass</span>
 
-   function LineByLinePrinter(config) {
-     this.config = config;
-+
-+    var HoganJsUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+    hoganUtils = new HoganJsUtils(config);
-   }
+<span class="c1"># test_registration.py  
+</span><span class="k">def</span> <span class="nf">test_user_registration</span><span class="p">(</span><span class="n">browser</span><span class="p">,</span> <span class="n">test_data</span><span class="p">):</span>
+    <span class="c1"># Same fixtures available here too
+</span>    <span class="k">pass</span>
+</code></pre></div></div> <h3 id="configuration-and-environment-setup">Configuration and Environment Setup</h3> <p><code class="language-plaintext highlighter-rouge">conftest.py</code> is perfect for environment-specific configurations:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">import</span> <span class="n">os</span>
 
-   LineByLinePrinter.prototype.makeFileDiffHtml = function(file, diffs) {
-diff --git a/src/side-by-side-printer.js b/src/side-by-side-printer.js
-index bbf1dc8d..5e3033b3 100644
---- a/src/side-by-side-printer.js
-+++ b/src/side-by-side-printer.js
-@@ -11,7 +11,8 @@
-   var utils = require('./utils.js').Utils;
-   var Rematch = require('./rematch.js').Rematch;
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">base_url</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Environment-specific base URL</span><span class="sh">"""</span>
+    <span class="n">env</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="nf">getenv</span><span class="p">(</span><span class="sh">"</span><span class="s">TEST_ENV</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">staging</span><span class="sh">"</span><span class="p">)</span>
+    <span class="n">urls</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="sh">"</span><span class="s">staging</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">https://staging.example.com</span><span class="sh">"</span><span class="p">,</span>
+        <span class="sh">"</span><span class="s">production</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">https://example.com</span><span class="sh">"</span><span class="p">,</span>
+        <span class="sh">"</span><span class="s">local</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">http://localhost:3000</span><span class="sh">"</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">urls</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">urls</span><span class="p">[</span><span class="sh">"</span><span class="s">staging</span><span class="sh">"</span><span class="p">])</span>
 
--  var hoganUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+  var hoganUtils;
-+
-   var genericTemplatesPath = 'generic';
-   var baseTemplatesPath = 'side-by-side';
-   var iconsBaseTemplatesPath = 'icon';
-@@ -26,6 +27,9 @@
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">api_credentials</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Load API credentials from environment</span><span class="sh">"""</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="sh">"</span><span class="s">api_key</span><span class="sh">"</span><span class="p">:</span> <span class="n">os</span><span class="p">.</span><span class="nf">getenv</span><span class="p">(</span><span class="sh">"</span><span class="s">API_KEY</span><span class="sh">"</span><span class="p">),</span>
+        <span class="sh">"</span><span class="s">secret</span><span class="sh">"</span><span class="p">:</span> <span class="n">os</span><span class="p">.</span><span class="nf">getenv</span><span class="p">(</span><span class="sh">"</span><span class="s">API_SECRET</span><span class="sh">"</span><span class="p">)</span>
+    <span class="p">}</span>
+</code></pre></div></div> <hr/> <h2 id="hierarchical-conftestpy-architecture">Hierarchical conftest.py Architecture</h2> <p>Here’s where things get really powerful. You can have multiple <code class="language-plaintext highlighter-rouge">conftest.py</code> files in different directories, each serving different scopes:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>project/
+├── conftest.py              # Global fixtures
+├── tests/
+│   ├── conftest.py          # Test-wide fixtures
+│   ├── unit/
+│   │   ├── conftest.py      # Unit test specific
+│   │   └── test_models.py
+│   ├── integration/
+│   │   ├── conftest.py      # Integration test specific
+│   │   └── test_api.py
+│   └── e2e/
+│       ├── conftest.py      # E2E test specific
+│       └── test_workflows.py
+</code></pre></div></div> <h3 id="real-world-example">Real-World Example</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># project/conftest.py (Global level)
+</span><span class="kn">import</span> <span class="n">pytest</span>
 
-   function SideBySidePrinter(config) {
-     this.config = config;
-+
-+    var HoganJsUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+    hoganUtils = new HoganJsUtils(config);
-   }
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">database_url</span><span class="p">():</span>
+    <span class="k">return</span> <span class="sh">"</span><span class="s">postgresql://test:test@localhost/testdb</span><span class="sh">"</span>
 
-   SideBySidePrinter.prototype.makeDiffHtml = function(file, diffs) {
-diff --git a/test/file-list-printer-tests.js b/test/file-list-printer-tests.js
-index a502a46f..60ea3208 100644
---- a/test/file-list-printer-tests.js
-+++ b/test/file-list-printer-tests.js
-@@ -1,6 +1,6 @@
- var assert = require('assert');
+<span class="c1"># tests/conftest.py (Test level)
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">from</span> <span class="n">database</span> <span class="kn">import</span> <span class="n">Database</span>
 
--var fileListPrinter = require('../src/file-list-printer.js').FileListPrinter;
-+var fileListPrinter = new (require('../src/file-list-printer.js').FileListPrinter)();
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">db_connection</span><span class="p">(</span><span class="n">database_url</span><span class="p">):</span>
+    <span class="n">db</span> <span class="o">=</span> <span class="nc">Database</span><span class="p">(</span><span class="n">database_url</span><span class="p">)</span>
+    <span class="n">db</span><span class="p">.</span><span class="nf">connect</span><span class="p">()</span>
+    <span class="k">yield</span> <span class="n">db</span>
+    <span class="n">db</span><span class="p">.</span><span class="nf">disconnect</span><span class="p">()</span>
 
- describe('FileListPrinter', function() {
-   describe('generateFileList', function() {
-diff --git a/test/hogan-cache-tests.js b/test/hogan-cache-tests.js
-index 190bf6f8..3bb754ac 100644
---- a/test/hogan-cache-tests.js
-+++ b/test/hogan-cache-tests.js
-@@ -1,6 +1,6 @@
- var assert = require('assert');
+<span class="c1"># tests/unit/conftest.py (Unit test level)
+</span><span class="kn">import</span> <span class="n">pytest</span>
 
--var HoganJsUtils = require('../src/hoganjs-utils.js').HoganJsUtils;
-+var HoganJsUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)();
- var diffParser = require('../src/diff-parser.js').DiffParser;
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">mock_external_api</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Mock external API calls for unit tests</span><span class="sh">"""</span>
+    <span class="k">with</span> <span class="nf">patch</span><span class="p">(</span><span class="sh">'</span><span class="s">requests.get</span><span class="sh">'</span><span class="p">)</span> <span class="k">as</span> <span class="n">mock_get</span><span class="p">:</span>
+        <span class="n">mock_get</span><span class="p">.</span><span class="n">return_value</span><span class="p">.</span><span class="n">json</span><span class="p">.</span><span class="n">return_value</span> <span class="o">=</span> <span class="p">{</span><span class="sh">"</span><span class="s">status</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">success</span><span class="sh">"</span><span class="p">}</span>
+        <span class="k">yield</span> <span class="n">mock_get</span>
 
- describe('HoganJsUtils', function() {
-@@ -21,16 +21,28 @@ describe('HoganJsUtils', function() {
-       });
-       assert.equal(emptyDiffHtml, result);
-     });
-+
-     it('should render view without cache', function() {
-       var result = HoganJsUtils.render('generic', 'empty-diff', {
-         contentClass: 'd2h-code-line',
-         diffParser: diffParser
-       }, {noCache: true});
--      assert.equal(emptyDiffHtml + '\n', result);
-+      assert.equal(emptyDiffHtml, result);
-     });
-+
-     it('should return null if template is missing', function() {
--      var result = HoganJsUtils.render('generic', 'missing-template', {}, {noCache: true});
-+      var hoganUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)({noCache: true});
-+      var result = hoganUtils.render('generic', 'missing-template', {});
-       assert.equal(null, result);
-     });
-+
-+    it('should allow templates to be overridden', function() {
-+      var emptyDiffTemplate = HoganJsUtils.compile('&lt;p&gt;&lt;/p&gt;');
-+
-+      var config = {templates: {'generic-empty-diff': emptyDiffTemplate}};
-+      var hoganUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)(config);
-+      var result = hoganUtils.render('generic', 'empty-diff', {myName: 'Rodrigo Fernandes'});
-+      assert.equal('&lt;p&gt;Rodrigo Fernandes&lt;/p&gt;', result);
-+    });
-   });
- });
-diff --git a/test/line-by-line-tests.js b/test/line-by-line-tests.js
-index 1cd92073..8869b3df 100644
---- a/test/line-by-line-tests.js
-+++ b/test/line-by-line-tests.js
-@@ -14,7 +14,7 @@ describe('LineByLinePrinter', function() {
-         '            File without changes\n' +
-         '        &lt;/div&gt;\n' +
-         '    &lt;/td&gt;\n' +
--        '&lt;/tr&gt;\n';
-+        '&lt;/tr&gt;';
+<span class="c1"># tests/e2e/conftest.py (E2E test level)
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">from</span> <span class="n">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
 
-       assert.equal(expected, fileHtml);
-     });
-@@ -422,7 +422,6 @@ describe('LineByLinePrinter', function() {
-         '        &lt;/div&gt;\n' +
-         '    &lt;/td&gt;\n' +
-         '&lt;/tr&gt;\n' +
--        '\n' +
-         '                &lt;/tbody&gt;\n' +
-         '            &lt;/table&gt;\n' +
-         '        &lt;/div&gt;\n' +
-diff --git a/test/side-by-side-printer-tests.js b/test/side-by-side-printer-tests.js
-index 76625f8e..771daaa5 100644
---- a/test/side-by-side-printer-tests.js
-+++ b/test/side-by-side-printer-tests.js
-@@ -14,7 +14,7 @@ describe('SideBySidePrinter', function() {
-         '            File without changes\n' +
-         '        &lt;/div&gt;\n' +
-         '    &lt;/td&gt;\n' +
--        '&lt;/tr&gt;\n';
-+        '&lt;/tr&gt;';
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">authenticated_browser</span><span class="p">(</span><span class="n">browser</span><span class="p">,</span> <span class="n">base_url</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Browser with user already logged in</span><span class="sh">"""</span>
+    <span class="n">browser</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="si">{</span><span class="n">base_url</span><span class="si">}</span><span class="s">/login</span><span class="sh">"</span><span class="p">)</span>
+    <span class="c1"># Perform login steps
+</span>    <span class="k">return</span> <span class="n">browser</span>
+</code></pre></div></div> <p>This structure gives you:</p> <ul> <li><strong>Global fixtures</strong> available everywhere</li> <li><strong>Specialized fixtures</strong> for specific test types</li> <li><strong>Clean separation</strong> of concerns</li> <li><strong>Easy maintenance</strong> - change unit test setup without affecting E2E tests</li> </ul> <hr/> <h2 id="advanced-patterns-and-best-practices">Advanced Patterns and Best Practices</h2> <h3 id="fixture-factories-in-conftestpy">Fixture Factories in conftest.py</h3> <p>Sometimes you need more flexibility than static fixtures provide. Factory fixtures are perfect for this:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">from</span> <span class="n">selenium.webdriver.common.by</span> <span class="kn">import</span> <span class="n">By</span>
+<span class="kn">from</span> <span class="n">selenium.webdriver.support.ui</span> <span class="kn">import</span> <span class="n">WebDriverWait</span>
+<span class="kn">from</span> <span class="n">selenium.webdriver.support</span> <span class="kn">import</span> <span class="n">expected_conditions</span> <span class="k">as</span> <span class="n">EC</span>
 
-       assert.equal(expectedRight, fileHtml.right);
-       assert.equal(expectedLeft, fileHtml.left);
-@@ -324,7 +324,6 @@ describe('SideBySidePrinter', function() {
-         '        &lt;/div&gt;\n' +
-         '    &lt;/td&gt;\n' +
-         '&lt;/tr&gt;\n' +
--        '\n' +
-         '                    &lt;/tbody&gt;\n' +
-         '                &lt;/table&gt;\n' +
-         '            &lt;/div&gt;\n' +
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">page_object_factory</span><span class="p">(</span><span class="n">browser</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Factory for creating page objects with common functionality</span><span class="sh">"""</span>
+    
+    <span class="k">class</span> <span class="nc">BasePage</span><span class="p">:</span>
+        <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">driver</span><span class="p">):</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">driver</span> <span class="o">=</span> <span class="n">driver</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">wait</span> <span class="o">=</span> <span class="nc">WebDriverWait</span><span class="p">(</span><span class="n">driver</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+        
+        <span class="k">def</span> <span class="nf">find_element</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">locator</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">wait</span><span class="p">.</span><span class="nf">until</span><span class="p">(</span><span class="n">EC</span><span class="p">.</span><span class="nf">presence_of_element_located</span><span class="p">(</span><span class="n">locator</span><span class="p">))</span>
+        
+        <span class="k">def</span> <span class="nf">click_element</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">locator</span><span class="p">):</span>
+            <span class="n">element</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">find_element</span><span class="p">(</span><span class="n">locator</span><span class="p">)</span>
+            <span class="n">element</span><span class="p">.</span><span class="nf">click</span><span class="p">()</span>
+    
+    <span class="k">def</span> <span class="nf">_create_page</span><span class="p">(</span><span class="n">page_class</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nf">page_class</span><span class="p">(</span><span class="n">browser</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">_create_page</span>
 
-From f3cadb96677d0eb82fc2752dc3ffbf35ca9b5bdb Mon Sep 17 00:00:00 2001
-From: Rodrigo Fernandes &lt;rtfrodrigo@gmail.com&gt;
-Date: Sat, 15 Oct 2016 13:21:22 +0100
-Subject: [PATCH 2/2] Allow uncompiled templates
+<span class="c1"># Usage in tests
+</span><span class="k">def</span> <span class="nf">test_login_page</span><span class="p">(</span><span class="n">page_object_factory</span><span class="p">):</span>
+    <span class="n">login_page</span> <span class="o">=</span> <span class="nf">page_object_factory</span><span class="p">(</span><span class="n">LoginPage</span><span class="p">)</span>
+    <span class="n">login_page</span><span class="p">.</span><span class="nf">enter_credentials</span><span class="p">(</span><span class="sh">"</span><span class="s">user</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">pass</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div> <h3 id="conditional-fixtures">Conditional Fixtures</h3> <p>You can create fixtures that behave differently based on conditions:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
 
----
- README.md                 |  3 +++
- src/hoganjs-utils.js      |  7 +++++++
- test/hogan-cache-tests.js | 24 +++++++++++++++++++++++-
- 3 files changed, 33 insertions(+), 1 deletion(-)
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">browser</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Browser fixture that adapts based on markers</span><span class="sh">"""</span>
+    <span class="n">browser_name</span> <span class="o">=</span> <span class="sh">"</span><span class="s">chrome</span><span class="sh">"</span>  <span class="c1"># default
+</span>    
+    <span class="c1"># Check for custom markers
+</span>    <span class="k">if</span> <span class="n">request</span><span class="p">.</span><span class="n">node</span><span class="p">.</span><span class="nf">get_closest_marker</span><span class="p">(</span><span class="sh">"</span><span class="s">firefox</span><span class="sh">"</span><span class="p">):</span>
+        <span class="n">browser_name</span> <span class="o">=</span> <span class="sh">"</span><span class="s">firefox</span><span class="sh">"</span>
+    <span class="k">elif</span> <span class="n">request</span><span class="p">.</span><span class="n">node</span><span class="p">.</span><span class="nf">get_closest_marker</span><span class="p">(</span><span class="sh">"</span><span class="s">safari</span><span class="sh">"</span><span class="p">):</span>
+        <span class="n">browser_name</span> <span class="o">=</span> <span class="sh">"</span><span class="s">safari</span><span class="sh">"</span>
+    
+    <span class="k">if</span> <span class="n">browser_name</span> <span class="o">==</span> <span class="sh">"</span><span class="s">firefox</span><span class="sh">"</span><span class="p">:</span>
+        <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Firefox</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">browser_name</span> <span class="o">==</span> <span class="sh">"</span><span class="s">safari</span><span class="sh">"</span><span class="p">:</span>
+        <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Safari</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">()</span>
+    
+    <span class="k">yield</span> <span class="n">driver</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
 
-diff --git a/README.md b/README.md
-index 132c8a28..46909f25 100644
---- a/README.md
-+++ b/README.md
-@@ -98,6 +98,9 @@ The HTML output accepts a Javascript object with configuration. Possible options
-   - `synchronisedScroll`: scroll both panes in side-by-side mode: `true` or `false`, default is `false`
-   - `matchWordsThreshold`: similarity threshold for word matching, default is 0.25
-   - `matchingMaxComparisons`: perform at most this much comparisons for line matching a block of changes, default is `2500`
-+  - `templates`: object with previously compiled templates to replace parts of the html
-+  - `rawTemplates`: object with raw not compiled templates to replace parts of the html
-+  &gt; For more information regarding the possible templates look into [src/templates](https://github.com/rtfpessoa/diff2html/tree/master/src/templates)
+<span class="c1"># Usage in tests
+</span><span class="nd">@pytest.mark.firefox</span>
+<span class="k">def</span> <span class="nf">test_firefox_specific_feature</span><span class="p">(</span><span class="n">browser</span><span class="p">):</span>
+    <span class="c1"># This test will use Firefox
+</span>    <span class="k">pass</span>
+</code></pre></div></div> <h3 id="data-driven-testing-with-conftestpy">Data-Driven Testing with conftest.py</h3> <p>Perfect for maintaining test data centrally:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">import</span> <span class="n">json</span>
+<span class="kn">import</span> <span class="n">os</span>
 
- ## Diff2HtmlUI Helper
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_data_loader</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Centralized test data loader</span><span class="sh">"""</span>
+    <span class="k">def</span> <span class="nf">load_data</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+        <span class="n">data_path</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="sh">"</span><span class="s">test_data</span><span class="sh">"</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+        <span class="k">with</span> <span class="nf">open</span><span class="p">(</span><span class="n">data_path</span><span class="p">,</span> <span class="sh">'</span><span class="s">r</span><span class="sh">'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">json</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">load_data</span>
 
-diff --git a/src/hoganjs-utils.js b/src/hoganjs-utils.js
-index 0dda08d7..b2e9c275 100644
---- a/src/hoganjs-utils.js
-+++ b/src/hoganjs-utils.js
-@@ -17,6 +17,13 @@
-   function HoganJsUtils(configuration) {
-     this.config = configuration || {};
-     extraTemplates = this.config.templates || {};
-+
-+    var rawTemplates = this.config.rawTemplates || {};
-+    for (var templateName in rawTemplates) {
-+      if (rawTemplates.hasOwnProperty(templateName)) {
-+        if (!extraTemplates[templateName]) extraTemplates[templateName] = this.compile(rawTemplates[templateName]);
-+      }
-+    }
-   }
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">params</span><span class="o">=</span><span class="p">[</span><span class="sh">"</span><span class="s">valid_users.json</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">invalid_users.json</span><span class="sh">"</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">user_test_data</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">test_data_loader</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Parameterized fixture for different user data sets</span><span class="sh">"""</span>
+    <span class="k">return</span> <span class="nf">test_data_loader</span><span class="p">(</span><span class="n">request</span><span class="p">.</span><span class="n">param</span><span class="p">)</span>
 
-   HoganJsUtils.prototype.render = function(namespace, view, params) {
-diff --git a/test/hogan-cache-tests.js b/test/hogan-cache-tests.js
-index 3bb754ac..a34839c0 100644
---- a/test/hogan-cache-tests.js
-+++ b/test/hogan-cache-tests.js
-@@ -36,7 +36,7 @@ describe('HoganJsUtils', function() {
-       assert.equal(null, result);
-     });
+<span class="c1"># Tests automatically run with both data sets
+</span><span class="k">def</span> <span class="nf">test_user_validation</span><span class="p">(</span><span class="n">user_test_data</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">user_test_data</span><span class="p">:</span>
+        <span class="c1"># Test logic here
+</span>        <span class="k">pass</span>
+</code></pre></div></div> <hr/> <h2 id="selenium-specific-patterns">Selenium-Specific Patterns</h2> <p>As a Selenium tester, here are some patterns I’ve found incredibly useful:</p> <h3 id="browser-management">Browser Management</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">from</span> <span class="n">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
+<span class="kn">from</span> <span class="n">selenium.webdriver.chrome.options</span> <span class="kn">import</span> <span class="n">Options</span>
+<span class="kn">from</span> <span class="n">selenium.webdriver.firefox.options</span> <span class="kn">import</span> <span class="n">Options</span> <span class="k">as</span> <span class="n">FirefoxOptions</span>
 
--    it('should allow templates to be overridden', function() {
-+    it('should allow templates to be overridden with compiled templates', function() {
-       var emptyDiffTemplate = HoganJsUtils.compile('&lt;p&gt;&lt;/p&gt;');
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">browser_config</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Centralized browser configuration</span><span class="sh">"""</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="sh">"</span><span class="s">chrome_options</span><span class="sh">"</span><span class="p">:</span> <span class="p">[</span><span class="sh">"</span><span class="s">--headless</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">--no-sandbox</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">--disable-dev-shm-usage</span><span class="sh">"</span><span class="p">],</span>
+        <span class="sh">"</span><span class="s">firefox_options</span><span class="sh">"</span><span class="p">:</span> <span class="p">[</span><span class="sh">"</span><span class="s">--headless</span><span class="sh">"</span><span class="p">],</span>
+        <span class="sh">"</span><span class="s">implicit_wait</span><span class="sh">"</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="sh">"</span><span class="s">page_load_timeout</span><span class="sh">"</span><span class="p">:</span> <span class="mi">30</span>
+    <span class="p">}</span>
 
-       var config = {templates: {'generic-empty-diff': emptyDiffTemplate}};
-@@ -44,5 +44,27 @@ describe('HoganJsUtils', function() {
-       var result = hoganUtils.render('generic', 'empty-diff', {myName: 'Rodrigo Fernandes'});
-       assert.equal('&lt;p&gt;Rodrigo Fernandes&lt;/p&gt;', result);
-     });
-+
-+    it('should allow templates to be overridden with uncompiled templates', function() {
-+      var emptyDiffTemplate = '&lt;p&gt;&lt;/p&gt;';
-+
-+      var config = {rawTemplates: {'generic-empty-diff': emptyDiffTemplate}};
-+      var hoganUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)(config);
-+      var result = hoganUtils.render('generic', 'empty-diff', {myName: 'Rodrigo Fernandes'});
-+      assert.equal('&lt;p&gt;Rodrigo Fernandes&lt;/p&gt;', result);
-+    });
-+
-+    it('should allow templates to be overridden giving priority to compiled templates', function() {
-+      var emptyDiffTemplate = HoganJsUtils.compile('&lt;p&gt;&lt;/p&gt;');
-+      var emptyDiffTemplateUncompiled = '&lt;p&gt;Not used!&lt;/p&gt;';
-+
-+      var config = {
-+        templates: {'generic-empty-diff': emptyDiffTemplate},
-+        rawTemplates: {'generic-empty-diff': emptyDiffTemplateUncompiled}
-+      };
-+      var hoganUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)(config);
-+      var result = hoganUtils.render('generic', 'empty-diff', {myName: 'Rodrigo Fernandes'});
-+      assert.equal('&lt;p&gt;Rodrigo Fernandes&lt;/p&gt;', result);
-+    });
-   });
- });
-</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is how you can display code diffs]]></summary></entry><entry><title type="html">a post with advanced image components</title><link href="/blog/2024/advanced-images/" rel="alternate" type="text/html" title="a post with advanced image components"/><published>2024-01-27T11:46:00+00:00</published><updated>2024-01-27T11:46:00+00:00</updated><id>/blog/2024/advanced-images</id><content type="html" xml:base="/blog/2024/advanced-images/"><![CDATA[<p>This is an example post with advanced image components.</p> <h2 id="image-slider">Image Slider</h2> <p>This is a simple image slider. It uses the <a href="https://swiperjs.com/">Swiper</a> library. Check the <a href="https://swiperjs.com/demos">examples page</a> for more information of what you can achieve with it.</p> <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true"> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/9-480.webp 480w,/assets/img/9-800.webp 800w,/assets/img/9-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/9.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </swiper-slide> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/7-480.webp 480w,/assets/img/7-800.webp 800w,/assets/img/7-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/7.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </swiper-slide> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/8-480.webp 480w,/assets/img/8-800.webp 800w,/assets/img/8-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/8.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </swiper-slide> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/10-480.webp 480w,/assets/img/10-800.webp 800w,/assets/img/10-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/10.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </swiper-slide> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/12-480.webp 480w,/assets/img/12-800.webp 800w,/assets/img/12-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/12.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </swiper-slide> </swiper-container> <h2 id="image-comparison-slider">Image Comparison Slider</h2> <p>This is a simple image comparison slider. It uses the <a href="https://img-comparison-slider.sneas.io/">img-comparison-slider</a> library. Check the <a href="https://img-comparison-slider.sneas.io/examples.html">examples page</a> for more information of what you can achieve with it.</p> <img-comparison-slider> <figure slot="first"> <picture> <source class="responsive-img-srcset" srcset="/assets/img/prof_pic-480.webp 480w,/assets/img/prof_pic-800.webp 800w,/assets/img/prof_pic-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/prof_pic.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> <figure slot="second"> <picture> <source class="responsive-img-srcset" srcset="/assets/img/prof_pic_color-480.webp 480w,/assets/img/prof_pic_color-800.webp 800w,/assets/img/prof_pic_color-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/prof_pic_color.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </img-comparison-slider>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="images"/><summary type="html"><![CDATA[this is what advanced image components could look like]]></summary></entry><entry><title type="html">a post with vega lite</title><link href="/blog/2024/vega-lite/" rel="alternate" type="text/html" title="a post with vega lite"/><published>2024-01-27T00:20:00+00:00</published><updated>2024-04-14T04:30:00+00:00</updated><id>/blog/2024/vega-lite</id><content type="html" xml:base="/blog/2024/vega-lite/"><![CDATA[<p>This is an example post with some <a href="https://vega.github.io/vega-lite/">vega lite</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">vega_lite
-</span><span class="sb">{
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A dot plot showing each movie in the database, and the difference from the average movie rating. The display is sorted by year to visualize everything in sequential order. The graph is for all Movies before 2019.",
-  "data": {
-    "url": "https://raw.githubusercontent.com/vega/vega/main/docs/data/movies.json"
-  },
-  "transform": [
-    {"filter": "datum['IMDB Rating'] != null"},
-    {"filter": {"timeUnit": "year", "field": "Release Date", "range": [null, 2019]}},
-    {
-      "joinaggregate": [{
-        "op": "mean",
-        "field": "IMDB Rating",
-        "as": "AverageRating"
-      }]
-    },
-    {
-      "calculate": "datum['IMDB Rating'] - datum.AverageRating",
-      "as": "RatingDelta"
-    }
-  ],
-  "mark": "point",
-  "encoding": {
-    "x": {
-      "field": "Release Date",
-      "type": "temporal"
-    },
-    "y": {
-      "field": "RatingDelta",
-      "type": "quantitative",
-      "title": "Rating Delta"
-    },
-    "color": {
-      "field": "RatingDelta",
-      "type": "quantitative",
-      "scale": {"domainMid": 0},
-      "title": "Rating Delta"
-    }
-  }
-}</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Which generates:</p> <pre><code class="language-vega_lite">{
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A dot plot showing each movie in the database, and the difference from the average movie rating. The display is sorted by year to visualize everything in sequential order. The graph is for all Movies before 2019.",
-  "data": {
-    "url": "https://raw.githubusercontent.com/vega/vega/main/docs/data/movies.json"
-  },
-  "transform": [
-    {"filter": "datum['IMDB Rating'] != null"},
-    {"filter": {"timeUnit": "year", "field": "Release Date", "range": [null, 2019]}},
-    {
-      "joinaggregate": [{
-        "op": "mean",
-        "field": "IMDB Rating",
-        "as": "AverageRating"
-      }]
-    },
-    {
-      "calculate": "datum['IMDB Rating'] - datum.AverageRating",
-      "as": "RatingDelta"
-    }
-  ],
-  "mark": "point",
-  "encoding": {
-    "x": {
-      "field": "Release Date",
-      "type": "temporal"
-    },
-    "y": {
-      "field": "RatingDelta",
-      "type": "quantitative",
-      "title": "Rating Delta"
-    },
-    "color": {
-      "field": "RatingDelta",
-      "type": "quantitative",
-      "scale": {"domainMid": 0},
-      "title": "Rating Delta"
-    }
-  }
-}
-</code></pre> <p>This plot supports both light and dark themes.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="charts"/><summary type="html"><![CDATA[this is what included vega lite code could look like]]></summary></entry></feed>
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">chrome_browser</span><span class="p">(</span><span class="n">browser_config</span><span class="p">):</span>
+    <span class="n">options</span> <span class="o">=</span> <span class="nc">Options</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">option</span> <span class="ow">in</span> <span class="n">browser_config</span><span class="p">[</span><span class="sh">"</span><span class="s">chrome_options</span><span class="sh">"</span><span class="p">]:</span>
+        <span class="n">options</span><span class="p">.</span><span class="nf">add_argument</span><span class="p">(</span><span class="n">option</span><span class="p">)</span>
+    
+    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">implicitly_wait</span><span class="p">(</span><span class="n">browser_config</span><span class="p">[</span><span class="sh">"</span><span class="s">implicit_wait</span><span class="sh">"</span><span class="p">])</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">set_page_load_timeout</span><span class="p">(</span><span class="n">browser_config</span><span class="p">[</span><span class="sh">"</span><span class="s">page_load_timeout</span><span class="sh">"</span><span class="p">])</span>
+    
+    <span class="k">yield</span> <span class="n">driver</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">firefox_browser</span><span class="p">(</span><span class="n">browser_config</span><span class="p">):</span>
+    <span class="n">options</span> <span class="o">=</span> <span class="nc">FirefoxOptions</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">option</span> <span class="ow">in</span> <span class="n">browser_config</span><span class="p">[</span><span class="sh">"</span><span class="s">firefox_options</span><span class="sh">"</span><span class="p">]:</span>
+        <span class="n">options</span><span class="p">.</span><span class="nf">add_argument</span><span class="p">(</span><span class="n">option</span><span class="p">)</span>
+    
+    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Firefox</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">implicitly_wait</span><span class="p">(</span><span class="n">browser_config</span><span class="p">[</span><span class="sh">"</span><span class="s">implicit_wait</span><span class="sh">"</span><span class="p">])</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">set_page_load_timeout</span><span class="p">(</span><span class="n">browser_config</span><span class="p">[</span><span class="sh">"</span><span class="s">page_load_timeout</span><span class="sh">"</span><span class="p">])</span>
+    
+    <span class="k">yield</span> <span class="n">driver</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
+</code></pre></div></div> <h3 id="page-object-integration">Page Object Integration</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">from</span> <span class="n">pages.login_page</span> <span class="kn">import</span> <span class="n">LoginPage</span>
+<span class="kn">from</span> <span class="n">pages.dashboard_page</span> <span class="kn">import</span> <span class="n">DashboardPage</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">login_page</span><span class="p">(</span><span class="n">browser</span><span class="p">,</span> <span class="n">base_url</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Pre-configured login page object</span><span class="sh">"""</span>
+    <span class="n">browser</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="si">{</span><span class="n">base_url</span><span class="si">}</span><span class="s">/login</span><span class="sh">"</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nc">LoginPage</span><span class="p">(</span><span class="n">browser</span><span class="p">)</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">authenticated_session</span><span class="p">(</span><span class="n">login_page</span><span class="p">,</span> <span class="n">valid_credentials</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Fixture that provides an authenticated browser session</span><span class="sh">"""</span>
+    <span class="n">login_page</span><span class="p">.</span><span class="nf">login</span><span class="p">(</span>
+        <span class="n">valid_credentials</span><span class="p">[</span><span class="sh">"</span><span class="s">username</span><span class="sh">"</span><span class="p">],</span> 
+        <span class="n">valid_credentials</span><span class="p">[</span><span class="sh">"</span><span class="s">password</span><span class="sh">"</span><span class="p">]</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="nc">DashboardPage</span><span class="p">(</span><span class="n">login_page</span><span class="p">.</span><span class="n">driver</span><span class="p">)</span>
+</code></pre></div></div> <hr/> <h2 id="testing-conftestpy-and-debugging">Testing conftest.py and Debugging</h2> <h3 id="how-to-test-your-fixtures">How to Test Your Fixtures</h3> <p>Yes, you should test your fixtures too! Here’s how:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># test_conftest.py
+</span><span class="k">def</span> <span class="nf">test_browser_fixture_creates_driver</span><span class="p">(</span><span class="n">browser</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Test that browser fixture works correctly</span><span class="sh">"""</span>
+    <span class="k">assert</span> <span class="n">browser</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span>
+    <span class="k">assert</span> <span class="nf">hasattr</span><span class="p">(</span><span class="n">browser</span><span class="p">,</span> <span class="sh">'</span><span class="s">get</span><span class="sh">'</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="nf">hasattr</span><span class="p">(</span><span class="n">browser</span><span class="p">,</span> <span class="sh">'</span><span class="s">find_element</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">test_test_data_fixture_loads_correctly</span><span class="p">(</span><span class="n">test_data</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Test that test data fixture provides expected structure</span><span class="sh">"""</span>
+    <span class="k">assert</span> <span class="sh">"</span><span class="s">valid_user</span><span class="sh">"</span> <span class="ow">in</span> <span class="n">test_data</span>
+    <span class="k">assert</span> <span class="sh">"</span><span class="s">username</span><span class="sh">"</span> <span class="ow">in</span> <span class="n">test_data</span><span class="p">[</span><span class="sh">"</span><span class="s">valid_user</span><span class="sh">"</span><span class="p">]</span>
+    <span class="k">assert</span> <span class="sh">"</span><span class="s">password</span><span class="sh">"</span> <span class="ow">in</span> <span class="n">test_data</span><span class="p">[</span><span class="sh">"</span><span class="s">valid_user</span><span class="sh">"</span><span class="p">]</span>
+</code></pre></div></div> <h3 id="debugging-fixture-issues">Debugging Fixture Issues</h3> <p>Common debugging techniques:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">import</span> <span class="n">logging</span>
+
+<span class="c1"># Enable logging for fixture debugging
+</span><span class="n">logging</span><span class="p">.</span><span class="nf">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="p">.</span><span class="n">INFO</span><span class="p">)</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="p">.</span><span class="nf">getLogger</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">debug_browser</span><span class="p">():</span>
+    <span class="n">logger</span><span class="p">.</span><span class="nf">info</span><span class="p">(</span><span class="sh">"</span><span class="s">Creating browser instance</span><span class="sh">"</span><span class="p">)</span>
+    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">()</span>
+    <span class="n">logger</span><span class="p">.</span><span class="nf">info</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Browser created: </span><span class="si">{</span><span class="n">driver</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+    
+    <span class="k">yield</span> <span class="n">driver</span>
+    
+    <span class="n">logger</span><span class="p">.</span><span class="nf">info</span><span class="p">(</span><span class="sh">"</span><span class="s">Cleaning up browser</span><span class="sh">"</span><span class="p">)</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
+    <span class="n">logger</span><span class="p">.</span><span class="nf">info</span><span class="p">(</span><span class="sh">"</span><span class="s">Browser cleanup complete</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div> <h3 id="using-pytest-fixtures">Using pytest –fixtures</h3> <p>Pytest provides a built-in way to see all available fixtures:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># See all fixtures available in current directory</span>
+pytest <span class="nt">--fixtures</span>
+
+<span class="c"># See fixtures with their source locations</span>
+pytest <span class="nt">--fixtures-per-test</span> test_file.py::test_function
+</code></pre></div></div> <hr/> <h2 id="common-pitfalls-and-how-to-avoid-them">Common Pitfalls and How to Avoid Them</h2> <h3 id="1-fixture-name-conflicts">1. Fixture Name Conflicts</h3> <p><strong>Problem</strong>: Multiple <code class="language-plaintext highlighter-rouge">conftest.py</code> files define fixtures with the same name.</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># tests/conftest.py
+</span><span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">user_data</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">{</span><span class="sh">"</span><span class="s">type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">admin</span><span class="sh">"</span><span class="p">}</span>
+
+<span class="c1"># tests/unit/conftest.py
+</span><span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">user_data</span><span class="p">():</span>  <span class="c1"># This overrides the parent fixture!
+</span>    <span class="k">return</span> <span class="p">{</span><span class="sh">"</span><span class="s">type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">regular</span><span class="sh">"</span><span class="p">}</span>
+</code></pre></div></div> <p><strong>Solution</strong>: Use descriptive, specific names and be intentional about overrides.</p> <h3 id="2-scope-mismanagement">2. Scope Mismanagement</h3> <p><strong>Problem</strong>: Using wrong fixture scope leading to performance issues or test isolation problems.</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Bad: Database fixture with function scope - creates DB for every test
+</span><span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">function</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">database</span><span class="p">():</span>
+    <span class="k">return</span> <span class="nf">create_expensive_database</span><span class="p">()</span>
+
+<span class="c1"># Good: Use appropriate scope
+</span><span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">module</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">database</span><span class="p">():</span>
+    <span class="k">return</span> <span class="nf">create_expensive_database</span><span class="p">()</span>
+</code></pre></div></div> <h3 id="3-over-engineering">3. Over-Engineering</h3> <p><strong>Problem</strong>: Creating too many layers of <code class="language-plaintext highlighter-rouge">conftest.py</code> files.</p> <p><strong>Rule of thumb</strong>: If you have more than 3-4 levels of <code class="language-plaintext highlighter-rouge">conftest.py</code> files, you might be over-engineering. Keep it simple.</p> <h3 id="4-import-issues">4. Import Issues</h3> <p><strong>Problem</strong>: Trying to import fixtures from <code class="language-plaintext highlighter-rouge">conftest.py</code>.</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Wrong
+</span><span class="kn">from</span> <span class="n">conftest</span> <span class="kn">import</span> <span class="n">my_fixture</span>  <span class="c1"># Don't do this!
+</span>
+<span class="c1"># Right
+# Just use the fixture name as a parameter
+</span><span class="k">def</span> <span class="nf">test_something</span><span class="p">(</span><span class="n">my_fixture</span><span class="p">):</span>
+    <span class="k">pass</span>
+</code></pre></div></div> <hr/> <h2 id="performance-considerations">Performance Considerations</h2> <h3 id="smart-scope-usage">Smart Scope Usage</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">expensive_setup</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Run once per test session - perfect for expensive operations</span><span class="sh">"""</span>
+    <span class="n">database</span> <span class="o">=</span> <span class="nf">create_test_database</span><span class="p">()</span>
+    <span class="nf">load_test_data</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">database</span>
+
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">module</span><span class="sh">"</span><span class="p">)</span> 
+<span class="k">def</span> <span class="nf">module_specific_setup</span><span class="p">(</span><span class="n">expensive_setup</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Build on session fixture for module-specific needs</span><span class="sh">"""</span>
+    <span class="nf">setup_module_data</span><span class="p">(</span><span class="n">expensive_setup</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">expensive_setup</span>
+
+<span class="nd">@pytest.fixture</span>  <span class="c1"># function scope - default
+</span><span class="k">def</span> <span class="nf">clean_state</span><span class="p">(</span><span class="n">module_specific_setup</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Reset state for each test</span><span class="sh">"""</span>
+    <span class="nf">reset_data</span><span class="p">(</span><span class="n">module_specific_setup</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">module_specific_setup</span>
+</code></pre></div></div> <h3 id="lazy-loading">Lazy Loading</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">heavy_resource</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Only create the resource when actually used</span><span class="sh">"""</span>
+    <span class="n">resource</span> <span class="o">=</span> <span class="bp">None</span>
+    
+    <span class="k">def</span> <span class="nf">get_resource</span><span class="p">():</span>
+        <span class="k">nonlocal</span> <span class="n">resource</span>
+        <span class="k">if</span> <span class="n">resource</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">resource</span> <span class="o">=</span> <span class="nf">create_expensive_resource</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">resource</span>
+    
+    <span class="k">return</span> <span class="n">get_resource</span>
+</code></pre></div></div> <hr/> <h2 id="real-world-project-structure">Real-World Project Structure</h2> <p>Here’s how I typically structure a real Selenium project:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>selenium_project/
+├── conftest.py                 # Global fixtures (browser, base_url)
+├── pytest.ini                 # Pytest configuration
+├── requirements.txt
+├── pages/                     # Page Object Models
+│   ├── __init__.py
+│   ├── base_page.py
+│   └── login_page.py
+├── test_data/                 # Test data files
+│   ├── users.json
+│   └── products.json
+├── tests/
+│   ├── conftest.py            # Test-wide fixtures (auth, data loaders)
+│   ├── smoke/
+│   │   ├── conftest.py        # Smoke test fixtures
+│   │   └── test_critical_paths.py
+│   ├── regression/
+│   │   ├── conftest.py        # Regression-specific fixtures
+│   │   └── test_full_workflows.py
+│   └── api/
+│       ├── conftest.py        # API testing fixtures
+│       └── test_endpoints.py
+├── utils/                     # Helper utilities
+│   ├── __init__.py
+│   └── database_helper.py
+└── reports/                   # Test reports output
+</code></pre></div></div> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Root conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">from</span> <span class="n">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
+
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">base_url</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">os</span><span class="p">.</span><span class="nf">getenv</span><span class="p">(</span><span class="sh">"</span><span class="s">BASE_URL</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">https://staging.example.com</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">browser</span><span class="p">():</span>
+    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">()</span>
+    <span class="k">yield</span> <span class="n">driver</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
+
+<span class="c1"># tests/conftest.py  
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">from</span> <span class="n">utils.database_helper</span> <span class="kn">import</span> <span class="n">DatabaseHelper</span>
+
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">db_helper</span><span class="p">():</span>
+    <span class="n">helper</span> <span class="o">=</span> <span class="nc">DatabaseHelper</span><span class="p">()</span>
+    <span class="n">helper</span><span class="p">.</span><span class="nf">connect</span><span class="p">()</span>
+    <span class="k">yield</span> <span class="n">helper</span>
+    <span class="n">helper</span><span class="p">.</span><span class="nf">disconnect</span><span class="p">()</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">clean_database</span><span class="p">(</span><span class="n">db_helper</span><span class="p">):</span>
+    <span class="k">yield</span> <span class="n">db_helper</span>
+    <span class="n">db_helper</span><span class="p">.</span><span class="nf">clean_test_data</span><span class="p">()</span>
+
+<span class="c1"># tests/smoke/conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">quick_browser</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Headless browser for smoke tests</span><span class="sh">"""</span>
+    <span class="n">options</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">ChromeOptions</span><span class="p">()</span>
+    <span class="n">options</span><span class="p">.</span><span class="nf">add_argument</span><span class="p">(</span><span class="sh">"</span><span class="s">--headless</span><span class="sh">"</span><span class="p">)</span>
+    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
+    <span class="k">yield</span> <span class="n">driver</span>
+    <span class="n">driver</span><span class="p">.</span><span class="nf">quit</span><span class="p">()</span>
+</code></pre></div></div> <hr/> <h2 id="integration-with-cicd">Integration with CI/CD</h2> <p><code class="language-plaintext highlighter-rouge">conftest.py</code> shines in CI/CD environments:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py
+</span><span class="kn">import</span> <span class="n">pytest</span>
+<span class="kn">import</span> <span class="n">os</span>
+
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">ci_browser</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Browser configuration optimized for CI environment</span><span class="sh">"""</span>
+    <span class="n">options</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">ChromeOptions</span><span class="p">()</span>
+    
+    <span class="k">if</span> <span class="n">os</span><span class="p">.</span><span class="nf">getenv</span><span class="p">(</span><span class="sh">"</span><span class="s">CI</span><span class="sh">"</span><span class="p">):</span>
+        <span class="c1"># CI-specific options
+</span>        <span class="n">options</span><span class="p">.</span><span class="nf">add_argument</span><span class="p">(</span><span class="sh">"</span><span class="s">--headless</span><span class="sh">"</span><span class="p">)</span>
+        <span class="n">options</span><span class="p">.</span><span class="nf">add_argument</span><span class="p">(</span><span class="sh">"</span><span class="s">--no-sandbox</span><span class="sh">"</span><span class="p">)</span>
+        <span class="n">options</span><span class="p">.</span><span class="nf">add_argument</span><span class="p">(</span><span class="sh">"</span><span class="s">--disable-dev-shm-usage</span><span class="sh">"</span><span class="p">)</span>
+        <span class="n">options</span><span class="p">.</span><span class="nf">add_argument</span><span class="p">(</span><span class="sh">"</span><span class="s">--disable-gpu</span><span class="sh">"</span><span class="p">)</span>
+        <span class="n">options</span><span class="p">.</span><span class="nf">add_argument</span><span class="p">(</span><span class="sh">"</span><span class="s">--window-size=1920,1080</span><span class="sh">"</span><span class="p">)</span>
+    
+    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">driver</span>
+
+<span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_environment</span><span class="p">():</span>
+    <span class="sh">"""</span><span class="s">Determine test environment from CI variables</span><span class="sh">"""</span>
+    <span class="k">if</span> <span class="n">os</span><span class="p">.</span><span class="nf">getenv</span><span class="p">(</span><span class="sh">"</span><span class="s">GITHUB_ACTIONS</span><span class="sh">"</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sh">"</span><span class="s">github_ci</span><span class="sh">"</span>
+    <span class="k">elif</span> <span class="n">os</span><span class="p">.</span><span class="nf">getenv</span><span class="p">(</span><span class="sh">"</span><span class="s">JENKINS_URL</span><span class="sh">"</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sh">"</span><span class="s">jenkins</span><span class="sh">"</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sh">"</span><span class="s">local</span><span class="sh">"</span>
+</code></pre></div></div> <hr/> <h2 id="migration-strategy-from-scattered-fixtures-to-conftestpy">Migration Strategy: From Scattered Fixtures to conftest.py</h2> <p>If you have an existing test suite with scattered fixtures, here’s how to migrate:</p> <h3 id="step-1-audit-existing-fixtures">Step 1: Audit Existing Fixtures</h3> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Find all fixture definitions</span>
+<span class="nb">grep</span> <span class="nt">-r</span> <span class="s2">"@pytest.fixture"</span> tests/ <span class="nt">--include</span><span class="o">=</span><span class="s2">"*.py"</span>
+</code></pre></div></div> <h3 id="step-2-identify-common-patterns">Step 2: Identify Common Patterns</h3> <p>Group fixtures by:</p> <ul> <li>Usage frequency (how many test files use them)</li> <li>Scope (session, module, function)</li> <li>Domain (browser-related, data-related, etc.)</li> </ul> <h3 id="step-3-create-hierarchical-structure">Step 3: Create Hierarchical Structure</h3> <p>Start with the most commonly used fixtures at the root level:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conftest.py (root level)
+</span><span class="nd">@pytest.fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="sh">"</span><span class="s">session</span><span class="sh">"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">browser</span><span class="p">():</span>  <span class="c1"># Used by 80% of tests
+</span>    <span class="c1"># Move most common browser fixture here
+</span>
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">test_user</span><span class="p">():</span>  <span class="c1"># Used across multiple domains
+</span>    <span class="c1"># Common user fixture
+</span></code></pre></div></div> <h3 id="step-4-migrate-gradually">Step 4: Migrate Gradually</h3> <p>Don’t try to move everything at once. Migrate one domain at a time:</p> <ol> <li>Browser/WebDriver fixtures first</li> <li>Common test data second</li> <li>Domain-specific fixtures last</li> </ol> <h3 id="step-5-clean-up">Step 5: Clean Up</h3> <p>Remove duplicate fixtures and unused imports as you go.</p> <hr/> <h2 id="conclusion">Conclusion</h2> <p><code class="language-plaintext highlighter-rouge">conftest.py</code> is more than just a place to put shared fixtures - it’s the foundation of a scalable, maintainable test architecture. When used properly, it:</p> <ul> <li><strong>Eliminates code duplication</strong> across your test suite</li> <li><strong>Provides clear separation</strong> between different test domains</li> <li><strong>Makes test maintenance</strong> significantly easier</li> <li><strong>Enables powerful patterns</strong> like fixture factories and conditional fixtures</li> <li><strong>Scales beautifully</strong> from small projects to enterprise test suites</li> </ul> <p>The key is to start simple and evolve your <code class="language-plaintext highlighter-rouge">conftest.py</code> structure as your test suite grows. Don’t over-engineer from the beginning, but don’t ignore it either.</p> <p>Here are the main takeaways:</p> <ol> <li><strong>Use hierarchical structure</strong> - Global fixtures at the root, specific ones deeper in the tree</li> <li><strong>Choose appropriate scopes</strong> - Session for expensive setup, function for test isolation</li> <li><strong>Keep fixtures focused</strong> - Each fixture should have a single, clear responsibility</li> <li><strong>Name fixtures clearly</strong> - Future you (and your team) will thank you</li> <li><strong>Test your fixtures</strong> - They’re code too, they can have bugs</li> </ol> <p>Start by moving your most commonly used fixtures to <code class="language-plaintext highlighter-rouge">conftest.py</code>, and gradually build out your structure. You’ll be amazed at how much cleaner and more maintainable your test suite becomes.</p> <p>Remember, good test architecture is not about following rigid rules - it’s about making your life easier when you’re debugging that failing test at 2 AM. And trust me, <code class="language-plaintext highlighter-rouge">conftest.py</code> will definitely make that easier.</p>]]></content><author><name></name></author><category term="testing"/><category term="testing"/><category term="pytest"/><category term="automation"/><category term="conftest"/><summary type="html"><![CDATA[Understanding how conftest.py helps manage fixtures, configuration, and reusable setup in Pytest automation frameworks.]]></summary></entry><entry><title type="html">An Uninvited Guest in the Diwali Party</title><link href="/blog/2024/diwali-production-bug-pairwise-testing/" rel="alternate" type="text/html" title="An Uninvited Guest in the Diwali Party"/><published>2024-10-10T00:00:00+00:00</published><updated>2024-10-10T00:00:00+00:00</updated><id>/blog/2024/diwali-production-bug-pairwise-testing</id><content type="html" xml:base="/blog/2024/diwali-production-bug-pairwise-testing/"><![CDATA[<p><strong>Why Updating with a Condition is Important</strong></p> <p>It was a usual evening, and in just a couple of hours the Diwali party was about to begin. Excitement was in the air and everyone was looking forward to creating some memorable moments. Some people were dressed in ethnic wear while others were in casual clothes, but the shared excitement and team spirit were clear.</p> <p>Before the party everyone was trying to wrap up their work to enjoy the evening stress free. But as we all know, no software is perfect. Sometimes it is all about the timing when a bug shows up.</p> <h2 id="incident-reported">Incident Reported</h2> <p>Just half an hour before finishing up, we got word of a bug in the production environment. Initially it seemed like a simple issue that could be fixed quickly with a hotfix.</p> <p>But since it was already time for the Diwali party, some people started heading there while my team gathered in the boardroom hoping to solve the issue fast.</p> <p>Within 10 minutes everyone was there — front end, back end, QA and PM.</p> <h2 id="debugging-begins">Debugging Begins</h2> <p>With everyone in the room we started digging into the problem. As time passed we realized the debugging was getting more complicated. But finding the root cause was the priority before fixing it.</p> <p>The team began pairwise testing, trying different combinations.</p> <p>After nearly an hour we finally found the root cause: a small error in variable name declaration.</p> <p>Even though it seemed like a minor issue, every production bug is critical.</p> <h2 id="deployment-process">Deployment Process</h2> <p>Once the issue was fixed, testing began.</p> <p>We tested on the test environment first, then moved to staging. After a quick sanity check on staging we got sign off for production.</p> <p>This whole process took around five hours.</p> <p>By the time we deployed the hotfix it was already <strong>10:15 PM</strong>, making us late to the party.</p> <h2 id="lessons-learned">Lessons Learned</h2> <ul> <li> <p><strong>Every bug teaches a lesson</strong><br/> Some team members missed the Diwali party, but we didn’t want to miss the opportunity to learn from the bug.</p> </li> <li> <p><strong>Choose the smartest testing approach</strong><br/> When time is limited, selecting a testing strategy that ensures quality is critical.</p> </li> <li> <p><strong>The value of pairwise testing</strong><br/> Pairwise testing works well when systems have multiple inputs and combinations.</p> </li> <li> <p><strong>Focus on key combinations</strong><br/> Instead of testing everything, pairwise testing helps focus on meaningful combinations.</p> </li> <li> <p><strong>Catch hidden bugs faster</strong><br/> Prioritized combinations reveal hidden issues earlier.</p> </li> <li> <p><strong>Teamwork is essential</strong><br/> Critical situations highlight how important collaboration is.</p> </li> </ul>]]></content><author><name></name></author><category term="testing"/><category term="testing"/><category term="pairwise-testing"/><category term="bug-investigation"/><summary type="html"><![CDATA[A real story about how a production bug interrupted a Diwali celebration and what it taught about pairwise testing.]]></summary></entry><entry><title type="html">When a Single Alphabet Decided the Fate of the First Demo</title><link href="/blog/2024/single-alphabet-demo-bug/" rel="alternate" type="text/html" title="When a Single Alphabet Decided the Fate of the First Demo"/><published>2024-10-10T00:00:00+00:00</published><updated>2024-10-10T00:00:00+00:00</updated><id>/blog/2024/single-alphabet-demo-bug</id><content type="html" xml:base="/blog/2024/single-alphabet-demo-bug/"><![CDATA[<p><strong>Everything that happens the first time is special because of its first-time experience.</strong></p> <p>It was mid-December in 2021, and my internship was still going on, I was testing a mobile application for a project that was intended to be an in-company notification app to provide notifications related to companies to all the employees of the companies. Although this was my second project during the internship, it holds a special place for me. Even though the app had limited functionality from the learning point of view it offered lot of things to learn.</p> <p>The app was developed for Android and iOS separately, so the testing strategies for testing the app on both platforms were different. After a month of development, the first demo of the project was scheduled for Friday evening. So now, as the date was finalized and approaching, the team was in full swing to complete the pending task, as the first MVP for delivery was planned after the delivery.</p> <h1 id="testing-challenges">Testing Challenges</h1> <p>As the primary goal of the app was to provide notifications We tested push notifications in every possible scenario to ensure a seamless experience for the user. However, during the testing phase, we faced many challenges, especially in Android devices for the UI. Differences in screen sizes between Android devices (5.5–6+ inches) caused minor UI inconsistencies, which we addressed. Another challenge was that we were using 3rd party API for notification and as the API was mostly designed for the customer of the USA their server would remain down during office time IST which made it challenging some time to test the app during office hours.</p> <h1 id="demo-started">Demo Started</h1> <p>On the day of the demo, we did our final round of sanity testing to ensure the build was stable and there was no technical glitch from our side. As it was the first demo for me as a software tester there was some nervousness in the atmosphere. So the demo started at 9PM (IST) and as it was mid-December winter had started and the majority of the office employees had left the office. Only a couple of people were in the office including me, the delivery manager, and a few other people.</p> <p>We expected a small group from the client side, but to our surprise, 13 people joined the meeting, including their creative director. Their presence added to my jitters. Everything was going smoothly until someone from their creative team interrupted, pointing out a discrepancy in the text ‘Notifications’ on Android versus ‘Notification’ on iOS. Suddenly, all eyes were on this minor yet significant inconsistency.</p> <h1 id="build-rejected">Build Rejected</h1> <p>The moment one of the members pointed out the difference between “Notification” and “Notifications,” it quickly became the center of attention. Soon, everyone began discussing how the text not only looked inconsistent but also conveyed different meanings. After an extensive discussion, the client decided to reject the builds, requesting immediate fixes before scheduling another delivery.</p> <p>Initially, I had high hopes for the demo, given the app’s performance and stability during testing. However, the rejection of the build during my first demo was an outcome I hadn’t anticipated. What I thought would be a smooth first-time experience became an eye-opening moment, fundamentally reshaping my approach to testing strategies.</p> <h1 id="lessons-learned">Lessons Learned</h1> <ul> <li> <p><b>Importance of UI/UX Testing: </b> Even though functional testing has its own importance the experience from the first demo was enough to teach me the importance of UI/UX Testing.</p> </li> <li> <p><b>Feedback of Non-Technical Stakeholders: </b> While we usually talk about the primary stakeholders who are involved in the project there are non-technical stakeholders whose feedback is also very helpful in enhancing the app user interface.</p> </li> <li> <p><b>Being confident is better than being nervous:</b> While testing the product it is important to have faith in our testing strategies as well as in the product that we are aiming to deliver,Showing nervousness to stakeholders may bring question in their mind regarding the stability of the product.</p> </li> </ul>]]></content><author><name></name></author><category term="testing"/><category term="testing"/><category term="bug-story"/><category term="debugging"/><category term="qa"/><summary type="html"><![CDATA[A real testing story about how a tiny mistake in a single variable name nearly affected a product demo and what it taught about debugging and quality.]]></summary></entry><entry><title type="html">Various SDLC Models</title><link href="/blog/2024/various-sdlc-models/" rel="alternate" type="text/html" title="Various SDLC Models"/><published>2024-08-14T00:00:00+00:00</published><updated>2024-08-14T00:00:00+00:00</updated><id>/blog/2024/various-sdlc-models</id><content type="html" xml:base="/blog/2024/various-sdlc-models/"><![CDATA[<p>Some of the major software development lifecycle models are:</p> <p><img src="/images/new.jpeg"/></p> <ul> <li> <p><b>Iterative Model :</b> The Iterative Model in software development focuses on developing and deploying one feature at a time, repeating the same series of activities through multiple cycles. This repetition allows for refining and improving the product with each iteration, making it suitable for projects that benefit from gradual enhancements.</p> </li> <li> <p><b> Incremental Model :</b> The Incremental Model emphasizes the modular development of software, where features are built and deployed incrementally. A clear modular architecture is essential for this model, as each new feature is added as an extension of the previous ones, ensuring steady progress and functionality with every iteration.</p> </li> <li> <p><b>Agile Model :</b> The Agile Model is characterized by simultaneous development and coding activities. It places significant importance on collaboration, customer feedback, and adaptability. Agile encourages iterative and incremental delivery, allowing teams to respond quickly to changes and deliver value to stakeholders at every stage.</p> </li> <li> <p><b> Spiral Model :</b> The Spiral Model combines iterative development with risk analysis, making it a preferred choice for complex and high-risk projects. Each cycle involves thorough planning, risk resolution, development, and evaluation. However, the model can be expensive and challenging to manage due to its focus on comprehensive risk management.</p> </li> <li> <p><b> Waterfall Model :</b> The Waterfall Model follows a linear and sequential approach where all requirements are collected upfront, and each phase is completed before moving to the next. It is simple and easy to understand, making it suitable for smaller projects with well-defined requirements and minimal scope for changes.</p> </li> <li> <p><b>V-Model :</b> The V-Model, also known as the Verification and Validation Model, ensures that the developed software meets business requirements through rigorous testing aligned with each development stage. This model emphasizes verifying and validating requirements at every phase to deliver a product that satisfies all defined objectives.</p> </li> </ul> <p><b>Some other type of Development Models are: </b></p> <ul> <li> <p><b>Prototype Model : </b> The Prototype Model is centered around creating a working prototype to gather feedback and refine requirements before developing the final system. This model is highly effective in projects where user needs are unclear or evolving, as it allows stakeholders to visualize functionalities and provide input early in the development process.</p> </li> <li> <p><b>Rapid Application Development (RAD) Model : </b>The Rapid Application Development (RAD) Model prioritizes speed and flexibility by focusing on rapid prototyping and iterative development. It involves active user participation and relies on reusable components, which enables faster delivery of high-quality systems. This model is ideal for projects requiring quick turnaround times and frequent updates based on user feedback.</p> </li> </ul>]]></content><author><name></name></author><category term="testing"/><category term="testing"/><category term="sdlc"/><category term="software-development"/><category term="qa"/><summary type="html"><![CDATA[A visual overview of major software development life cycle models and how they differ in approach and structure.]]></summary></entry><entry><title type="html">Setting Up Pytest for Automation Project</title><link href="/blog/2024/setting-up-pytest-automation-project/" rel="alternate" type="text/html" title="Setting Up Pytest for Automation Project"/><published>2024-07-19T00:00:00+00:00</published><updated>2024-07-19T00:00:00+00:00</updated><id>/blog/2024/setting-up-pytest-automation-project</id><content type="html" xml:base="/blog/2024/setting-up-pytest-automation-project/"><![CDATA[<p>Pytest is a powerful testing framework for Python, widely used for functional and API testing. Its simplicity, scalability, and rich plugin ecosystem make it an excellent choice for test automation.</p> <h2 id="installing-pytest">Installing Pytest</h2> <p>Before setting up Pytest, ensure you have Python installed. If not, download and install Python from the <a href="https://www.python.org/downloads/">official website</a>.</p> <p>To install Pytest, run the following command:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install pytest
+</code></pre></div></div> <p>To verify the installation, check the version:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pytest --version
+</code></pre></div></div> <h2 id="project-structure">Project Structure</h2> <p>A well-structured project improves maintainability. Below is an ideal setup for a Pytest-based automation framework:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>project-root/
+│── tests/
+│   ├── test_admin.py
+│   ├── test_dashboard.py
+│   ├── conftest.py
+│
+│── utilities/
+│   ├── BaseClass.py
+│
+│── TestData/
+│   ├── AdminData.py
+│
+│── pageObjects/
+│   ├── Admin.py
+│
+│── reports/
+│   ├── screenshots/
+│
+│── README.md
+</code></pre></div></div> <h2 id="writing-test-cases">Writing Test Cases</h2> <h3 id="basic-test-case">Basic Test Case</h3> <p>Create a simple test file in the <code class="language-plaintext highlighter-rouge">tests/</code> directory, for example, <code class="language-plaintext highlighter-rouge">test_sample.py</code>:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">test_example</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span>
+</code></pre></div></div> <p>Run the test using:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pytest tests/test_sample.py
+</code></pre></div></div> <h3 id="using-assertions">Using Assertions</h3> <p>Pytest uses standard Python <code class="language-plaintext highlighter-rouge">assert</code> statements for validation:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">test_string</span><span class="p">():</span>
+    <span class="n">message</span> <span class="o">=</span> <span class="sh">"</span><span class="s">Hello Pytest</span><span class="sh">"</span>
+    <span class="k">assert</span> <span class="n">message</span><span class="p">.</span><span class="nf">startswith</span><span class="p">(</span><span class="sh">"</span><span class="s">Hello</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div> <h3 id="markers-for-categorizing-tests">Markers for Categorizing Tests</h3> <p>Markers help organize and execute specific test groups:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">pytest</span>
+
+<span class="nd">@pytest.mark.smoke</span>
+<span class="k">def</span> <span class="nf">test_smoke</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="mi">5</span> <span class="o">*</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">25</span>
+</code></pre></div></div> <p>Run only smoke tests:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pytest -m smoke
+</code></pre></div></div> <h2 id="configuring-pytest">Configuring Pytest</h2> <h3 id="pytestini"><code class="language-plaintext highlighter-rouge">pytest.ini</code></h3> <p>To configure global settings, create a <code class="language-plaintext highlighter-rouge">pytest.ini</code> file:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[pytest]
+testpaths = tests
+addopts = -v --html=report.html --self-contained-html
+markers =
+    smoke: Smoke tests
+</code></pre></div></div> <h3 id="conftestpy-for-fixtures"><code class="language-plaintext highlighter-rouge">conftest.py</code> for Fixtures</h3> <p>Fixtures help in setting up preconditions for tests:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">pytest</span>
+
+<span class="nd">@pytest.fixture</span>
+<span class="k">def</span> <span class="nf">setup</span><span class="p">():</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Setting up test environment</span><span class="sh">"</span><span class="p">)</span>
+    <span class="k">yield</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Tearing down test environment</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div> <h2 id="running-tests">Running Tests</h2> <p>Run all tests:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pytest
+</code></pre></div></div> <p>Generate an HTML report:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pytest --html=report.html
+</code></pre></div></div> <h2 id="logging-and-reporting">Logging and Reporting</h2> <h3 id="logging">Logging</h3> <p>To capture logs, configure <code class="language-plaintext highlighter-rouge">pytest.ini</code>:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>log_cli = true
+log_cli_level = INFO
+log_file = logfile.log
+log_file_level = INFO
+</code></pre></div></div> <h3 id="allure-reporting">Allure Reporting</h3> <p>To generate advanced reports, install Allure:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install allure-pytest
+</code></pre></div></div> <p>Run tests with Allure reporting:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pytest --alluredir=reports/
+</code></pre></div></div> <h2 id="best-practices">Best Practices</h2> <ol> <li><strong>Use Fixtures Effectively:</strong> Reduce code duplication by utilizing fixtures.</li> <li><strong>Use Page Object Model (POM):</strong> Keep UI interactions in <code class="language-plaintext highlighter-rouge">pageObjects/</code>.</li> <li><strong>Categorize Tests with Markers:</strong> Make test execution structured.</li> <li><strong>Generate Reports:</strong> Always generate HTML/Allure reports.</li> <li><strong>Automate Test Execution:</strong> Integrate Pytest with CI/CD tools.</li> </ol> <h2 id="conclusion">Conclusion</h2> <p>Setting up Pytest for automation is straightforward when you follow a structured approach. With the setup described here, you can build a robust, maintainable, and scalable test automation framework.</p> <p>By leveraging Pytest’s powerful features like fixtures, markers, and reporting, you can create a seamless testing workflow that enhances software quality.</p>]]></content><author><name></name></author><category term="testing"/><category term="testing"/><category term="pytest"/><category term="automation"/><category term="python"/><summary type="html"><![CDATA[A comprehensive guide to setting up Pytest, structuring automation projects, configuring test suites, and running tests effectively.]]></summary></entry></feed>
