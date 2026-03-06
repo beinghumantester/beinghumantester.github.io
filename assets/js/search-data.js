@@ -201,11 +201,46 @@ ninja.data = [{
             window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
+      },{id: "books-ikigai-the-japanese-secret-to-a-long-and-happy-life",
+          title: 'Ikigai - The Japanese Secret to a Long and Happy Life',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
+              window.location.href = "/books/ikigai/";
+            },},{id: "books-a-brief-history-of-time",
+          title: 'A Brief History of Time',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/a_brief_of_history_time/";
+            },},{id: "books-",
+          title: '',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/agile_testing_reading_guide/";
+            },},{id: "books-ये-मेरी-ग़ज़लें-ये-मेरी-नज़्में",
+          title: 'ये मेरी ग़ज़लें ये मेरी नज़्में',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/ye_meri_ghazelein/";
+            },},{id: "books-buddha-in-testing-finding-peace-in-chaos",
+          title: 'Buddha in Testing: Finding Peace in Chaos',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/posts/2024/10/buddha-in-testing/";
+            },},{id: "books-",
+          title: '',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/explore_it_exploratory_testing/";
+            },},{id: "books-growth-driven-testing",
+          title: 'Growth Driven Testing',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/growth_driven_testing/";
+            },},{id: "books-lessons-in-chemistry",
+          title: 'Lessons in Chemistry',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/lessons_in_chemistry/";
             },},{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
