@@ -1,8 +1,9 @@
 ---
 layout: book-shelf
-title: bookshelf
-permalink: /repositories/
-nav: false
+title: books
+permalink: /books/
+nav: true
+nav_order: 4
 collection: books
 ---
 
