@@ -216,21 +216,21 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/agile_testing_reading_guide/";
-            },},{id: "books-ये-मेरी-ग़ज़लें-ये-मेरी-नज़्में",
-          title: 'ये मेरी ग़ज़लें ये मेरी नज़्में',
+            },},{id: "books-",
+          title: '',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/ye_meri_ghazelein/";
-            },},{id: "books-buddha-in-testing-finding-peace-in-chaos",
-          title: 'Buddha in Testing: Finding Peace in Chaos',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/posts/2024/10/buddha-in-testing/";
+              window.location.href = "/books/buddha_in_testing/";
             },},{id: "books-",
           title: '',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/explore_it_exploratory_testing/";
+            },},{id: "books-ये-मेरी-ग़ज़लें-ये-मेरी-नज़्में",
+          title: 'ये मेरी ग़ज़लें ये मेरी नज़्में',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/ye_meri_ghazelein/";
             },},{id: "books-growth-driven-testing",
           title: 'Growth Driven Testing',
           description: "",
