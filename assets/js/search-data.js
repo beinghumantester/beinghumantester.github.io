@@ -53,7 +53,7 @@ ninja.data = [{
           },
         },{id: "nav-ai-in-testing",
           title: "ai in testing",
-          description: "members of the lab or group",
+          description: "resources or projects on which I have worked or I&#39;m working",
           section: "Navigation",
           handler: () => {
             window.location.href = "/people/";
