@@ -2,7 +2,7 @@
 layout: profiles
 permalink: /people/
 title: ai in testing
-description: members of the lab or group
+description: resources or projects on which I have worked or I'm working
 nav: true
 nav_order: 7
 
