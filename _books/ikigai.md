@@ -1,15 +1,15 @@
 ---
 layout: book-review
-title: Ikigai - The Japanese Secret to a Long and Happy Life
+title: Ikigai
 author: Héctor García and Francesc Miralles
-cover: assets/img/book_covers/ikigai.jpg
+cover: assets/img/book_covers/ikigai.jpeg
 isbn: 0143130722
 categories: self-help philosophy lifestyle
 tags: self-help purpose mindfulness
 buy_link: https://www.amazon.com/Ikigai-Japanese-Secret-Long-Happy/dp/0143130722
 date: 2024-08-18
 started: 2024-08-16
-finished: 2024-08-18
+finished: 2025-08-18
 released: 2016
 stars: 5
 status: Finished

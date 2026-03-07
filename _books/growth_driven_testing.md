@@ -8,8 +8,8 @@ categories: testing career-growth mindset
 tags: testing career quality
 buy_link: https://www.amazon.com/Growth-Driven-Testing-Pradeep-Soundarajan/dp/9352063083
 date: 2024-10-06
-started: 2024-10-03
-finished: 2024-10-06
+started: 2025-10-03
+finished: 2025-10-06
 released: 2015
 stars: 4
 status: Finished

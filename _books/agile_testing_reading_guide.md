@@ -8,8 +8,8 @@ categories: testing agile software-quality
 tags: testing agile-books
 buy_link: https://www.amazon.com/Agile-Testing-Practical-Guide-Testers/dp/0321534468
 date: 2024-10-05
-started: 2024-09-29
-finished: 2024-10-05
+started: 2025-09-29
+finished: 2025-10-05
 released: 2009
 stars: 4
 status: Finished
