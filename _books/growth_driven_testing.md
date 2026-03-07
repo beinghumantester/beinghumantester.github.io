@@ -2,7 +2,7 @@
 layout: book-review
 title: Growth Driven Testing
 author: Pradeep Soundarajan
-cover: assets/img/book_covers/growth-driven-testing.jpg
+cover: assets/img/book_covers/growth_driven_testing.jpg
 isbn: 9352063083
 categories: testing career-growth mindset
 tags: testing career quality

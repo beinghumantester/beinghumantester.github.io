@@ -1,29 +1,21 @@
 ---
-title: "Buddha in Testing: Finding Peace in Chaos"
+layout: book-review
+title: Buddha in Testing: Finding Peace in Chaos
+author: Pradeep Soundarajan
+cover: assets/img/book_covers/buddha_in_testing.jpg
+isbn: 0321534468
+categories: testing software-quality
+tags: testing 
+buy_link: https://www.amazon.in/Buddha-Testing-Finding-Peace-Chaos/dp/1647608511
 date: 2024-10-05
-permalink: /posts/2024/10/buddha-in-testing/
-tags:
-  - Books
-  - Testing
-  - Software Quality
-  - Mindset
+started: 2025-09-29
+finished: 2025-10-05
+released: 2009
+stars: 4
+status: Finished
 ---
 
 
-<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 20px; color: #666;">
-  <span>By Pradeep Soundarajan</span>
-  <span>•</span>
-  <span>Published 2015</span>
-  <span>•</span>
-  <span>5 min read</span>
-  <span>•</span>
-  <span style="color: #ffd700;">★★★★☆</span>
-</div>
-
-
-<p style="text-align: center;">
-<img src="/images/buddha_in_testing.png" alt="buddha in testing">
-</p>
 
 **Buddha in Testing: Finding Peace in Chaos** by **Pradeep Soundarajan** is one of those rare testing books that does not try to teach you *how to test*, but instead makes you pause and reflect on *how you think while testing*.
 

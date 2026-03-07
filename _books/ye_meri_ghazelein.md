@@ -2,7 +2,7 @@
 layout: book-review
 title: ये मेरी ग़ज़लें ये मेरी नज़्में
 author: Ahmad Faraz
-cover: assets/img/book_covers/ye-meri-ghazalein.jpg
+cover: assets/img/book_covers/ye_meri_ghazalein.jpg
 categories: poetry urdu-literature
 tags: poetry ghazal urdu
 date: 2024-08-25
