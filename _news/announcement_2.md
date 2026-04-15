@@ -1,33 +1,24 @@
 ---
 layout: post
-title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
+title: When Nobody Owns Quality - Making Testing Responsibility Explicit in Open Source Projects
+date: 2026-06-17 01:40:00-0400
 inline: false
 related_posts: false
 ---
 
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
+## Description
 
----
+Who owns testing standards in your project? Who decides release gates? Who pays the cost of test debt?
 
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
+Many open source projects cannot answer clearly. Not because maintainers do not care, but because test health responsibility emerges informally rather than being explicitly defined. What remains informal becomes nobody's obligation until it turns into everyone's problem.
 
-#### Hipster list
+Examining governance docs, contributor guidelines and issue discussions from Linux kernel, Kubernetes, Apache and OpenStack, this talk surfaces a recurring pattern: investing in CI alone does not clarify who owns test health. Kubernetes has a testing SIG and extensive CI, yet flaky test discussions reveal uncertainty about who can enforce fixes.
 
-<ul>
-    <li>brunch</li>
-    <li>fixie</li>
-    <li>raybans</li>
-    <li>messenger bag</li>
-</ul>
+## Four practical steps projects can adopt:
 
-Hoodie Thundercats retro, tote bag 8-bit Godard craft beer gastropub. Truffaut Tumblr taxidermy, raw denim Kickstarter sartorial dreamcatcher. Quinoa chambray slow-carb salvia readymade, bicycle rights 90's yr typewriter selfies letterpress cardigan vegan.
+- Make testing ownership explicit in governance and contributing documentation.
+- Define release quality gates that are written, versioned and enforced.
+- Designate CI health stewardship the way projects designate release managers.
+- Track flaky test debt the way projects track open issues.
 
----
-
-Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxidermy reprehenderit fap distillery master cleanse locavore. Est anim sapiente leggings Brooklyn ea. Thundercats locavore excepteur veniam eiusmod. Raw denim Truffaut Schlitz, migas sapiente Portland VHS twee Bushwick Marfa typewriter retro id keytar.
-
-> We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
-> —Anais Nin
-
-Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual.
+Open source conferences focus on tools. This talk focuses on ownership: a framework for identifying and closing gaps in test health responsibility.
