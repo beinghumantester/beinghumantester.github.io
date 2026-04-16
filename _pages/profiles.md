@@ -1,16 +1,29 @@
 ---
-layout: profiles
-permalink: /people/
+layout: page
+permalink: /ai-in-testing/
 title: ai in testing
-description: resources or projects on which I have worked or I'm working
+description: AI related resources or projects on which I have worked or I'm working
 nav: true
 nav_order: 7
 
-profiles:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
-
-    content: about_einstein.md
-
-
 ---
+
+<div class="project-grid">
+
+  <a href="/ai-projects/test-case-generator/" class="project-card">
+    <img src="/assets/img/test-case.png" alt="AI Test Case Generator">
+    <div>
+      <h3>AI Test Case Generator</h3>
+      <p>Generate test cases using LLM prompts.</p>
+    </div>
+  </a>
+
+  <a href="/ai-projects/api-analyzer/" class="project-card">
+    <img src="/assets/img/api.png" alt="API Analyzer">
+    <div>
+      <h3>API Analyzer</h3>
+      <p>Analyze APIs and generate edge test scenarios.</p>
+    </div>
+  </a>
+
+</div>
