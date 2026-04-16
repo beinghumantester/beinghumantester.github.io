@@ -53,10 +53,10 @@ ninja.data = [{
           },
         },{id: "nav-ai-in-testing",
           title: "ai in testing",
-          description: "resources or projects on which I have worked or I&#39;m working",
+          description: "AI related resources or projects on which I have worked or I&#39;m working",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/people/";
+            window.location.href = "/ai-in-testing/";
           },
         },{id: "post-postbot-in-postman",
         
@@ -297,6 +297,16 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "teachings-open-source-summit-india-2026",
+          title: 'Open Source Summit India 2026',
+          description: "When Nobody Owns Quality-Making Testing Responsibility Explicit in Open Source Projects",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/software-testing-live=2026%20copy%202/";
+            },},{id: "teachings-upcoming-talk-session-with-continuous-testing-meetup",
+          title: 'Upcoming Talk Session With Continuous Testing Meetup',
+          description: "Upcoming Talk - AI Follows the Prompt. Community Expands Quality Thinking",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/software-testing-live=2026%20copy/";
             },},{id: "teachings-software-testing-live-conversation-with-ben-dowen",
           title: 'Software Testing Live – Conversation with Ben Dowen',
           description: "A live discussion on modern software testing practices and quality thinking, hosted by Ministry of Testing.",
