@@ -195,7 +195,3 @@ Break things. That’s where the real understanding comes from.
 
 ---
 
-If you want, I can next:
-- Convert this into your **portfolio theme format (Jekyll / GitHub Pages specific)**
-- Or add **code blocks + demo GIF idea for stronger impact**
-```
