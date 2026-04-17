@@ -5,14 +5,9 @@ permalink: /ai-projects/test-case-generator/
 ---
 
 
-Here’s a clean, detailed `.md` page you can directly add to your portfolio. I’ve kept it simple, structured, and in your natural tone.
 
----
-
-```md
----
-title: Building My First AI Agent (and Breaking It)
-description: Exploring AI agents using Ollama and understanding the gap between reasoning and execution
+## title: Building My First AI Agent (and Breaking It)
+## description: Exploring AI agents using Ollama and understanding the gap between reasoning and execution
 ---
 
 # Building My First AI Agent (and Breaking It)
@@ -185,13 +180,6 @@ I plan to extend this further by:
 * Adding structured outputs (JSON instead of plain text)
 * Introducing tool-based actions (file handling, API calls)
 * Building a more reliable agent loop with validation
-
----
-
-If you're experimenting with AI agents, start simple.
-Break things. That’s where the real understanding comes from.
-
-```
 
 ---
 
