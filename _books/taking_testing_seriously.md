@@ -4,15 +4,15 @@ title: Taking Testing Seriously
 author: Stephen Hawking
 cover: assets/img/book_covers/taking_testing_seriously.jpg
 isbn: 0553380168
-categories: software testing
-tags: software testing
+categories: software-testing
+tags: quality testing
 buy_link: https://www.amazon.in/Taking-Testing-Seriously-Rapid-Software/dp/1394253192
 date: 2024-08-20
 started: 2026-02-28
 finished: 2026-04-17
 released: 2025
 stars: 5
-status: In-Progress
+status: Finished
 ---
 
 Taking Testing Seriously by James Bach is a book that challenges how we think about testing at a very fundamental level. It is not just about improving techniques or learning new tools, but about understanding the purpose, depth, and responsibility behind testing itself.
