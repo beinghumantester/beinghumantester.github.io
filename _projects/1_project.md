@@ -2,7 +2,7 @@
 layout: page
 title: OrangeHRM E2E Testing (Playwright + JS)
 description: End-to-end test automation framework for OrangeHRM using Playwright and JavaScript
-img: /assets/img/orange-hrm2.png   # replace with your actual image
+img: /assets/img/orange-hrm2.jpg   # replace with your actual image
 importance: 1
 category: work
 github: https://github.com/beinghumantester/OrangeHRMWebsite-E2E-PW_JS
