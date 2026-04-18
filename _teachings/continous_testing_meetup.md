@@ -2,7 +2,7 @@
 layout: course
 title: Upcoming Talk Session With Continuous Testing Meetup
 description: Upcoming Talk - AI Follows the Prompt. Community Expands Quality Thinking
-instructor: Ujjwal Kumar Singh & Ben Dowen
+instructor: Ujjwal Kumar Singh 
 year: 2026
 term: June
 location: Online (Continuous Testing Meetup)

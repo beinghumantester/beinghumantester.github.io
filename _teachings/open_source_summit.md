@@ -2,7 +2,7 @@
 layout: course
 title: Open Source Summit India 2026
 description: When Nobody Owns Quality-Making Testing Responsibility Explicit in Open Source Projects
-instructor: Ujjwal Kumar Singh & Ben Dowen
+instructor: Ujjwal Kumar Singh 
 year: 2026
 term: June
 location: Mumbai
