@@ -2,7 +2,7 @@
 layout: book-review
 title: Taking Testing Seriously
 author: Stephen Hawking
-cover: assets/img/book_covers/taking-testing-seriously.jpg
+cover: assets/img/book_covers/taking_testing_seriously.jpg
 isbn: 0553380168
 categories: software testing
 tags: software testing
