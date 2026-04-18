@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "A growing collection of my projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -265,16 +265,16 @@ ninja.data = [{
           description: "Strengthening problem-solving and logical thinking through core coding exercises",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "teachings-open-source-summit-india-2026",
-          title: 'Open Source Summit India 2026',
-          description: "When Nobody Owns Quality-Making Testing Responsibility Explicit in Open Source Projects",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/software-testing-live=2026%20copy%202/";
             },},{id: "teachings-upcoming-talk-session-with-continuous-testing-meetup",
           title: 'Upcoming Talk Session With Continuous Testing Meetup',
           description: "Upcoming Talk - AI Follows the Prompt. Community Expands Quality Thinking",
           section: "Teachings",handler: () => {
-              window.location.href = "/teachings/software-testing-live=2026%20copy/";
+              window.location.href = "/teachings/continous_testing_meetup/";
+            },},{id: "teachings-open-source-summit-india-2026",
+          title: 'Open Source Summit India 2026',
+          description: "When Nobody Owns Quality-Making Testing Responsibility Explicit in Open Source Projects",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/open_source_summit/";
             },},{id: "teachings-software-testing-live-conversation-with-ben-dowen",
           title: 'Software Testing Live – Conversation with Ben Dowen',
           description: "A live discussion on modern software testing practices and quality thinking, hosted by Ministry of Testing.",
