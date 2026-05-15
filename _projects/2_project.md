@@ -66,10 +66,10 @@ This approach reflects how automation is handled in real-world CI environments.
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/grid-1.png" class="img-fluid rounded z-depth-1" %}
+    <img src="/assets/img/grid-1.png" class="img-fluid rounded" alt="Selenium Grid execution">
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/grid-2.png" class="img-fluid rounded z-depth-1" %}
+    <img src="/assets/img/grid-2.png" class="img-fluid rounded" alt="Parallel execution">
   </div>
 </div>
 
