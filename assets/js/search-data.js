@@ -232,7 +232,12 @@ ninja.data = [{
             },},{id: "news-community-testing-meetup-speaker-session",
           title: 'Community Testing Meetup - Speaker Session',
           description: "",
-          section: "News",},{id: "news-software-testing-live-episode-with-ben-dowen",
+          section: "News",},{id: "news-when-nobody-owns-quality-making-testing-responsibility-explicit-in-open-source-projects",
+          title: 'When Nobody Owns Quality - Making Testing Responsibility Explicit in Open Source Projects...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_4/";
+            },},{id: "news-software-testing-live-episode-with-ben-dowen",
           title: 'Software Testing Live Episode With Ben Dowen.',
           description: "",
           section: "News",},{id: "projects-orangehrm-e2e-testing-playwright-js",
@@ -275,6 +280,11 @@ ninja.data = [{
           description: "When Nobody Owns Quality-Making Testing Responsibility Explicit in Open Source Projects",
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/open_source_summit/";
+            },},{id: "teachings-red-head-pod",
+          title: 'Red Head Pod',
+          description: "When Nobody Owns Quality-Making Testing Responsibility Explicit in Open Source Projects",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/red_head_pod/";
             },},{id: "teachings-software-testing-live-conversation-with-ben-dowen",
           title: 'Software Testing Live – Conversation with Ben Dowen',
           description: "A live discussion on modern software testing practices and quality thinking, hosted by Ministry of Testing.",
