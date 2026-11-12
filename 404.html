@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Moved to beinghumantester.com</title>
+    <script>
+        // Send every old github.io URL to the same path on the new domain,
+        // keeping the query string and #hash.
+        var target = "https://beinghumantester.com" +
+            window.location.pathname +
+            window.location.search +
+            window.location.hash;
+        window.location.replace(target);
+    </script>
+</head>
+<body>
+    <p>This site has moved to
+        <a id="link" href="https://beinghumantester.com/">beinghumantester.com</a>.
+    </p>
+    <script>
+        // If the redirect is slow, show the exact link too.
+        document.getElementById("link").href = target;
+    </script>
+</body>
+</html>
